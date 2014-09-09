@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40" />
+    </behaviour>
+</enemy>
