@@ -1,0 +1,362 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_AwesomeAIMain_Toolkit_Ticker</string>
+                    <string id="Minimized">yes</string>
+                </action>
+                <condition id="once">
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Used to track time when discovering bots</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot 1 exist?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot 2 exist?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot 3 exist?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">bot1Exist</string>
+                    <string id="Comment">Did I hear that bot1 exists?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot1 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">bot2Exist</string>
+                    <string id="Comment">Did I hear that bot2 exists?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot2 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">bot3Exist</string>
+                    <string id="Comment">Did I hear that bot3 exists?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot3 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
+                <orblock>
+                    <string id="Comment">Do I have a bot identifier yet?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot 1?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1Exist</string>
+                                    <string id="Comment">Did I just get bumped out of my slot?</string>
+                                    <normal>
+                                        <action id="enableUpgrade">
+                                            <string id="condition" values="yesno">no</string>
+                                            <string id="upgrade name">TutorialListen</string>
+                                            <string id="Comment">I am no longer bot 1</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">botReport</string>
+                                            <string id="Comment">Am I being asked to report my slot?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot1Exist</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell all friendly bots who I am!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 2?</string>
+                                    <normal>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2Exist</string>
+                                            <string id="Comment">Did I just get bumped out of my slot?</string>
+                                            <normal>
+                                                <action id="enableUpgrade">
+                                                    <string id="condition" values="yesno">no</string>
+                                                    <string id="upgrade name">TutorialOpening</string>
+                                                    <string id="Comment">I am no longer bot 2</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">botReport</string>
+                                                    <string id="Comment">Am I being asked to report my slot?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot2Exist</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell all friendly bots who I am!</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialListen</string>
+                                            <string id="Comment">Am I bot 3?</string>
+                                            <normal>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot3Exist</string>
+                                                    <string id="Comment">Did I just get bumped out of my slot?</string>
+                                                    <normal>
+                                                        <action id="enableUpgrade">
+                                                            <string id="condition" values="yesno">no</string>
+                                                            <string id="upgrade name">TutorialTalk</string>
+                                                            <string id="Comment">I am no longer bot 3</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">botReport</string>
+                                                            <string id="Comment">Am I being asked to report my slot?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot3Exist</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                    <string id="Comment">Tell all friendly bots who I am!</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                    <else>
+                        <condition id="once">
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                    <string id="Comment">start listening</string>
+                                </action>
+                                <action id="emitMessageInArea">
+                                    <string id="id">botReport</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                    <string id="Comment">Ask for friendly bots to report status</string>
+                                    <string id="Minimized">yes</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="checkCounter">
+                            <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                            <string id="value">Toolkit_Ticker_Event_5TickAgo</string>
+                            <string id="compare method" values="valuecompare">less or equal</string>
+                            <string id="Comment">Checks if the bot has been listening for longer than 5 ticks</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                    <string id="Comment">reset listener</string>
+                                </action>
+                                <condition id="getBoolEquals">
+                                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                                    <string id="value" values="yesno">yes</string>
+                                    <string id="Comment">Is there a free slot for bot1?</string>
+                                    <normal>
+                                        <action id="enableUpgrade">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialListen</string>
+                                            <string id="Comment">I am now bot1!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1Exist</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                            <string id="Comment">Tell other friendly bots that I exist!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="getBoolEquals">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                                            <string id="value" values="yesno">yes</string>
+                                            <string id="Comment">Is there a free spot for bot2?</string>
+                                            <normal>
+                                                <action id="enableUpgrade">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialOpening</string>
+                                                    <string id="Comment">I am now bot2!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2Exist</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell other friendly bots that I exist!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="getBoolEquals">
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                                    <string id="value" values="yesno">yes</string>
+                                                    <string id="Comment">Is there a free spot for bot3?</string>
+                                                    <normal>
+                                                        <action id="enableUpgrade">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialTalk</string>
+                                                            <string id="Comment">I am now bot3!</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3Exist</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell other friendly bots that I exist!</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <action id="emitMessageInArea">
+                                    <string id="id">botReport</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                    <string id="Comment">Ask for friendly bots to report status</string>
+                                    <string id="Minimized">yes</string>
+                                </action>
+                            </else>
+                        </condition>
+                    </else>
+                    <or>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot 1?</string>
+                            <string id="Minimized">yes</string>
+                        </condition>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialOpening</string>
+                            <string id="Comment">Am I bot 2?</string>
+                            <string id="Minimized">yes</string>
+                        </condition>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialTalk</string>
+                            <string id="Comment">Am I bot 3?</string>
+                            <string id="Minimized">yes</string>
+                        </condition>
+                    </or>
+                </orblock>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
