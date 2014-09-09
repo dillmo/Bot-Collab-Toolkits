@@ -7,6 +7,10 @@
                     <string id="fileName">Mod_AwesomeAIMain_Toolkit_Ticker</string>
                     <string id="Minimized">yes</string>
                 </action>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_AwesomeAIMain_Toolkit_Constants</string>
+                    <string id="Minimized">yes</string>
+                </action>
                 <condition id="once">
                     <normal>
                         <action id="adjustCounter">
