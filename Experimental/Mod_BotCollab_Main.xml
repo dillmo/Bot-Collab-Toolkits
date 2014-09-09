@@ -39,6 +39,23 @@
                         </action>
                     </normal>
                 </condition>
+                <condition id="once">
+                    <normal>
+                        <action id="emitMessageInArea">
+                            <string id="id">botReport</string>
+                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                            <float id="xOffset">0.00</float>
+                            <float id="yOffset">0.00</float>
+                            <float id="width">200.00</float>
+                            <float id="height">200.00</float>
+                            <string id="ignore invisibility" values="yesno">yes</string>
+                            <string id="check line of sight" values="yesno">no</string>
+                            <string id="Comment">Ask for friendly bots to report status</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
                 <condition id="receivedMessage">
                     <string id="id">bot1Exist</string>
                     <string id="Comment">Did I hear that bot1 exists?</string>
@@ -250,6 +267,12 @@
                                             <string id="Comment">I am now bot1!</string>
                                             <string id="Minimized">yes</string>
                                         </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot1 exists!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
                                         <action id="emitMessageInArea">
                                             <string id="id">bot1Exist</string>
                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
@@ -276,6 +299,12 @@
                                                     <string id="Comment">I am now bot2!</string>
                                                     <string id="Minimized">yes</string>
                                                 </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                    <string id="Comment">Bot2 exists!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
                                                 <action id="emitMessageInArea">
                                                     <string id="id">bot2Exist</string>
                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
@@ -300,6 +329,12 @@
                                                             <string id="condition" values="yesno">yes</string>
                                                             <string id="upgrade name">TutorialTalk</string>
                                                             <string id="Comment">I am now bot3!</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                            <string id="Comment">Bot3 exists!</string>
                                                             <string id="Minimized">yes</string>
                                                         </action>
                                                         <action id="emitMessageInArea">
