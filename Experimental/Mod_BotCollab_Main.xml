@@ -137,7 +137,7 @@
                             <else>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
-                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="upgrade name">TutorialOpening</string>
                                     <string id="Comment">Am I bot 2?</string>
                                     <normal>
                                         <condition id="receivedMessage">
@@ -177,7 +177,7 @@
                                     <else>
                                         <condition id="isUpgradeEnabled">
                                             <string id="condition" values="yesno">yes</string>
-                                            <string id="upgrade name">TutorialListen</string>
+                                            <string id="upgrade name">TutorialTalk</string>
                                             <string id="Comment">Am I bot 3?</string>
                                             <normal>
                                                 <condition id="receivedMessage">
