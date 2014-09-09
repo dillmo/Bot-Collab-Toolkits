@@ -1,0 +1,392 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="once">
+                    <string id="Comment">Document variables</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_OddModWorking</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">True when odd modulus works</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_EvenModWorking</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">True when even modulus works</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_Ticks</string>
+                            <string id="value">0</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Start ticker</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_100TickFromNow</string>
+                            <string id="value">100</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick in 100 ticks?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_50TickFromNow</string>
+                            <string id="value">50</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick in 50 ticks?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_20TickFromNow</string>
+                            <string id="value">20</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick in 20 ticks?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_10TickFromNow</string>
+                            <string id="value">10</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick in 10 ticks?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_2TickFromNow</string>
+                            <string id="value">2</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick in 2 ticks?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_1TickFromNow</string>
+                            <string id="value">1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Keeps track of the next tick</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_1TickAgo</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Keeps track of the previous tick</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_2TickAgo</string>
+                            <string id="value">-2</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 2 ticks ago?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_3TickAgo</string>
+                            <string id="value">-3</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 3 ticks ago?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_5TickAgo</string>
+                            <string id="value">-5</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 5 ticks ago?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_10TickAgo</string>
+                            <string id="value">-10</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 10 ticks ago?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_20TickAgo</string>
+                            <string id="value">-20</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 20 ticks ago?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_50TickAgo</string>
+                            <string id="value">-50</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 50 ticks ago?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_Ticker_Event_100TickAgo</string>
+                            <string id="value">-100</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">What tick was 100 ticks ago?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_2ndTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is it the second tick yet?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_3rdTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">It&apos;s the third tick</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_5thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">It&apos;s the fifth tick</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_10thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is it the tenth tick yet?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_20thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is it the twentieth tick yet?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is it the fiftyth tick yet?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_100thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is it the hundredth tick yet?</string>
+                        </action>
+                    </normal>
+                </condition>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_Ticks</string>
+                    <string id="value">1</string>
+                    <string id="adjust method" values="valueadjust">add</string>
+                    <string id="Comment">Time passes</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_1TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 1</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">Keeps track of the next tick</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_2TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 2</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 2 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_3TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 3</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 3 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_5TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 5</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 5 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_10TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 10</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 10 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_20TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 20</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 20 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_50TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 50</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 50 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_100TickFromNow</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks + 100</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick in 100 ticks?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_1TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 1</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">Keeps track of the previous tick</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_2TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 2</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 2 ticks ago?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_3TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 3</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 3 ticks ago?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_5TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 5</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 5 ticks ago?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_10TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 10</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 10 ticks ago?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_20TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 20</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 20 ticks ago?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_50TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 50</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 50 ticks ago?</string>
+                </action>
+                <action id="adjustCounter">
+                    <string id="id">Toolkit_Ticker_Event_100TickAgo</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks - 100</string>
+                    <string id="adjust method" values="valueadjust">set</string>
+                    <string id="Comment">What tick was 100 ticks ago?</string>
+                </action>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 2</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the second tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_2ndTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the Second tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_2ndTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Nope</string>
+                        </action>
+                    </else>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 3</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the third tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_3rdTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the third tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_3rdTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">It&apos;s the third tick</string>
+                        </action>
+                    </else>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 5</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the fifth tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_5thTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the fifth tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_5thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">It&apos;s not the fifth tick</string>
+                        </action>
+                    </else>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 10</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the tenth tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_10thTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the tenth tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_10thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Nope</string>
+                        </action>
+                    </else>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 20</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the twentieth tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_20thTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the twentyth tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_20thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Nope</string>
+                        </action>
+                    </else>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 50</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the fiftyth tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the fiftyth tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Nope</string>
+                        </action>
+                    </else>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_Constants_Event_ConstantZero</string>
+                    <string id="value">Toolkit_Ticker_Event_Ticks % 100</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Is it the hundredth tick yet?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_100thTick</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">It&apos;s the hundredth tick</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <action id="setBool">
+                            <string id="id">Toolkit_Ticker_Event_100thTick</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Nope</string>
+                        </action>
+                    </else>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
