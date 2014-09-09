@@ -241,7 +241,7 @@
                                 </action>
                                 <condition id="getBoolEquals">
                                     <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
-                                    <string id="value" values="yesno">yes</string>
+                                    <string id="value" values="yesno">no</string>
                                     <string id="Comment">Is there a free slot for bot1?</string>
                                     <normal>
                                         <action id="enableUpgrade">
@@ -267,7 +267,7 @@
                                     <else>
                                         <condition id="getBoolEquals">
                                             <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
-                                            <string id="value" values="yesno">yes</string>
+                                            <string id="value" values="yesno">no</string>
                                             <string id="Comment">Is there a free spot for bot2?</string>
                                             <normal>
                                                 <action id="enableUpgrade">
@@ -293,7 +293,7 @@
                                             <else>
                                                 <condition id="getBoolEquals">
                                                     <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
-                                                    <string id="value" values="yesno">yes</string>
+                                                    <string id="value" values="yesno">no</string>
                                                     <string id="Comment">Is there a free spot for bot3?</string>
                                                     <normal>
                                                         <action id="enableUpgrade">
