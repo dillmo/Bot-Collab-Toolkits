@@ -536,13 +536,12 @@
                     <string id="condition" values="yesno">no</string>
                     <string id="upgrade name">TutorialListen</string>
                     <string id="Comment">Am I not bot 1?</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="checkCounter">
                             <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
-                            <string id="value">Toolkit_Ticker_Event_100TickAgo</string>
+                            <string id="value">Toolkit_Ticker_Event_50TickAgo</string>
                             <string id="compare method" values="valuecompare">less or equal</string>
-                            <string id="Comment">Has it been 10 seconds since last response from bot1?</string>
+                            <string id="Comment">Has it been 5 seconds since last response from bot1?</string>
                             <normal>
                                 <condition id="checkCounter">
                                     <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
@@ -573,13 +572,12 @@
                     <string id="condition" values="yesno">no</string>
                     <string id="upgrade name">TutorialOpening</string>
                     <string id="Comment">Am I not bot 2?</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="checkCounter">
                             <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
-                            <string id="value">Toolkit_Ticker_Event_100TickAgo</string>
+                            <string id="value">Toolkit_Ticker_Event_50TickAgo</string>
                             <string id="compare method" values="valuecompare">less or equal</string>
-                            <string id="Comment">Has it been 10 seconds since last response from bot2?</string>
+                            <string id="Comment">Has it been 5 seconds since last response from bot2?</string>
                             <normal>
                                 <condition id="checkCounter">
                                     <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
@@ -610,13 +608,12 @@
                     <string id="condition" values="yesno">no</string>
                     <string id="upgrade name">TutorialTalk</string>
                     <string id="Comment">Am I not bot 3?</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="checkCounter">
                             <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
-                            <string id="value">Toolkit_Ticker_Event_100TickAgo</string>
+                            <string id="value">Toolkit_Ticker_Event_50TickAgo</string>
                             <string id="compare method" values="valuecompare">less or equal</string>
-                            <string id="Comment">Has it been 10 seconds since last response from bot3?</string>
+                            <string id="Comment">Has it been 5 seconds since last response from bot3?</string>
                             <normal>
                                 <condition id="checkCounter">
                                     <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
@@ -649,7 +646,7 @@
                     <normal>
                         <action id="executeBehaviourTree">
                             <string id="fileName">Mod_BotCollab_Plugins</string>
-                            <string id="Comment">To add your plugin, go here!</string>
+                            <string id="Comment">This behavior tree leads to plugins, it does nothing on it&apos;s own but linking</string>
                             <string id="Minimized">yes</string>
                         </action>
                     </normal>
