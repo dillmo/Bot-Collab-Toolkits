@@ -90,6 +90,7 @@
                 </condition>
                 <orblock>
                     <string id="Comment">Do I have a bot identifier yet?</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isUpgradeEnabled">
                             <string id="condition" values="yesno">yes</string>
@@ -221,9 +222,22 @@
                             <normal>
                                 <action id="adjustCounter">
                                     <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
-                                    <string id="value">Toolkit_Ticker_Event_1TickAgo</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks</string>
                                     <string id="adjust method" values="valueadjust">set</string>
                                     <string id="Comment">start listening</string>
+                                </action>
+                                <action id="emitMessageInArea">
+                                    <string id="id">botReport</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                    <string id="Comment">Ask for friendly bots to report status</string>
+                                    <string id="Minimized">yes</string>
                                 </action>
                             </normal>
                         </condition>
