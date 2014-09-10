@@ -9,130 +9,130 @@
                     <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Bot1Class</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Bot2Class</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Bot3Class</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Vampire</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                             <string id="value">1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Tank</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Tank</string>
                             <string id="value">2</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Blazer</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                             <string id="value">3</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Heavy</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                             <string id="value">4</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Dasher</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                             <string id="value">5</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Butterfly</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                             <string id="value">6</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Maw</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Maw</string>
                             <string id="value">7</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Chameleon</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
                             <string id="value">8</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Cowboy</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
                             <string id="value">9</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Assassin</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Assassin</string>
                             <string id="value">10</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Hunter</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Hunter</string>
                             <string id="value">11</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Spy</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Spy</string>
                             <string id="value">12</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Brute</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Brute</string>
                             <string id="value">12</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Shaman</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Shaman</string>
                             <string id="value">13</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Captain</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Captain</string>
                             <string id="value">14</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Commando</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Commando</string>
                             <string id="value">15</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Bird</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bird</string>
                             <string id="value">16</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Summoner</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Summoner</string>
                             <string id="value">17</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Jetter</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Jetter</string>
                             <string id="value">18</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
@@ -1399,8 +1399,8 @@
                     <string id="Comment">Class receiver code</string>
                     <normal>
                         <action id="adjustCounter">
-                            <string id="id">BotCollab_Class_Bot1Class</string>
-                            <string id="value">BotCollab_Class_Vampire</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                            <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Minimized">yes</string>
                         </action>
@@ -1410,8 +1410,8 @@
                             <string id="id">bot2ClassVampire</string>
                             <normal>
                                 <action id="adjustCounter">
-                                    <string id="id">BotCollab_Class_Bot2Class</string>
-                                    <string id="value">BotCollab_Class_Vampire</string>
+                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                                     <string id="adjust method" values="valueadjust">set</string>
                                     <string id="Minimized">yes</string>
                                 </action>
@@ -1421,8 +1421,8 @@
                                     <string id="id">bot3ClassVampire</string>
                                     <normal>
                                         <action id="adjustCounter">
-                                            <string id="id">BotCollab_Class_Bot3Class</string>
-                                            <string id="value">BotCollab_Class_Vampire</string>
+                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                                             <string id="adjust method" values="valueadjust">set</string>
                                             <string id="Minimized">yes</string>
                                         </action>
@@ -1432,8 +1432,8 @@
                                             <string id="id">bot1ClassTank</string>
                                             <normal>
                                                 <action id="adjustCounter">
-                                                    <string id="id">BotCollab_Class_Bot1Class</string>
-                                                    <string id="value">BotCollab_Class_Tank</string>
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                     <string id="adjust method" values="valueadjust">set</string>
                                                     <string id="Minimized">yes</string>
                                                 </action>
@@ -1443,8 +1443,8 @@
                                                     <string id="id">bot2ClassTank</string>
                                                     <normal>
                                                         <action id="adjustCounter">
-                                                            <string id="id">BotCollab_Class_Bot2Class</string>
-                                                            <string id="value">BotCollab_Class_Tank</string>
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                             <string id="Minimized">yes</string>
                                                         </action>
@@ -1454,8 +1454,8 @@
                                                             <string id="id">bot3ClassTank</string>
                                                             <normal>
                                                                 <action id="adjustCounter">
-                                                                    <string id="id">BotCollab_Class_Bot3Class</string>
-                                                                    <string id="value">BotCollab_Class_Tank</string>
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                     <string id="Minimized">yes</string>
                                                                 </action>
@@ -1465,8 +1465,8 @@
                                                                     <string id="id">bot1ClassBlazer</string>
                                                                     <normal>
                                                                         <action id="adjustCounter">
-                                                                            <string id="id">BotCollab_Class_Bot1Class</string>
-                                                                            <string id="value">BotCollab_Class_Blazer</string>
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                             <string id="Minimized">yes</string>
                                                                         </action>
@@ -1476,8 +1476,8 @@
                                                                             <string id="id">bot2ClassBlazer</string>
                                                                             <normal>
                                                                                 <action id="adjustCounter">
-                                                                                    <string id="id">BotCollab_Class_Bot2Class</string>
-                                                                                    <string id="value">BotCollab_Class_Blazer</string>
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                     <string id="Minimized">yes</string>
                                                                                 </action>
@@ -1487,8 +1487,8 @@
                                                                                     <string id="id">bot3ClassBlazer</string>
                                                                                     <normal>
                                                                                         <action id="adjustCounter">
-                                                                                            <string id="id">BotCollab_Class_Bot3Class</string>
-                                                                                            <string id="value">BotCollab_Class_Blazer</string>
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                             <string id="Minimized">yes</string>
                                                                                         </action>
@@ -1498,8 +1498,8 @@
                                                                                             <string id="id">bot1ClassHeavy</string>
                                                                                             <normal>
                                                                                                 <action id="adjustCounter">
-                                                                                                    <string id="id">BotCollab_Class_Bot1Class</string>
-                                                                                                    <string id="value">BotCollab_Class_Heavy</string>
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                     <string id="Minimized">yes</string>
                                                                                                 </action>
@@ -1509,8 +1509,8 @@
                                                                                                     <string id="id">bot2ClassHeavy</string>
                                                                                                     <normal>
                                                                                                         <action id="adjustCounter">
-                                                                                                            <string id="id">BotCollab_Class_Bot2Class</string>
-                                                                                                            <string id="value">BotCollab_Class_Heavy</string>
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                             <string id="Minimized">yes</string>
                                                                                                         </action>
@@ -1520,8 +1520,8 @@
                                                                                                             <string id="id">bot3ClassHeavy</string>
                                                                                                             <normal>
                                                                                                                 <action id="adjustCounter">
-                                                                                                                    <string id="id">BotCollab_Class_Bot3Class</string>
-                                                                                                                    <string id="value">BotCollab_Class_Heavy</string>
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                     <string id="Minimized">yes</string>
                                                                                                                 </action>
@@ -1531,8 +1531,8 @@
                                                                                                                     <string id="id">bot1ClassDasher</string>
                                                                                                                     <normal>
                                                                                                                         <action id="adjustCounter">
-                                                                                                                            <string id="id">BotCollab_Class_Bot1Class</string>
-                                                                                                                            <string id="value">BotCollab_Class_Dasher</string>
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                             <string id="Minimized">yes</string>
                                                                                                                         </action>
@@ -1542,8 +1542,8 @@
                                                                                                                             <string id="id">bot2ClassDasher</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                    <string id="id">BotCollab_Class_Bot2Class</string>
-                                                                                                                                    <string id="value">BotCollab_Class_Dasher</string>
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                     <string id="Minimized">yes</string>
                                                                                                                                 </action>
@@ -1553,8 +1553,8 @@
                                                                                                                                     <string id="id">bot3ClassDasher</string>
                                                                                                                                     <normal>
                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                            <string id="id">BotCollab_Class_Bot3Class</string>
-                                                                                                                                            <string id="value">BotCollab_Class_Dasher</string>
+                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                             <string id="Minimized">yes</string>
                                                                                                                                         </action>
@@ -1564,8 +1564,8 @@
                                                                                                                                             <string id="id">bot1ClassButterfly</string>
                                                                                                                                             <normal>
                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                    <string id="id">BotCollab_Class_Bot1Class</string>
-                                                                                                                                                    <string id="value">BotCollab_Class_Butterfly</string>
+                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                     <string id="Minimized">yes</string>
                                                                                                                                                 </action>
@@ -1575,8 +1575,8 @@
                                                                                                                                                     <string id="id">bot2ClassButterfly</string>
                                                                                                                                                     <normal>
                                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                                            <string id="id">BotCollab_Class_Bot2Class</string>
-                                                                                                                                                            <string id="value">BotCollab_Class_Butterfly</string>
+                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                             <string id="Minimized">yes</string>
                                                                                                                                                         </action>
@@ -1586,8 +1586,8 @@
                                                                                                                                                             <string id="id">bot3ClassButterfly</string>
                                                                                                                                                             <normal>
                                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                                    <string id="id">BotCollab_Class_Bot3Class</string>
-                                                                                                                                                                    <string id="value">BotCollab_Class_Butterfly</string>
+                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                     <string id="Minimized">yes</string>
                                                                                                                                                                 </action>
@@ -1597,8 +1597,8 @@
                                                                                                                                                                     <string id="id">bot1Class</string>
                                                                                                                                                                     <normal>
                                                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                                                            <string id="id">BotCollab_Class_Bot1Class</string>
-                                                                                                                                                                            <string id="value">BotCollab_Class_</string>
+                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_</string>
                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                             <string id="Minimized">yes</string>
                                                                                                                                                                         </action>
@@ -1608,8 +1608,8 @@
                                                                                                                                                                             <string id="id">bot2Class</string>
                                                                                                                                                                             <normal>
                                                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                                                    <string id="id">BotCollab_Class_Bot2Class</string>
-                                                                                                                                                                                    <string id="value">BotCollab_Class_</string>
+                                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_</string>
                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                     <string id="Minimized">yes</string>
                                                                                                                                                                                 </action>
@@ -1619,8 +1619,8 @@
                                                                                                                                                                                     <string id="id">bot3Class</string>
                                                                                                                                                                                     <normal>
                                                                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                                                                            <string id="id">BotCollab_Class_Bot3Class</string>
-                                                                                                                                                                                            <string id="value">BotCollab_Class_</string>
+                                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_</string>
                                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                             <string id="Minimized">yes</string>
                                                                                                                                                                                         </action>
