@@ -7,10 +7,6 @@
                     <string id="fileName">Mod_AwesomeAIMain_Toolkit_Ticker</string>
                     <string id="Minimized">yes</string>
                 </action>
-                <action id="executeBehaviourTree">
-                    <string id="fileName">Mod_AwesomeAIMain_Toolkit_Constants</string>
-                    <string id="Minimized">yes</string>
-                </action>
                 <condition id="once">
                     <normal>
                         <action id="adjustCounter">
@@ -94,6 +90,7 @@
                 </condition>
                 <orblock>
                     <string id="Comment">Do I have a bot identifier yet?</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isUpgradeEnabled">
                             <string id="condition" values="yesno">yes</string>
