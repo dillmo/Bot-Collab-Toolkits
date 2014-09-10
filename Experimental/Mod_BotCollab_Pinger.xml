@@ -25,6 +25,11 @@
                     <string id="id">botPing</string>
                     <normal>
                         <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Pinger_lastBotCount</string>
+                            <string id="value">Toolkit_BotCollab_Pinger_botCount</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Pinger_botCount</string>
                             <string id="value">1</string>
                             <string id="adjust method" values="valueadjust">set</string>
@@ -45,11 +50,6 @@
                 <condition id="receivedMessage">
                     <string id="id">botHere</string>
                     <normal>
-                        <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Pinger_lastBotCount</string>
-                            <string id="value">Toolkit_BotCollab_Pinger_botCount</string>
-                            <string id="adjust method" values="valueadjust">set</string>
-                        </action>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Pinger_botCount</string>
                             <string id="value">1</string>
@@ -159,6 +159,11 @@
                                     <string id="id">Toolkit_BotCollab_Main_bot1Exists</string>
                                     <string id="value" values="flagtoggle">no</string>
                                 </action>
+                                <action id="log">
+                                    <string id="text">Bot 1 Left</string>
+                                    <string id="counter"></string>
+                                    <string id="bool"></string>
+                                </action>
                             </else>
                         </condition>
                         <condition id="receivedMessage">
@@ -174,6 +179,11 @@
                                     <string id="id">Toolkit_BotCollab_Main_bot2Exists</string>
                                     <string id="value" values="flagtoggle">no</string>
                                 </action>
+                                <action id="log">
+                                    <string id="text">Bot 2 Left</string>
+                                    <string id="counter"></string>
+                                    <string id="bool"></string>
+                                </action>
                             </else>
                         </condition>
                         <condition id="receivedMessage">
@@ -188,6 +198,11 @@
                                 <action id="setBool">
                                     <string id="id">Toolkit_BotCollab_Main_bot3Exists</string>
                                     <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                                <action id="log">
+                                    <string id="text">Bot 3 Left</string>
+                                    <string id="counter"></string>
+                                    <string id="bool"></string>
                                 </action>
                             </else>
                         </condition>
