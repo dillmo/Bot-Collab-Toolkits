@@ -5,7 +5,7 @@
             <string id="Comment">This behavior tree leads to plugins, it does nothing on it&apos;s own but linking</string>
             <normal>
                 <action id="executeBehaviourTree">
-                    <string id="fileName">Mod_BotCollab_Plugin_Classes</string>
+                    <string id="fileName">Mod_BotCollab_Plugin_Class</string>
                     <string id="Minimized">yes</string>
                 </action>
             </normal>
