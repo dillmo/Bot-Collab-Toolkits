@@ -7,10 +7,6 @@
                     <string id="fileName">Mod_AwesomeAIMain_Toolkit_Ticker</string>
                     <string id="Minimized">yes</string>
                 </action>
-                <action id="executeBehaviourTree">
-                    <string id="fileName">Mod_AwesomeAIMain_Toolkit_Constants</string>
-                    <string id="Minimized">yes</string>
-                </action>
                 <condition id="once">
                     <normal>
                         <action id="adjustCounter">
@@ -35,23 +31,6 @@
                             <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
                             <string id="value" values="flagtoggle">no</string>
                             <string id="Comment">Does bot 3 exist?</string>
-                            <string id="Minimized">yes</string>
-                        </action>
-                    </normal>
-                </condition>
-                <condition id="once">
-                    <normal>
-                        <action id="emitMessageInArea">
-                            <string id="id">botReport</string>
-                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                            <float id="xOffset">0.00</float>
-                            <float id="yOffset">0.00</float>
-                            <float id="width">200.00</float>
-                            <float id="height">200.00</float>
-                            <string id="ignore invisibility" values="yesno">yes</string>
-                            <string id="check line of sight" values="yesno">no</string>
-                            <string id="Comment">Ask for friendly bots to report status</string>
                             <string id="Minimized">yes</string>
                         </action>
                     </normal>
@@ -88,6 +67,23 @@
                             <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
                             <string id="value" values="flagtoggle">yes</string>
                             <string id="Comment">Bot3 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="once">
+                    <normal>
+                        <action id="emitMessageInArea">
+                            <string id="id">botReport</string>
+                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                            <float id="xOffset">0.00</float>
+                            <float id="yOffset">0.00</float>
+                            <float id="width">200.00</float>
+                            <float id="height">200.00</float>
+                            <string id="ignore invisibility" values="yesno">yes</string>
+                            <string id="check line of sight" values="yesno">no</string>
+                            <string id="Comment">Ask for friendly bots to report status</string>
                             <string id="Minimized">yes</string>
                         </action>
                     </normal>
@@ -225,22 +221,9 @@
                             <normal>
                                 <action id="adjustCounter">
                                     <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
-                                    <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                    <string id="value">Toolkit_Ticker_Event_1TickAgo</string>
                                     <string id="adjust method" values="valueadjust">set</string>
                                     <string id="Comment">start listening</string>
-                                </action>
-                                <action id="emitMessageInArea">
-                                    <string id="id">botReport</string>
-                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                                    <float id="xOffset">0.00</float>
-                                    <float id="yOffset">0.00</float>
-                                    <float id="width">200.00</float>
-                                    <float id="height">200.00</float>
-                                    <string id="ignore invisibility" values="yesno">yes</string>
-                                    <string id="check line of sight" values="yesno">no</string>
-                                    <string id="Comment">Ask for friendly bots to report status</string>
-                                    <string id="Minimized">yes</string>
                                 </action>
                             </normal>
                         </condition>
