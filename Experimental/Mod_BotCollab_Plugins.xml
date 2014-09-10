@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <string id="Comment">This behavior tree leads to plugins, it does nothing on it&apos;s own but linking</string>
+            <normal>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_BotCollab_Plugin_Classes</string>
+                    <string id="Minimized">yes</string>
+                </action>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
