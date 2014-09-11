@@ -120,89 +120,16 @@
                         </action>
                     </normal>
                 </condition>
-                <condition id="checkClass">
-                    <string id="check on" values="targetself">self</string>
-                    <string id="class">Vampire</string>
-                    <string id="Comment">Class reporting logic</string>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Check every 5 seconds</string>
                     <normal>
-                        <condition id="isUpgradeEnabled">
-                            <string id="condition" values="yesno">yes</string>
-                            <string id="upgrade name">TutorialListen</string>
-                            <string id="Comment">Am I bot 1?</string>
-                            <normal>
-                                <action id="emitMessageInArea">
-                                    <string id="id">bot1ClassVampire</string>
-                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                                    <float id="xOffset">0.00</float>
-                                    <float id="yOffset">0.00</float>
-                                    <float id="width">200.00</float>
-                                    <float id="height">200.00</float>
-                                    <string id="ignore invisibility" values="yesno">yes</string>
-                                    <string id="check line of sight" values="yesno">no</string>
-                                </action>
-                                <action id="adjustCounter">
-                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
-                                    <string id="adjust method" values="valueadjust">set</string>
-                                </action>
-                            </normal>
-                            <else>
-                                <condition id="isUpgradeEnabled">
-                                    <string id="condition" values="yesno">yes</string>
-                                    <string id="upgrade name">TutorialOpening</string>
-                                    <string id="Comment">Am I bot 2?</string>
-                                    <normal>
-                                        <action id="emitMessageInArea">
-                                            <string id="id">bot2ClassVampire</string>
-                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                                            <float id="xOffset">0.00</float>
-                                            <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
-                                            <string id="ignore invisibility" values="yesno">yes</string>
-                                            <string id="check line of sight" values="yesno">no</string>
-                                        </action>
-                                        <action id="adjustCounter">
-                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
-                                            <string id="adjust method" values="valueadjust">set</string>
-                                        </action>
-                                    </normal>
-                                    <else>
-                                        <condition id="isUpgradeEnabled">
-                                            <string id="condition" values="yesno">yes</string>
-                                            <string id="upgrade name">TutorialTalk</string>
-                                            <string id="Comment">Am I bot 3?</string>
-                                            <normal>
-                                                <action id="emitMessageInArea">
-                                                    <string id="id">bot3ClassVampire</string>
-                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                                                    <float id="xOffset">0.00</float>
-                                                    <float id="yOffset">0.00</float>
-                                                    <float id="width">200.00</float>
-                                                    <float id="height">200.00</float>
-                                                    <string id="ignore invisibility" values="yesno">yes</string>
-                                                    <string id="check line of sight" values="yesno">no</string>
-                                                </action>
-                                                <action id="adjustCounter">
-                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
-                                                    <string id="adjust method" values="valueadjust">set</string>
-                                                </action>
-                                            </normal>
-                                        </condition>
-                                    </else>
-                                </condition>
-                            </else>
-                        </condition>
-                    </normal>
-                    <else>
                         <condition id="checkClass">
                             <string id="check on" values="targetself">self</string>
-                            <string id="class">Tank</string>
+                            <string id="class">Vampire</string>
+                            <string id="Comment">Class reporting logic</string>
+                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -210,7 +137,7 @@
                                     <string id="Comment">Am I bot 1?</string>
                                     <normal>
                                         <action id="emitMessageInArea">
-                                            <string id="id">bot1ClassTank</string>
+                                            <string id="id">bot1ClassVampire</string>
                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
@@ -222,7 +149,7 @@
                                         </action>
                                         <action id="adjustCounter">
                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                                             <string id="adjust method" values="valueadjust">set</string>
                                         </action>
                                     </normal>
@@ -233,7 +160,7 @@
                                             <string id="Comment">Am I bot 2?</string>
                                             <normal>
                                                 <action id="emitMessageInArea">
-                                                    <string id="id">bot2ClassTank</string>
+                                                    <string id="id">bot2ClassVampire</string>
                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
@@ -245,7 +172,7 @@
                                                 </action>
                                                 <action id="adjustCounter">
                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                                                     <string id="adjust method" values="valueadjust">set</string>
                                                 </action>
                                             </normal>
@@ -256,7 +183,7 @@
                                                     <string id="Comment">Am I bot 3?</string>
                                                     <normal>
                                                         <action id="emitMessageInArea">
-                                                            <string id="id">bot3ClassTank</string>
+                                                            <string id="id">bot3ClassVampire</string>
                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
@@ -268,7 +195,7 @@
                                                         </action>
                                                         <action id="adjustCounter">
                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                         </action>
                                                     </normal>
@@ -281,7 +208,7 @@
                             <else>
                                 <condition id="checkClass">
                                     <string id="check on" values="targetself">self</string>
-                                    <string id="class">Blazer</string>
+                                    <string id="class">Tank</string>
                                     <normal>
                                         <condition id="isUpgradeEnabled">
                                             <string id="condition" values="yesno">yes</string>
@@ -289,7 +216,7 @@
                                             <string id="Comment">Am I bot 1?</string>
                                             <normal>
                                                 <action id="emitMessageInArea">
-                                                    <string id="id">bot1ClassBlazer</string>
+                                                    <string id="id">bot1ClassTank</string>
                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
@@ -301,7 +228,7 @@
                                                 </action>
                                                 <action id="adjustCounter">
                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                     <string id="adjust method" values="valueadjust">set</string>
                                                 </action>
                                             </normal>
@@ -312,7 +239,7 @@
                                                     <string id="Comment">Am I bot 2?</string>
                                                     <normal>
                                                         <action id="emitMessageInArea">
-                                                            <string id="id">bot2ClassBlazer</string>
+                                                            <string id="id">bot2ClassTank</string>
                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
@@ -324,7 +251,7 @@
                                                         </action>
                                                         <action id="adjustCounter">
                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                         </action>
                                                     </normal>
@@ -335,7 +262,7 @@
                                                             <string id="Comment">Am I bot 3?</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
-                                                                    <string id="id">bot3ClassBlazer</string>
+                                                                    <string id="id">bot3ClassTank</string>
                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
@@ -347,7 +274,7 @@
                                                                 </action>
                                                                 <action id="adjustCounter">
                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                 </action>
                                                             </normal>
@@ -360,7 +287,7 @@
                                     <else>
                                         <condition id="checkClass">
                                             <string id="check on" values="targetself">self</string>
-                                            <string id="class">Heavy</string>
+                                            <string id="class">Blazer</string>
                                             <normal>
                                                 <condition id="isUpgradeEnabled">
                                                     <string id="condition" values="yesno">yes</string>
@@ -368,7 +295,7 @@
                                                     <string id="Comment">Am I bot 1?</string>
                                                     <normal>
                                                         <action id="emitMessageInArea">
-                                                            <string id="id">bot1ClassHeavy</string>
+                                                            <string id="id">bot1ClassBlazer</string>
                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
@@ -380,7 +307,7 @@
                                                         </action>
                                                         <action id="adjustCounter">
                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                         </action>
                                                     </normal>
@@ -391,7 +318,7 @@
                                                             <string id="Comment">Am I bot 2?</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
-                                                                    <string id="id">bot2ClassHeavy</string>
+                                                                    <string id="id">bot2ClassBlazer</string>
                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
@@ -403,7 +330,7 @@
                                                                 </action>
                                                                 <action id="adjustCounter">
                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                 </action>
                                                             </normal>
@@ -414,7 +341,7 @@
                                                                     <string id="Comment">Am I bot 3?</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
-                                                                            <string id="id">bot3ClassHeavy</string>
+                                                                            <string id="id">bot3ClassBlazer</string>
                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
@@ -426,7 +353,7 @@
                                                                         </action>
                                                                         <action id="adjustCounter">
                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                         </action>
                                                                     </normal>
@@ -439,7 +366,7 @@
                                             <else>
                                                 <condition id="checkClass">
                                                     <string id="check on" values="targetself">self</string>
-                                                    <string id="class">Dasher</string>
+                                                    <string id="class">Heavy</string>
                                                     <normal>
                                                         <condition id="isUpgradeEnabled">
                                                             <string id="condition" values="yesno">yes</string>
@@ -447,7 +374,7 @@
                                                             <string id="Comment">Am I bot 1?</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
-                                                                    <string id="id">bot1ClassDasher</string>
+                                                                    <string id="id">bot1ClassHeavy</string>
                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
@@ -459,7 +386,7 @@
                                                                 </action>
                                                                 <action id="adjustCounter">
                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                 </action>
                                                             </normal>
@@ -470,7 +397,7 @@
                                                                     <string id="Comment">Am I bot 2?</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
-                                                                            <string id="id">bot2ClassDasher</string>
+                                                                            <string id="id">bot2ClassHeavy</string>
                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
@@ -482,7 +409,7 @@
                                                                         </action>
                                                                         <action id="adjustCounter">
                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                         </action>
                                                                     </normal>
@@ -493,7 +420,7 @@
                                                                             <string id="Comment">Am I bot 3?</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
-                                                                                    <string id="id">bot3ClassDasher</string>
+                                                                                    <string id="id">bot3ClassHeavy</string>
                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                     <float id="xOffset">0.00</float>
@@ -505,7 +432,7 @@
                                                                                 </action>
                                                                                 <action id="adjustCounter">
                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                 </action>
                                                                             </normal>
@@ -518,7 +445,7 @@
                                                     <else>
                                                         <condition id="checkClass">
                                                             <string id="check on" values="targetself">self</string>
-                                                            <string id="class">Butterfly</string>
+                                                            <string id="class">Dasher</string>
                                                             <normal>
                                                                 <condition id="isUpgradeEnabled">
                                                                     <string id="condition" values="yesno">yes</string>
@@ -526,7 +453,7 @@
                                                                     <string id="Comment">Am I bot 1?</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
-                                                                            <string id="id">bot1ClassButterfly</string>
+                                                                            <string id="id">bot1ClassDasher</string>
                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
@@ -538,7 +465,7 @@
                                                                         </action>
                                                                         <action id="adjustCounter">
                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                         </action>
                                                                     </normal>
@@ -549,7 +476,7 @@
                                                                             <string id="Comment">Am I bot 2?</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
-                                                                                    <string id="id">bot2ClassButterfly</string>
+                                                                                    <string id="id">bot2ClassDasher</string>
                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                     <float id="xOffset">0.00</float>
@@ -561,7 +488,7 @@
                                                                                 </action>
                                                                                 <action id="adjustCounter">
                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                 </action>
                                                                             </normal>
@@ -572,7 +499,7 @@
                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
-                                                                                            <string id="id">bot3ClassButterfly</string>
+                                                                                            <string id="id">bot3ClassDasher</string>
                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                             <float id="xOffset">0.00</float>
@@ -584,7 +511,7 @@
                                                                                         </action>
                                                                                         <action id="adjustCounter">
                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                         </action>
                                                                                     </normal>
@@ -597,7 +524,7 @@
                                                             <else>
                                                                 <condition id="checkClass">
                                                                     <string id="check on" values="targetself">self</string>
-                                                                    <string id="class">Maw</string>
+                                                                    <string id="class">Butterfly</string>
                                                                     <normal>
                                                                         <condition id="isUpgradeEnabled">
                                                                             <string id="condition" values="yesno">yes</string>
@@ -605,7 +532,7 @@
                                                                             <string id="Comment">Am I bot 1?</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
-                                                                                    <string id="id">bot1ClassMaw</string>
+                                                                                    <string id="id">bot1ClassButterfly</string>
                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                     <float id="xOffset">0.00</float>
@@ -617,7 +544,7 @@
                                                                                 </action>
                                                                                 <action id="adjustCounter">
                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                 </action>
                                                                             </normal>
@@ -628,7 +555,7 @@
                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
-                                                                                            <string id="id">bot2ClassMaw</string>
+                                                                                            <string id="id">bot2ClassButterfly</string>
                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                             <float id="xOffset">0.00</float>
@@ -640,7 +567,7 @@
                                                                                         </action>
                                                                                         <action id="adjustCounter">
                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                         </action>
                                                                                     </normal>
@@ -651,7 +578,7 @@
                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
-                                                                                                    <string id="id">bot3ClassMaw</string>
+                                                                                                    <string id="id">bot3ClassButterfly</string>
                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                     <float id="xOffset">0.00</float>
@@ -663,7 +590,7 @@
                                                                                                 </action>
                                                                                                 <action id="adjustCounter">
                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                 </action>
                                                                                             </normal>
@@ -676,7 +603,7 @@
                                                                     <else>
                                                                         <condition id="checkClass">
                                                                             <string id="check on" values="targetself">self</string>
-                                                                            <string id="class">Chameleon</string>
+                                                                            <string id="class">Maw</string>
                                                                             <normal>
                                                                                 <condition id="isUpgradeEnabled">
                                                                                     <string id="condition" values="yesno">yes</string>
@@ -684,7 +611,7 @@
                                                                                     <string id="Comment">Am I bot 1?</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
-                                                                                            <string id="id">bot1ClassChameleon</string>
+                                                                                            <string id="id">bot1ClassMaw</string>
                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                             <float id="xOffset">0.00</float>
@@ -696,7 +623,7 @@
                                                                                         </action>
                                                                                         <action id="adjustCounter">
                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                         </action>
                                                                                     </normal>
@@ -707,7 +634,7 @@
                                                                                             <string id="Comment">Am I bot 2?</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
-                                                                                                    <string id="id">bot2ClassChameleon</string>
+                                                                                                    <string id="id">bot2ClassMaw</string>
                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                     <float id="xOffset">0.00</float>
@@ -719,7 +646,7 @@
                                                                                                 </action>
                                                                                                 <action id="adjustCounter">
                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                 </action>
                                                                                             </normal>
@@ -730,7 +657,7 @@
                                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
-                                                                                                            <string id="id">bot3ClassChameleon</string>
+                                                                                                            <string id="id">bot3ClassMaw</string>
                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                             <float id="xOffset">0.00</float>
@@ -742,7 +669,7 @@
                                                                                                         </action>
                                                                                                         <action id="adjustCounter">
                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                         </action>
                                                                                                     </normal>
@@ -755,7 +682,7 @@
                                                                             <else>
                                                                                 <condition id="checkClass">
                                                                                     <string id="check on" values="targetself">self</string>
-                                                                                    <string id="class">Cowboy</string>
+                                                                                    <string id="class">Chameleon</string>
                                                                                     <normal>
                                                                                         <condition id="isUpgradeEnabled">
                                                                                             <string id="condition" values="yesno">yes</string>
@@ -763,7 +690,7 @@
                                                                                             <string id="Comment">Am I bot 1?</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
-                                                                                                    <string id="id">bot1ClassCowboy</string>
+                                                                                                    <string id="id">bot1ClassChameleon</string>
                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                     <float id="xOffset">0.00</float>
@@ -775,7 +702,7 @@
                                                                                                 </action>
                                                                                                 <action id="adjustCounter">
                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                 </action>
                                                                                             </normal>
@@ -786,7 +713,7 @@
                                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
-                                                                                                            <string id="id">bot2ClassCowboy</string>
+                                                                                                            <string id="id">bot2ClassChameleon</string>
                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                             <float id="xOffset">0.00</float>
@@ -798,7 +725,7 @@
                                                                                                         </action>
                                                                                                         <action id="adjustCounter">
                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                         </action>
                                                                                                     </normal>
@@ -809,7 +736,7 @@
                                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                    <string id="id">bot3ClassCowboy</string>
+                                                                                                                    <string id="id">bot3ClassChameleon</string>
                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                     <float id="xOffset">0.00</float>
@@ -821,7 +748,7 @@
                                                                                                                 </action>
                                                                                                                 <action id="adjustCounter">
                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                 </action>
                                                                                                             </normal>
@@ -834,7 +761,7 @@
                                                                                     <else>
                                                                                         <condition id="checkClass">
                                                                                             <string id="check on" values="targetself">self</string>
-                                                                                            <string id="class">Assasin</string>
+                                                                                            <string id="class">Cowboy</string>
                                                                                             <normal>
                                                                                                 <condition id="isUpgradeEnabled">
                                                                                                     <string id="condition" values="yesno">yes</string>
@@ -842,7 +769,7 @@
                                                                                                     <string id="Comment">Am I bot 1?</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
-                                                                                                            <string id="id">bot1ClassAssassin</string>
+                                                                                                            <string id="id">bot1ClassCowboy</string>
                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                             <float id="xOffset">0.00</float>
@@ -854,7 +781,7 @@
                                                                                                         </action>
                                                                                                         <action id="adjustCounter">
                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                         </action>
                                                                                                     </normal>
@@ -865,7 +792,7 @@
                                                                                                             <string id="Comment">Am I bot 2?</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                    <string id="id">bot2ClassAssassin</string>
+                                                                                                                    <string id="id">bot2ClassCowboy</string>
                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                     <float id="xOffset">0.00</float>
@@ -877,7 +804,7 @@
                                                                                                                 </action>
                                                                                                                 <action id="adjustCounter">
                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                 </action>
                                                                                                             </normal>
@@ -888,7 +815,7 @@
                                                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                                                     <normal>
                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                            <string id="id">bot3ClassAssassin</string>
+                                                                                                                            <string id="id">bot3ClassCowboy</string>
                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                             <float id="xOffset">0.00</float>
@@ -900,7 +827,7 @@
                                                                                                                         </action>
                                                                                                                         <action id="adjustCounter">
                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
                                                                                                                     </normal>
@@ -913,7 +840,7 @@
                                                                                             <else>
                                                                                                 <condition id="checkClass">
                                                                                                     <string id="check on" values="targetself">self</string>
-                                                                                                    <string id="class">Hunter</string>
+                                                                                                    <string id="class">Assasin</string>
                                                                                                     <normal>
                                                                                                         <condition id="isUpgradeEnabled">
                                                                                                             <string id="condition" values="yesno">yes</string>
@@ -921,7 +848,7 @@
                                                                                                             <string id="Comment">Am I bot 1?</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                    <string id="id">bot1ClassHunter</string>
+                                                                                                                    <string id="id">bot1ClassAssassin</string>
                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                     <float id="xOffset">0.00</float>
@@ -933,7 +860,7 @@
                                                                                                                 </action>
                                                                                                                 <action id="adjustCounter">
                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                 </action>
                                                                                                             </normal>
@@ -944,7 +871,7 @@
                                                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                                                     <normal>
                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                            <string id="id">bot2ClassHunter</string>
+                                                                                                                            <string id="id">bot2ClassAssassin</string>
                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                             <float id="xOffset">0.00</float>
@@ -956,7 +883,7 @@
                                                                                                                         </action>
                                                                                                                         <action id="adjustCounter">
                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
                                                                                                                     </normal>
@@ -967,7 +894,7 @@
                                                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                    <string id="id">bot3ClassHunter</string>
+                                                                                                                                    <string id="id">bot3ClassAssassin</string>
                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                     <float id="xOffset">0.00</float>
@@ -979,7 +906,7 @@
                                                                                                                                 </action>
                                                                                                                                 <action id="adjustCounter">
                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
@@ -992,7 +919,7 @@
                                                                                                     <else>
                                                                                                         <condition id="checkClass">
                                                                                                             <string id="check on" values="targetself">self</string>
-                                                                                                            <string id="class">Spy</string>
+                                                                                                            <string id="class">Hunter</string>
                                                                                                             <normal>
                                                                                                                 <condition id="isUpgradeEnabled">
                                                                                                                     <string id="condition" values="yesno">yes</string>
@@ -1000,7 +927,7 @@
                                                                                                                     <string id="Comment">Am I bot 1?</string>
                                                                                                                     <normal>
                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                            <string id="id">bot1ClassSpy</string>
+                                                                                                                            <string id="id">bot1ClassHunter</string>
                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                             <float id="xOffset">0.00</float>
@@ -1012,7 +939,7 @@
                                                                                                                         </action>
                                                                                                                         <action id="adjustCounter">
                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
                                                                                                                     </normal>
@@ -1023,7 +950,7 @@
                                                                                                                             <string id="Comment">Am I bot 2?</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                    <string id="id">bot2ClassSpy</string>
+                                                                                                                                    <string id="id">bot2ClassHunter</string>
                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1035,7 +962,7 @@
                                                                                                                                 </action>
                                                                                                                                 <action id="adjustCounter">
                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
@@ -1046,7 +973,7 @@
                                                                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                                                                     <normal>
                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                            <string id="id">bot3ClassSpy</string>
+                                                                                                                                            <string id="id">bot3ClassHunter</string>
                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1058,7 +985,7 @@
                                                                                                                                         </action>
                                                                                                                                         <action id="adjustCounter">
                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
+                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                         </action>
                                                                                                                                     </normal>
@@ -1071,7 +998,7 @@
                                                                                                             <else>
                                                                                                                 <condition id="checkClass">
                                                                                                                     <string id="check on" values="targetself">self</string>
-                                                                                                                    <string id="class">Brute</string>
+                                                                                                                    <string id="class">Spy</string>
                                                                                                                     <normal>
                                                                                                                         <condition id="isUpgradeEnabled">
                                                                                                                             <string id="condition" values="yesno">yes</string>
@@ -1079,7 +1006,7 @@
                                                                                                                             <string id="Comment">Am I bot 1?</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                    <string id="id">bot1ClassBrute</string>
+                                                                                                                                    <string id="id">bot1ClassSpy</string>
                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1091,7 +1018,7 @@
                                                                                                                                 </action>
                                                                                                                                 <action id="adjustCounter">
                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
@@ -1102,7 +1029,7 @@
                                                                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                                                                     <normal>
                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                            <string id="id">bot2ClassBrute</string>
+                                                                                                                                            <string id="id">bot2ClassSpy</string>
                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1114,7 +1041,7 @@
                                                                                                                                         </action>
                                                                                                                                         <action id="adjustCounter">
                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
+                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                         </action>
                                                                                                                                     </normal>
@@ -1125,7 +1052,7 @@
                                                                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                                                                             <normal>
                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                    <string id="id">bot3ClassBrute</string>
+                                                                                                                                                    <string id="id">bot3ClassSpy</string>
                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1137,7 +1064,7 @@
                                                                                                                                                 </action>
                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
+                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                 </action>
                                                                                                                                             </normal>
@@ -1150,7 +1077,7 @@
                                                                                                                     <else>
                                                                                                                         <condition id="checkClass">
                                                                                                                             <string id="check on" values="targetself">self</string>
-                                                                                                                            <string id="class">Shaman</string>
+                                                                                                                            <string id="class">Brute</string>
                                                                                                                             <normal>
                                                                                                                                 <condition id="isUpgradeEnabled">
                                                                                                                                     <string id="condition" values="yesno">yes</string>
@@ -1158,7 +1085,7 @@
                                                                                                                                     <string id="Comment">Am I bot 1?</string>
                                                                                                                                     <normal>
                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                            <string id="id">bot1ClassShaman</string>
+                                                                                                                                            <string id="id">bot1ClassBrute</string>
                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1170,7 +1097,7 @@
                                                                                                                                         </action>
                                                                                                                                         <action id="adjustCounter">
                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
+                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                         </action>
                                                                                                                                     </normal>
@@ -1181,7 +1108,7 @@
                                                                                                                                             <string id="Comment">Am I bot 2?</string>
                                                                                                                                             <normal>
                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                    <string id="id">bot2ClassShaman</string>
+                                                                                                                                                    <string id="id">bot2ClassBrute</string>
                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1193,7 +1120,7 @@
                                                                                                                                                 </action>
                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
+                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                 </action>
                                                                                                                                             </normal>
@@ -1204,7 +1131,7 @@
                                                                                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                                                                                     <normal>
                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                            <string id="id">bot3ClassShaman</string>
+                                                                                                                                                            <string id="id">bot3ClassBrute</string>
                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1216,7 +1143,7 @@
                                                                                                                                                         </action>
                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
+                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                         </action>
                                                                                                                                                     </normal>
@@ -1229,7 +1156,7 @@
                                                                                                                             <else>
                                                                                                                                 <condition id="checkClass">
                                                                                                                                     <string id="check on" values="targetself">self</string>
-                                                                                                                                    <string id="class">Captain</string>
+                                                                                                                                    <string id="class">Shaman</string>
                                                                                                                                     <normal>
                                                                                                                                         <condition id="isUpgradeEnabled">
                                                                                                                                             <string id="condition" values="yesno">yes</string>
@@ -1237,7 +1164,7 @@
                                                                                                                                             <string id="Comment">Am I bot 1?</string>
                                                                                                                                             <normal>
                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                    <string id="id">bot1ClassCaptain</string>
+                                                                                                                                                    <string id="id">bot1ClassShaman</string>
                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1249,7 +1176,7 @@
                                                                                                                                                 </action>
                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
+                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                 </action>
                                                                                                                                             </normal>
@@ -1260,7 +1187,7 @@
                                                                                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                                                                                     <normal>
                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                            <string id="id">bot2ClassCaptain</string>
+                                                                                                                                                            <string id="id">bot2ClassShaman</string>
                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1272,7 +1199,7 @@
                                                                                                                                                         </action>
                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
+                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                         </action>
                                                                                                                                                     </normal>
@@ -1283,7 +1210,7 @@
                                                                                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                                                                                             <normal>
                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                    <string id="id">bot3ClassCaptain</string>
+                                                                                                                                                                    <string id="id">bot3ClassShaman</string>
                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1295,7 +1222,7 @@
                                                                                                                                                                 </action>
                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
+                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                 </action>
                                                                                                                                                             </normal>
@@ -1308,7 +1235,7 @@
                                                                                                                                     <else>
                                                                                                                                         <condition id="checkClass">
                                                                                                                                             <string id="check on" values="targetself">self</string>
-                                                                                                                                            <string id="class">Commando</string>
+                                                                                                                                            <string id="class">Captain</string>
                                                                                                                                             <normal>
                                                                                                                                                 <condition id="isUpgradeEnabled">
                                                                                                                                                     <string id="condition" values="yesno">yes</string>
@@ -1316,7 +1243,7 @@
                                                                                                                                                     <string id="Comment">Am I bot 1?</string>
                                                                                                                                                     <normal>
                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                            <string id="id">bot1ClassCommando</string>
+                                                                                                                                                            <string id="id">bot1ClassCaptain</string>
                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1328,7 +1255,7 @@
                                                                                                                                                         </action>
                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
+                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                         </action>
                                                                                                                                                     </normal>
@@ -1339,7 +1266,7 @@
                                                                                                                                                             <string id="Comment">Am I bot 2?</string>
                                                                                                                                                             <normal>
                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                    <string id="id">bot2ClassCommando</string>
+                                                                                                                                                                    <string id="id">bot2ClassCaptain</string>
                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1351,7 +1278,7 @@
                                                                                                                                                                 </action>
                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
+                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                 </action>
                                                                                                                                                             </normal>
@@ -1362,7 +1289,7 @@
                                                                                                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                                                                                                     <normal>
                                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                                            <string id="id">bot3ClassCommando</string>
+                                                                                                                                                                            <string id="id">bot3ClassCaptain</string>
                                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1374,7 +1301,7 @@
                                                                                                                                                                         </action>
                                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
+                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                         </action>
                                                                                                                                                                     </normal>
@@ -1387,7 +1314,7 @@
                                                                                                                                             <else>
                                                                                                                                                 <condition id="checkClass">
                                                                                                                                                     <string id="check on" values="targetself">self</string>
-                                                                                                                                                    <string id="class">Bird</string>
+                                                                                                                                                    <string id="class">Commando</string>
                                                                                                                                                     <normal>
                                                                                                                                                         <condition id="isUpgradeEnabled">
                                                                                                                                                             <string id="condition" values="yesno">yes</string>
@@ -1395,7 +1322,7 @@
                                                                                                                                                             <string id="Comment">Am I bot 1?</string>
                                                                                                                                                             <normal>
                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                    <string id="id">bot1ClassBird</string>
+                                                                                                                                                                    <string id="id">bot1ClassCommando</string>
                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1407,9 +1334,8 @@
                                                                                                                                                                 </action>
                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
+                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
-                                                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                                                 </action>
                                                                                                                                                             </normal>
                                                                                                                                                             <else>
@@ -1419,7 +1345,7 @@
                                                                                                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                                                                                                     <normal>
                                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                                            <string id="id">bot2ClassBird</string>
+                                                                                                                                                                            <string id="id">bot2ClassCommando</string>
                                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1431,7 +1357,7 @@
                                                                                                                                                                         </action>
                                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
+                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                         </action>
                                                                                                                                                                     </normal>
@@ -1442,7 +1368,7 @@
                                                                                                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                                                                                                             <normal>
                                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                                    <string id="id">bot3ClassBird</string>
+                                                                                                                                                                                    <string id="id">bot3ClassCommando</string>
                                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1454,7 +1380,7 @@
                                                                                                                                                                                 </action>
                                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
+                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                 </action>
                                                                                                                                                                             </normal>
@@ -1467,7 +1393,7 @@
                                                                                                                                                     <else>
                                                                                                                                                         <condition id="checkClass">
                                                                                                                                                             <string id="check on" values="targetself">self</string>
-                                                                                                                                                            <string id="class">Summoner</string>
+                                                                                                                                                            <string id="class">Bird</string>
                                                                                                                                                             <normal>
                                                                                                                                                                 <condition id="isUpgradeEnabled">
                                                                                                                                                                     <string id="condition" values="yesno">yes</string>
@@ -1475,7 +1401,7 @@
                                                                                                                                                                     <string id="Comment">Am I bot 1?</string>
                                                                                                                                                                     <normal>
                                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                                            <string id="id">bot1ClassSummoner</string>
+                                                                                                                                                                            <string id="id">bot1ClassBird</string>
                                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1487,8 +1413,9 @@
                                                                                                                                                                         </action>
                                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
+                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                                                                         </action>
                                                                                                                                                                     </normal>
                                                                                                                                                                     <else>
@@ -1498,7 +1425,7 @@
                                                                                                                                                                             <string id="Comment">Am I bot 2?</string>
                                                                                                                                                                             <normal>
                                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                                    <string id="id">bot2ClassSummoner</string>
+                                                                                                                                                                                    <string id="id">bot2ClassBird</string>
                                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1510,7 +1437,7 @@
                                                                                                                                                                                 </action>
                                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
+                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                 </action>
                                                                                                                                                                             </normal>
@@ -1521,7 +1448,7 @@
                                                                                                                                                                                     <string id="Comment">Am I bot 3?</string>
                                                                                                                                                                                     <normal>
                                                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                                                            <string id="id">bot3ClassSummoner</string>
+                                                                                                                                                                                            <string id="id">bot3ClassBird</string>
                                                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1533,7 +1460,7 @@
                                                                                                                                                                                         </action>
                                                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
+                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
                                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                         </action>
                                                                                                                                                                                     </normal>
@@ -1546,7 +1473,7 @@
                                                                                                                                                             <else>
                                                                                                                                                                 <condition id="checkClass">
                                                                                                                                                                     <string id="check on" values="targetself">self</string>
-                                                                                                                                                                    <string id="class">Jetter</string>
+                                                                                                                                                                    <string id="class">Summoner</string>
                                                                                                                                                                     <normal>
                                                                                                                                                                         <condition id="isUpgradeEnabled">
                                                                                                                                                                             <string id="condition" values="yesno">yes</string>
@@ -1554,7 +1481,7 @@
                                                                                                                                                                             <string id="Comment">Am I bot 1?</string>
                                                                                                                                                                             <normal>
                                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                                    <string id="id">bot1ClassJetter</string>
+                                                                                                                                                                                    <string id="id">bot1ClassSummoner</string>
                                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1566,7 +1493,7 @@
                                                                                                                                                                                 </action>
                                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
-                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
+                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                 </action>
                                                                                                                                                                             </normal>
@@ -1577,7 +1504,7 @@
                                                                                                                                                                                     <string id="Comment">Am I bot 2?</string>
                                                                                                                                                                                     <normal>
                                                                                                                                                                                         <action id="emitMessageInArea">
-                                                                                                                                                                                            <string id="id">bot2ClassJetter</string>
+                                                                                                                                                                                            <string id="id">bot2ClassSummoner</string>
                                                                                                                                                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                                             <float id="xOffset">0.00</float>
@@ -1589,7 +1516,7 @@
                                                                                                                                                                                         </action>
                                                                                                                                                                                         <action id="adjustCounter">
                                                                                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
-                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
+                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
                                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                         </action>
                                                                                                                                                                                     </normal>
@@ -1600,7 +1527,7 @@
                                                                                                                                                                                             <string id="Comment">Am I bot 3?</string>
                                                                                                                                                                                             <normal>
                                                                                                                                                                                                 <action id="emitMessageInArea">
-                                                                                                                                                                                                    <string id="id">bot3ClassJetter</string>
+                                                                                                                                                                                                    <string id="id">bot3ClassSummoner</string>
                                                                                                                                                                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                                                                     <float id="xOffset">0.00</float>
@@ -1612,7 +1539,7 @@
                                                                                                                                                                                                 </action>
                                                                                                                                                                                                 <action id="adjustCounter">
                                                                                                                                                                                                     <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
-                                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
+                                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
                                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                                 </action>
                                                                                                                                                                                             </normal>
@@ -1622,6 +1549,87 @@
                                                                                                                                                                             </else>
                                                                                                                                                                         </condition>
                                                                                                                                                                     </normal>
+                                                                                                                                                                    <else>
+                                                                                                                                                                        <condition id="checkClass">
+                                                                                                                                                                            <string id="check on" values="targetself">self</string>
+                                                                                                                                                                            <string id="class">Jetter</string>
+                                                                                                                                                                            <normal>
+                                                                                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                                                                                                                                    <string id="Comment">Am I bot 1?</string>
+                                                                                                                                                                                    <normal>
+                                                                                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                                                                                            <string id="id">bot1ClassJetter</string>
+                                                                                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                                                                                            <float id="width">200.00</float>
+                                                                                                                                                                                            <float id="height">200.00</float>
+                                                                                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                                                                        </action>
+                                                                                                                                                                                        <action id="adjustCounter">
+                                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
+                                                                                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                                                                        </action>
+                                                                                                                                                                                    </normal>
+                                                                                                                                                                                    <else>
+                                                                                                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                                                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                                                                                                                                            <string id="Comment">Am I bot 2?</string>
+                                                                                                                                                                                            <normal>
+                                                                                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                                                                                    <string id="id">bot2ClassJetter</string>
+                                                                                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                                                                                    <float id="height">200.00</float>
+                                                                                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                                                                                </action>
+                                                                                                                                                                                                <action id="adjustCounter">
+                                                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot2Class</string>
+                                                                                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
+                                                                                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                                                                                </action>
+                                                                                                                                                                                            </normal>
+                                                                                                                                                                                            <else>
+                                                                                                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                                                                                                                                    <string id="Comment">Am I bot 3?</string>
+                                                                                                                                                                                                    <normal>
+                                                                                                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                                                                                                            <string id="id">bot3ClassJetter</string>
+                                                                                                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                                                                                                            <float id="width">200.00</float>
+                                                                                                                                                                                                            <float id="height">200.00</float>
+                                                                                                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                                                                                        </action>
+                                                                                                                                                                                                        <action id="adjustCounter">
+                                                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
+                                                                                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
+                                                                                                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                                                                                        </action>
+                                                                                                                                                                                                    </normal>
+                                                                                                                                                                                                </condition>
+                                                                                                                                                                                            </else>
+                                                                                                                                                                                        </condition>
+                                                                                                                                                                                    </else>
+                                                                                                                                                                                </condition>
+                                                                                                                                                                            </normal>
+                                                                                                                                                                        </condition>
+                                                                                                                                                                    </else>
                                                                                                                                                                 </condition>
                                                                                                                                                             </else>
                                                                                                                                                         </condition>
@@ -1657,11 +1665,12 @@
                                 </condition>
                             </else>
                         </condition>
-                    </else>
+                    </normal>
                 </condition>
                 <condition id="receivedMessage">
                     <string id="id">bot1ClassVampire</string>
                     <string id="Comment">Class receiver code</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
