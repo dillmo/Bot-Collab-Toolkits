@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <string id="Comment">Supports Veanko&apos;s Improved GeneralAI (state 11)</string>
+            <normal>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Check every 5 seconds</string>
+                </condition>
+                <condition id="once">
+                    <string id="Comment">documents variables</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot1&apos;s state</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot2&apos;s state</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot3&apos;s state</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot1 stopped existing?</string>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot2 stopped existing?</string>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot3 stopped existing?</string>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
