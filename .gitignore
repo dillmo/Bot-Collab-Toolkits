@@ -1,2 +1,7 @@
 *.log
 Experimental/BehavioursCustom - Shortcut.lnk
+
+# Vim temporary files
+*~
+*.swp
+*.swo
