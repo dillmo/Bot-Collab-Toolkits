@@ -1,0 +1,1002 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <string id="Comment">Supports Veanko&apos;s Improved GeneralAI (state 11)</string>
+            <normal>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Broadcast logic</string>
+                    <normal>
+                        <andblock>
+                            <string id="Comment">Check if the state counter is GeneralAI friendly</string>
+                            <normal>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">I support GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                            <string id="value">state</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">My state is my state!</string>
+                                        </action>
+                                        <condition id="checkCounter">
+                                            <string id="id">state</string>
+                                            <string id="value">1</string>
+                                            <string id="compare method" values="valuecompare">equal</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot1State1</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">I&apos;m in state 1!</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="checkCounter">
+                                                    <string id="id">state</string>
+                                                    <string id="value">2</string>
+                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot1State2</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">I&apos;m in state 2!</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="checkCounter">
+                                                            <string id="id">state</string>
+                                                            <string id="value">3</string>
+                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot1State3</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                    <string id="Comment">I&apos;m in state 3!</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="checkCounter">
+                                                                    <string id="id">state</string>
+                                                                    <string id="value">4</string>
+                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot1State4</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                            <string id="Comment">I&apos;m in state 4!</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="checkCounter">
+                                                                            <string id="id">state</string>
+                                                                            <string id="value">5</string>
+                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot1State5</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                    <string id="Comment">I&apos;m in state 5!</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="checkCounter">
+                                                                                    <string id="id">state</string>
+                                                                                    <string id="value">6</string>
+                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot1State6</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                            <string id="Comment">I&apos;m in state 6!</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="checkCounter">
+                                                                                            <string id="id">state</string>
+                                                                                            <string id="value">7</string>
+                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot1State7</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                    <string id="Comment">I&apos;m in state 7!</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="checkCounter">
+                                                                                                    <string id="id">state</string>
+                                                                                                    <string id="value">8</string>
+                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot1State8</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                            <string id="Comment">I&apos;m in state 8!</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="checkCounter">
+                                                                                                            <string id="id">state</string>
+                                                                                                            <string id="value">9</string>
+                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot1State9</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                    <string id="Comment">I&apos;m in state 9!</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="checkCounter">
+                                                                                                                    <string id="id">state</string>
+                                                                                                                    <string id="value">10</string>
+                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot1State10</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                            <string id="Comment">I&apos;m in state 10!</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="checkCounter">
+                                                                                                                            <string id="id">state</string>
+                                                                                                                            <string id="value">11</string>
+                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                    <string id="id">bot1State11</string>
+                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
+                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                    <string id="Comment">I&apos;m in state 11!</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                    <string id="Comment">I support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                    <string id="value">state</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">My state is my state!</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2StateSupportTrue</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                </action>
+                                                <condition id="checkCounter">
+                                                    <string id="id">state</string>
+                                                    <string id="value">1</string>
+                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                    <string id="Minimized">yes</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot2State1</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">I&apos;m in state 1</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="checkCounter">
+                                                            <string id="id">state</string>
+                                                            <string id="value">2</string>
+                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot2State2</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                    <string id="Comment">I&apos;m in state 2</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="checkCounter">
+                                                                    <string id="id">state</string>
+                                                                    <string id="value">3</string>
+                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot2State3</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                            <string id="Comment">I&apos;m in state 3</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="checkCounter">
+                                                                            <string id="id">state</string>
+                                                                            <string id="value">4</string>
+                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot2State4</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                    <string id="Comment">I&apos;m in state 4</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="checkCounter">
+                                                                                    <string id="id">state</string>
+                                                                                    <string id="value">5</string>
+                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot2State5</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                            <string id="Comment">I&apos;m in state 5</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="checkCounter">
+                                                                                            <string id="id">state</string>
+                                                                                            <string id="value">6</string>
+                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot2State6</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                    <string id="Comment">I&apos;m in state 6</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="checkCounter">
+                                                                                                    <string id="id">state</string>
+                                                                                                    <string id="value">7</string>
+                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot2State7</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                            <string id="Comment">I&apos;m in state 7</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="checkCounter">
+                                                                                                            <string id="id">state</string>
+                                                                                                            <string id="value">8</string>
+                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot2State8</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                    <string id="Comment">I&apos;m in state 8</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="checkCounter">
+                                                                                                                    <string id="id">state</string>
+                                                                                                                    <string id="value">9</string>
+                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot2State9</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                            <string id="Comment">I&apos;m in state 9</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="checkCounter">
+                                                                                                                            <string id="id">state</string>
+                                                                                                                            <string id="value">10</string>
+                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                    <string id="id">bot2State10</string>
+                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
+                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                    <string id="Comment">I&apos;m in state 10</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                            <else>
+                                                                                                                                <condition id="checkCounter">
+                                                                                                                                    <string id="id">state</string>
+                                                                                                                                    <string id="value">11</string>
+                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                    <normal>
+                                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                                            <string id="id">bot2State11</string>
+                                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                                            <float id="width">200.00</float>
+                                                                                                                                            <float id="height">200.00</float>
+                                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                            <string id="Comment">I&apos;m in state 11</string>
+                                                                                                                                        </action>
+                                                                                                                                    </normal>
+                                                                                                                                </condition>
+                                                                                                                            </else>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                            <string id="Comment">I support GeneralAI style states!</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                            <string id="value">state</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">My state is my state!</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3StateSupportTrue</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                        </action>
+                                                        <condition id="checkCounter">
+                                                            <string id="id">state</string>
+                                                            <string id="value">1</string>
+                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot3State1</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                    <string id="Comment">I&apos;m in state 1</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="checkCounter">
+                                                                    <string id="id">state</string>
+                                                                    <string id="value">2</string>
+                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot3State2</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                            <string id="Comment">I&apos;m in state 2</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="checkCounter">
+                                                                            <string id="id">state</string>
+                                                                            <string id="value">3</string>
+                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot3State3</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                    <string id="Comment">I&apos;m in state 3</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="checkCounter">
+                                                                                    <string id="id">state</string>
+                                                                                    <string id="value">4</string>
+                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot3State4</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                            <string id="Comment">I&apos;m in state 4</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="checkCounter">
+                                                                                            <string id="id">state</string>
+                                                                                            <string id="value">5</string>
+                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot3State5</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                    <string id="Comment">I&apos;m in state 5</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="checkCounter">
+                                                                                                    <string id="id">state</string>
+                                                                                                    <string id="value">6</string>
+                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot3State6</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                            <string id="Comment">I&apos;m in state 6</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="checkCounter">
+                                                                                                            <string id="id">state</string>
+                                                                                                            <string id="value">7</string>
+                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot3State7</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                    <string id="Comment">I&apos;m in state 7</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="checkCounter">
+                                                                                                                    <string id="id">state</string>
+                                                                                                                    <string id="value">8</string>
+                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot3State8</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                            <string id="Comment">I&apos;m in state 8</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="checkCounter">
+                                                                                                                            <string id="id">state</string>
+                                                                                                                            <string id="value">9</string>
+                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                    <string id="id">bot3State9</string>
+                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
+                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                    <string id="Comment">I&apos;m in state 9</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                            <else>
+                                                                                                                                <condition id="checkCounter">
+                                                                                                                                    <string id="id">state</string>
+                                                                                                                                    <string id="value">10</string>
+                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                    <normal>
+                                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                                            <string id="id">bot3State10</string>
+                                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                                            <float id="width">200.00</float>
+                                                                                                                                            <float id="height">200.00</float>
+                                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                            <string id="Comment">I&apos;m in state 10</string>
+                                                                                                                                        </action>
+                                                                                                                                    </normal>
+                                                                                                                                    <else>
+                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                            <string id="id">state</string>
+                                                                                                                                            <string id="value">11</string>
+                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                            <normal>
+                                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                                    <string id="id">bot3State11</string>
+                                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                                    <float id="height">200.00</float>
+                                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                                    <string id="Comment">I&apos;m in state 11</string>
+                                                                                                                                                </action>
+                                                                                                                                            </normal>
+                                                                                                                                        </condition>
+                                                                                                                                    </else>
+                                                                                                                                </condition>
+                                                                                                                            </else>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">I don&apos;t support GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                            <string id="value">-1</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">I have no state!</string>
+                                        </action>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1StateSupportFalse</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                            <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">I don&apos;t support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                    <string id="value">-1</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">I have no state!</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2StateSupportFalse</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                                            <string id="value" values="flagtoggle">no</string>
+                                                            <string id="Comment">I don&apos;t support GeneralAI style states!</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                            <string id="value">-1</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">I have no state!</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3StateSupportFalse</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                            <or>
+                                <condition id="checkCounter">
+                                    <string id="id">state</string>
+                                    <string id="value">0</string>
+                                    <string id="compare method" values="valuecompare">greater</string>
+                                </condition>
+                                <condition id="checkCounter">
+                                    <string id="id">state</string>
+                                    <string id="value">11</string>
+                                    <string id="compare method" values="valuecompare">less or equal</string>
+                                </condition>
+                            </or>
+                        </andblock>
+                    </normal>
+                </condition>
+                <condition id="once">
+                    <string id="Comment">documents variables</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot1 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot2 support GeneralAI-type states?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot3 support GeneralAI-type states?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot1&apos;s state</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot2&apos;s state</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot3&apos;s state</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot1 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the state</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot1 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot2 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the state</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot2 support GeneralAI-type states?</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot3 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the state</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot3 support GeneralAI-type states?</string>
+                        </action>
+                    </normal>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
