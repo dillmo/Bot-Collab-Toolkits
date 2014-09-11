@@ -80,7 +80,6 @@
                                             <string id="id">state</string>
                                             <string id="value">1</string>
                                             <string id="compare method" values="valuecompare">equal</string>
-                                            <string id="Minimized">yes</string>
                                             <normal>
                                                 <action id="emitMessageInArea">
                                                     <string id="id">bot1State1</string>
@@ -1058,6 +1057,166 @@
                                 </condition>
                             </else>
                         </condition>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Are GeneralAI style states supported?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1State1</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                            <string id="value">1</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot1State2</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                    <string id="value">2</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot1State3</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                            <string id="value">3</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot1State4</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                    <string id="value">4</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot1State5</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                            <string id="value">5</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot1State6</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                    <string id="value">6</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot1State7</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                            <string id="value">7</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot1State8</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                    <string id="value">8</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot1State9</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                            <string id="value">9</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot1State10</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                                    <string id="value">10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot1State11</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                                            <string id="value">11</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
                     </normal>
                 </condition>
                 <condition id="isUpgradeEnabled">
@@ -1090,6 +1249,166 @@
                                 </condition>
                             </else>
                         </condition>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Are GeneralAI style states supported?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2State1</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                            <string id="value">1</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2State2</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                    <string id="value">2</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot2State3</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                            <string id="value">3</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot2State4</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                    <string id="value">4</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot2State5</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                            <string id="value">5</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot2State6</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                    <string id="value">6</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot2State7</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                            <string id="value">7</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot2State8</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                    <string id="value">8</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot2State9</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                            <string id="value">9</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot2State10</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                                    <string id="value">10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot2State11</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                                            <string id="value">11</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
                     </normal>
                 </condition>
                 <condition id="isUpgradeEnabled">
@@ -1121,6 +1440,165 @@
                                     </normal>
                                 </condition>
                             </else>
+                        </condition>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Are GeneralAI style states supported?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3State1</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                            <string id="value">1</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot3State2</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                    <string id="value">2</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot3State3</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                            <string id="value">3</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot3State4</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                    <string id="value">4</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot3State5</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                            <string id="value">5</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot3State6</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                    <string id="value">6</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot3State7</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                            <string id="value">7</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot3State8</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                    <string id="value">8</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot3State9</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                            <string id="value">9</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot3State10</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                                    <string id="value">10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot3State11</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                                            <string id="value">11</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
                         </condition>
                     </normal>
                 </condition>
