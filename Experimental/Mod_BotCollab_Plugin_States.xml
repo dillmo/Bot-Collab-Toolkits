@@ -4,18 +4,66 @@
         <root x="110" y="40">
             <string id="Comment">Supports Veanko&apos;s Improved GeneralAI (state 11)</string>
             <normal>
+                <condition id="once">
+                    <string id="Comment">documents variables</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot1 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot2 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Does bot3 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot1&apos;s state</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot2&apos;s state</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents bot3&apos;s state</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
                 <condition id="getBoolEquals">
-                    <string id="id">Toolkit_Ticker_Event_50thTick</string>
+                    <string id="id">Toolkit_Ticker_Event_10thTick</string>
                     <string id="value" values="yesno">no</string>
                     <string id="Comment">Broadcast logic</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <andblock>
                             <string id="Comment">Check if the state counter is GeneralAI friendly</string>
+                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
                                     <string id="upgrade name">TutorialListen</string>
                                     <string id="Comment">Am I bot 1?</string>
+                                    <string id="Minimized">yes</string>
                                     <normal>
                                         <action id="setBool">
                                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
@@ -28,6 +76,7 @@
                                             <string id="value">state</string>
                                             <string id="adjust method" values="valueadjust">set</string>
                                             <string id="Comment">My state is my state!</string>
+                                            <string id="Minimized">yes</string>
                                         </action>
                                         <condition id="checkCounter">
                                             <string id="id">state</string>
@@ -46,6 +95,7 @@
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">I&apos;m in state 1!</string>
+                                                    <string id="Minimized">yes</string>
                                                 </action>
                                             </normal>
                                             <else>
@@ -53,6 +103,7 @@
                                                     <string id="id">state</string>
                                                     <string id="value">2</string>
                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                    <string id="Minimized">yes</string>
                                                     <normal>
                                                         <action id="emitMessageInArea">
                                                             <string id="id">bot1State2</string>
@@ -65,6 +116,7 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">I&apos;m in state 2!</string>
+                                                            <string id="Minimized">yes</string>
                                                         </action>
                                                     </normal>
                                                     <else>
@@ -72,6 +124,7 @@
                                                             <string id="id">state</string>
                                                             <string id="value">3</string>
                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                            <string id="Minimized">yes</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
                                                                     <string id="id">bot1State3</string>
@@ -84,6 +137,7 @@
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">I&apos;m in state 3!</string>
+                                                                    <string id="Minimized">yes</string>
                                                                 </action>
                                                             </normal>
                                                             <else>
@@ -91,6 +145,7 @@
                                                                     <string id="id">state</string>
                                                                     <string id="value">4</string>
                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                    <string id="Minimized">yes</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
                                                                             <string id="id">bot1State4</string>
@@ -103,6 +158,7 @@
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">I&apos;m in state 4!</string>
+                                                                            <string id="Minimized">yes</string>
                                                                         </action>
                                                                     </normal>
                                                                     <else>
@@ -110,6 +166,7 @@
                                                                             <string id="id">state</string>
                                                                             <string id="value">5</string>
                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                            <string id="Minimized">yes</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
                                                                                     <string id="id">bot1State5</string>
@@ -122,6 +179,7 @@
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                     <string id="Comment">I&apos;m in state 5!</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                 </action>
                                                                             </normal>
                                                                             <else>
@@ -129,6 +187,7 @@
                                                                                     <string id="id">state</string>
                                                                                     <string id="value">6</string>
                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
                                                                                             <string id="id">bot1State6</string>
@@ -141,6 +200,7 @@
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                             <string id="Comment">I&apos;m in state 6!</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                         </action>
                                                                                     </normal>
                                                                                     <else>
@@ -148,6 +208,7 @@
                                                                                             <string id="id">state</string>
                                                                                             <string id="value">7</string>
                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
                                                                                                     <string id="id">bot1State7</string>
@@ -160,6 +221,7 @@
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                     <string id="Comment">I&apos;m in state 7!</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                 </action>
                                                                                             </normal>
                                                                                             <else>
@@ -167,6 +229,7 @@
                                                                                                     <string id="id">state</string>
                                                                                                     <string id="value">8</string>
                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
                                                                                                             <string id="id">bot1State8</string>
@@ -179,6 +242,7 @@
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                             <string id="Comment">I&apos;m in state 8!</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                         </action>
                                                                                                     </normal>
                                                                                                     <else>
@@ -186,6 +250,7 @@
                                                                                                             <string id="id">state</string>
                                                                                                             <string id="value">9</string>
                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
                                                                                                                     <string id="id">bot1State9</string>
@@ -198,6 +263,7 @@
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                     <string id="Comment">I&apos;m in state 9!</string>
+                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                 </action>
                                                                                                             </normal>
                                                                                                             <else>
@@ -205,6 +271,7 @@
                                                                                                                     <string id="id">state</string>
                                                                                                                     <string id="value">10</string>
                                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                     <normal>
                                                                                                                         <action id="emitMessageInArea">
                                                                                                                             <string id="id">bot1State10</string>
@@ -217,6 +284,7 @@
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                             <string id="Comment">I&apos;m in state 10!</string>
+                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                         </action>
                                                                                                                     </normal>
                                                                                                                     <else>
@@ -224,6 +292,7 @@
                                                                                                                             <string id="id">state</string>
                                                                                                                             <string id="value">11</string>
                                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="emitMessageInArea">
                                                                                                                                     <string id="id">bot1State11</string>
@@ -236,6 +305,7 @@
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                     <string id="Comment">I&apos;m in state 11!</string>
+                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
                                                                                                                         </condition>
@@ -265,6 +335,7 @@
                                             <string id="condition" values="yesno">yes</string>
                                             <string id="upgrade name">TutorialOpening</string>
                                             <string id="Comment">Am I bot 2?</string>
+                                            <string id="Minimized">yes</string>
                                             <normal>
                                                 <action id="setBool">
                                                     <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
@@ -277,6 +348,7 @@
                                                     <string id="value">state</string>
                                                     <string id="adjust method" values="valueadjust">set</string>
                                                     <string id="Comment">My state is my state!</string>
+                                                    <string id="Minimized">yes</string>
                                                 </action>
                                                 <action id="emitMessageInArea">
                                                     <string id="id">bot2StateSupportTrue</string>
@@ -289,6 +361,7 @@
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
                                                 </action>
                                                 <condition id="checkCounter">
                                                     <string id="id">state</string>
@@ -307,6 +380,7 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">I&apos;m in state 1</string>
+                                                            <string id="Minimized">yes</string>
                                                         </action>
                                                     </normal>
                                                     <else>
@@ -314,6 +388,7 @@
                                                             <string id="id">state</string>
                                                             <string id="value">2</string>
                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                            <string id="Minimized">yes</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
                                                                     <string id="id">bot2State2</string>
@@ -326,6 +401,7 @@
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">I&apos;m in state 2</string>
+                                                                    <string id="Minimized">yes</string>
                                                                 </action>
                                                             </normal>
                                                             <else>
@@ -333,6 +409,7 @@
                                                                     <string id="id">state</string>
                                                                     <string id="value">3</string>
                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                    <string id="Minimized">yes</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
                                                                             <string id="id">bot2State3</string>
@@ -345,6 +422,7 @@
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">I&apos;m in state 3</string>
+                                                                            <string id="Minimized">yes</string>
                                                                         </action>
                                                                     </normal>
                                                                     <else>
@@ -352,6 +430,7 @@
                                                                             <string id="id">state</string>
                                                                             <string id="value">4</string>
                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                            <string id="Minimized">yes</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
                                                                                     <string id="id">bot2State4</string>
@@ -364,6 +443,7 @@
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                     <string id="Comment">I&apos;m in state 4</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                 </action>
                                                                             </normal>
                                                                             <else>
@@ -371,6 +451,7 @@
                                                                                     <string id="id">state</string>
                                                                                     <string id="value">5</string>
                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
                                                                                             <string id="id">bot2State5</string>
@@ -383,6 +464,7 @@
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                             <string id="Comment">I&apos;m in state 5</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                         </action>
                                                                                     </normal>
                                                                                     <else>
@@ -390,6 +472,7 @@
                                                                                             <string id="id">state</string>
                                                                                             <string id="value">6</string>
                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
                                                                                                     <string id="id">bot2State6</string>
@@ -402,6 +485,7 @@
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                     <string id="Comment">I&apos;m in state 6</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                 </action>
                                                                                             </normal>
                                                                                             <else>
@@ -409,6 +493,7 @@
                                                                                                     <string id="id">state</string>
                                                                                                     <string id="value">7</string>
                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
                                                                                                             <string id="id">bot2State7</string>
@@ -421,6 +506,7 @@
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                             <string id="Comment">I&apos;m in state 7</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                         </action>
                                                                                                     </normal>
                                                                                                     <else>
@@ -428,6 +514,7 @@
                                                                                                             <string id="id">state</string>
                                                                                                             <string id="value">8</string>
                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
                                                                                                                     <string id="id">bot2State8</string>
@@ -440,6 +527,7 @@
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                     <string id="Comment">I&apos;m in state 8</string>
+                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                 </action>
                                                                                                             </normal>
                                                                                                             <else>
@@ -447,6 +535,7 @@
                                                                                                                     <string id="id">state</string>
                                                                                                                     <string id="value">9</string>
                                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                     <normal>
                                                                                                                         <action id="emitMessageInArea">
                                                                                                                             <string id="id">bot2State9</string>
@@ -459,6 +548,7 @@
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                             <string id="Comment">I&apos;m in state 9</string>
+                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                         </action>
                                                                                                                     </normal>
                                                                                                                     <else>
@@ -466,6 +556,7 @@
                                                                                                                             <string id="id">state</string>
                                                                                                                             <string id="value">10</string>
                                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="emitMessageInArea">
                                                                                                                                     <string id="id">bot2State10</string>
@@ -478,6 +569,7 @@
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                     <string id="Comment">I&apos;m in state 10</string>
+                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
                                                                                                                             <else>
@@ -485,6 +577,7 @@
                                                                                                                                     <string id="id">state</string>
                                                                                                                                     <string id="value">11</string>
                                                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                     <normal>
                                                                                                                                         <action id="emitMessageInArea">
                                                                                                                                             <string id="id">bot2State11</string>
@@ -497,6 +590,7 @@
                                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                             <string id="Comment">I&apos;m in state 11</string>
+                                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                                         </action>
                                                                                                                                     </normal>
                                                                                                                                 </condition>
@@ -526,6 +620,7 @@
                                                     <string id="condition" values="yesno">yes</string>
                                                     <string id="upgrade name">TutorialTalk</string>
                                                     <string id="Comment">Am I bot 3?</string>
+                                                    <string id="Minimized">yes</string>
                                                     <normal>
                                                         <action id="setBool">
                                                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
@@ -538,6 +633,7 @@
                                                             <string id="value">state</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                             <string id="Comment">My state is my state!</string>
+                                                            <string id="Minimized">yes</string>
                                                         </action>
                                                         <action id="emitMessageInArea">
                                                             <string id="id">bot3StateSupportTrue</string>
@@ -550,11 +646,13 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                            <string id="Minimized">yes</string>
                                                         </action>
                                                         <condition id="checkCounter">
                                                             <string id="id">state</string>
                                                             <string id="value">1</string>
                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                            <string id="Minimized">yes</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
                                                                     <string id="id">bot3State1</string>
@@ -567,6 +665,7 @@
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">I&apos;m in state 1</string>
+                                                                    <string id="Minimized">yes</string>
                                                                 </action>
                                                             </normal>
                                                             <else>
@@ -574,6 +673,7 @@
                                                                     <string id="id">state</string>
                                                                     <string id="value">2</string>
                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                    <string id="Minimized">yes</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
                                                                             <string id="id">bot3State2</string>
@@ -586,6 +686,7 @@
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">I&apos;m in state 2</string>
+                                                                            <string id="Minimized">yes</string>
                                                                         </action>
                                                                     </normal>
                                                                     <else>
@@ -593,6 +694,7 @@
                                                                             <string id="id">state</string>
                                                                             <string id="value">3</string>
                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                            <string id="Minimized">yes</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
                                                                                     <string id="id">bot3State3</string>
@@ -605,6 +707,7 @@
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                     <string id="Comment">I&apos;m in state 3</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                 </action>
                                                                             </normal>
                                                                             <else>
@@ -612,6 +715,7 @@
                                                                                     <string id="id">state</string>
                                                                                     <string id="value">4</string>
                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
                                                                                             <string id="id">bot3State4</string>
@@ -624,6 +728,7 @@
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                             <string id="Comment">I&apos;m in state 4</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                         </action>
                                                                                     </normal>
                                                                                     <else>
@@ -631,6 +736,7 @@
                                                                                             <string id="id">state</string>
                                                                                             <string id="value">5</string>
                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
                                                                                                     <string id="id">bot3State5</string>
@@ -643,6 +749,7 @@
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                     <string id="Comment">I&apos;m in state 5</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                 </action>
                                                                                             </normal>
                                                                                             <else>
@@ -650,6 +757,7 @@
                                                                                                     <string id="id">state</string>
                                                                                                     <string id="value">6</string>
                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
                                                                                                             <string id="id">bot3State6</string>
@@ -662,6 +770,7 @@
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                             <string id="Comment">I&apos;m in state 6</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                         </action>
                                                                                                     </normal>
                                                                                                     <else>
@@ -669,6 +778,7 @@
                                                                                                             <string id="id">state</string>
                                                                                                             <string id="value">7</string>
                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
                                                                                                                     <string id="id">bot3State7</string>
@@ -681,6 +791,7 @@
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                     <string id="Comment">I&apos;m in state 7</string>
+                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                 </action>
                                                                                                             </normal>
                                                                                                             <else>
@@ -688,6 +799,7 @@
                                                                                                                     <string id="id">state</string>
                                                                                                                     <string id="value">8</string>
                                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                     <normal>
                                                                                                                         <action id="emitMessageInArea">
                                                                                                                             <string id="id">bot3State8</string>
@@ -700,6 +812,7 @@
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                             <string id="Comment">I&apos;m in state 8</string>
+                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                         </action>
                                                                                                                     </normal>
                                                                                                                     <else>
@@ -707,6 +820,7 @@
                                                                                                                             <string id="id">state</string>
                                                                                                                             <string id="value">9</string>
                                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                             <normal>
                                                                                                                                 <action id="emitMessageInArea">
                                                                                                                                     <string id="id">bot3State9</string>
@@ -719,6 +833,7 @@
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                     <string id="Comment">I&apos;m in state 9</string>
+                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
                                                                                                                             <else>
@@ -726,6 +841,7 @@
                                                                                                                                     <string id="id">state</string>
                                                                                                                                     <string id="value">10</string>
                                                                                                                                     <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                     <normal>
                                                                                                                                         <action id="emitMessageInArea">
                                                                                                                                             <string id="id">bot3State10</string>
@@ -738,6 +854,7 @@
                                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                             <string id="Comment">I&apos;m in state 10</string>
+                                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                                         </action>
                                                                                                                                     </normal>
                                                                                                                                     <else>
@@ -745,6 +862,7 @@
                                                                                                                                             <string id="id">state</string>
                                                                                                                                             <string id="value">11</string>
                                                                                                                                             <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                            <string id="Minimized">yes</string>
                                                                                                                                             <normal>
                                                                                                                                                 <action id="emitMessageInArea">
                                                                                                                                                     <string id="id">bot3State11</string>
@@ -757,6 +875,7 @@
                                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                     <string id="Comment">I&apos;m in state 11</string>
+                                                                                                                                                    <string id="Minimized">yes</string>
                                                                                                                                                 </action>
                                                                                                                                             </normal>
                                                                                                                                         </condition>
@@ -805,6 +924,7 @@
                                             <string id="value">-1</string>
                                             <string id="adjust method" values="valueadjust">set</string>
                                             <string id="Comment">I have no state!</string>
+                                            <string id="Minimized">yes</string>
                                         </action>
                                         <action id="emitMessageInArea">
                                             <string id="id">bot1StateSupportFalse</string>
@@ -817,6 +937,7 @@
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
                                             <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
                                         </action>
                                     </normal>
                                     <else>
@@ -824,6 +945,7 @@
                                             <string id="condition" values="yesno">yes</string>
                                             <string id="upgrade name">TutorialOpening</string>
                                             <string id="Comment">Am I bot 2?</string>
+                                            <string id="Minimized">yes</string>
                                             <normal>
                                                 <action id="setBool">
                                                     <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
@@ -836,6 +958,7 @@
                                                     <string id="value">-1</string>
                                                     <string id="adjust method" values="valueadjust">set</string>
                                                     <string id="Comment">I have no state!</string>
+                                                    <string id="Minimized">yes</string>
                                                 </action>
                                                 <action id="emitMessageInArea">
                                                     <string id="id">bot2StateSupportFalse</string>
@@ -848,6 +971,7 @@
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
                                                 </action>
                                             </normal>
                                             <else>
@@ -855,6 +979,7 @@
                                                     <string id="condition" values="yesno">yes</string>
                                                     <string id="upgrade name">TutorialTalk</string>
                                                     <string id="Comment">Am I bot 3?</string>
+                                                    <string id="Minimized">yes</string>
                                                     <normal>
                                                         <action id="setBool">
                                                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
@@ -867,6 +992,7 @@
                                                             <string id="value">-1</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                             <string id="Comment">I have no state!</string>
+                                                            <string id="Minimized">yes</string>
                                                         </action>
                                                         <action id="emitMessageInArea">
                                                             <string id="id">bot3StateSupportFalse</string>
@@ -879,6 +1005,7 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell allies that I support GeneralAI style states!</string>
+                                                            <string id="Minimized">yes</string>
                                                         </action>
                                                     </normal>
                                                 </condition>
@@ -892,65 +1019,669 @@
                                     <string id="id">state</string>
                                     <string id="value">0</string>
                                     <string id="compare method" values="valuecompare">greater</string>
+                                    <string id="Minimized">yes</string>
                                 </condition>
                                 <condition id="checkCounter">
                                     <string id="id">state</string>
                                     <string id="value">11</string>
                                     <string id="compare method" values="valuecompare">less or equal</string>
+                                    <string id="Minimized">yes</string>
                                 </condition>
                             </or>
                         </andblock>
                     </normal>
                 </condition>
-                <condition id="once">
-                    <string id="Comment">documents variables</string>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot1 alive?</string>
                     <normal>
-                        <action id="setBool">
-                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
-                            <string id="value" values="flagtoggle">no</string>
-                            <string id="Comment">Does bot1 support GeneralAI-type states?</string>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I not bot 1?</string>
                             <string id="Minimized">yes</string>
-                        </action>
-                        <action id="setBool">
-                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
-                            <string id="value" values="flagtoggle">no</string>
-                            <string id="Comment">Does bot2 support GeneralAI-type states?</string>
-                        </action>
-                        <action id="setBool">
-                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
-                            <string id="value" values="flagtoggle">no</string>
-                            <string id="Comment">Does bot3 support GeneralAI-type states?</string>
-                        </action>
-                        <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
-                            <string id="value">-1</string>
-                            <string id="adjust method" values="valueadjust">set</string>
-                            <string id="Comment">Represents bot1&apos;s state</string>
-                        </action>
-                        <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
-                            <string id="value">-1</string>
-                            <string id="adjust method" values="valueadjust">set</string>
-                            <string id="Comment">Represents bot2&apos;s state</string>
-                        </action>
-                        <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
-                            <string id="value">-1</string>
-                            <string id="adjust method" values="valueadjust">set</string>
-                            <string id="Comment">Represents bot3&apos;s state</string>
-                        </action>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupportTrue</string>
+                                    <string id="Comment">State support reciever logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">bot1 supports GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupportFalse</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">bot1 does not support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="getBoolEquals">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                    <string id="value" values="yesno">yes</string>
+                                    <string id="Comment">Are GeneralAI style states supported?</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot1State1</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                    <string id="value">1</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot1State2</string>
+                                                    <string id="Minimized">yes</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                            <string id="value">2</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot1State3</string>
+                                                            <string id="Minimized">yes</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                    <string id="value">3</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot1State4</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                            <string id="value">4</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot1State5</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                    <string id="value">5</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot1State6</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                            <string id="value">6</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot1State7</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                    <string id="value">7</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot1State8</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                            <string id="value">8</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot1State9</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                                    <string id="value">9</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot1State10</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                                            <string id="value">10</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="receivedMessage">
+                                                                                                                            <string id="id">bot1State11</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
+                                                                                                                                    <string id="value">11</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot2 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialOpening</string>
+                            <string id="Comment">Am not I bot 2?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupportTrue</string>
+                                    <string id="Comment">state report reciever logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">bot2 supports GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupportFalse</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">bot2 does not support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="getBoolEquals">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                    <string id="value" values="yesno">yes</string>
+                                    <string id="Comment">Are GeneralAI style states supported?</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2State1</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                    <string id="value">1</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot2State2</string>
+                                                    <string id="Minimized">yes</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                            <string id="value">2</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot2State3</string>
+                                                            <string id="Minimized">yes</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                    <string id="value">3</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot2State4</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                            <string id="value">4</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot2State5</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                    <string id="value">5</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot2State6</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                            <string id="value">6</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot2State7</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                    <string id="value">7</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot2State8</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                            <string id="value">8</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot2State9</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                                    <string id="value">9</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot2State10</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                                            <string id="value">10</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                            <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="receivedMessage">
+                                                                                                                            <string id="id">bot2State11</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
+                                                                                                                                    <string id="value">11</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                    <string id="Comment">Represents bot1&apos;s state</string>
+                                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot3 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialTalk</string>
+                            <string id="Comment">Am I not bot 3?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupportTrue</string>
+                                    <string id="Comment">State support reciever logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">bot3 supports GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupportFalse</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">bot3 does not support GeneralAI style states!</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="getBoolEquals">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                    <string id="value" values="yesno">yes</string>
+                                    <string id="Comment">Are GeneralAI style states supported?</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot3State1</string>
+                                            <string id="Minimized">yes</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                    <string id="value">1</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot3State2</string>
+                                                    <string id="Minimized">yes</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                            <string id="value">2</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                            <string id="Minimized">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot3State3</string>
+                                                            <string id="Minimized">yes</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                    <string id="value">3</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot3State4</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                            <string id="value">4</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot3State5</string>
+                                                                            <string id="Minimized">yes</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                    <string id="value">5</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot3State6</string>
+                                                                                    <string id="Minimized">yes</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                            <string id="value">6</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot3State7</string>
+                                                                                            <string id="Minimized">yes</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                    <string id="value">7</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot3State8</string>
+                                                                                                    <string id="Minimized">yes</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                            <string id="value">8</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot3State9</string>
+                                                                                                            <string id="Minimized">yes</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                                    <string id="value">9</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot3State10</string>
+                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                                            <string id="value">10</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                            <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="receivedMessage">
+                                                                                                                            <string id="id">bot3State11</string>
+                                                                                                                            <string id="Minimized">yes</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
+                                                                                                                                    <string id="value">11</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                    <string id="Comment">Represents bot3&apos;s state</string>
+                                                                                                                                    <string id="Minimized">yes</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                </condition>
+                            </normal>
+                        </condition>
                     </normal>
                 </condition>
                 <condition id="getBoolEquals">
                     <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
                     <string id="value" values="yesno">no</string>
                     <string id="Comment">Has bot1 stopped existing?</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot1State</string>
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Reset the state</string>
+                            <string id="Minimized">yes</string>
                         </action>
                         <action id="setBool">
                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
@@ -964,17 +1695,20 @@
                     <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
                     <string id="value" values="yesno">no</string>
                     <string id="Comment">Has bot2 stopped existing?</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot2State</string>
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Reset the state</string>
+                            <string id="Minimized">yes</string>
                         </action>
                         <action id="setBool">
                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
                             <string id="value" values="flagtoggle">no</string>
                             <string id="Comment">Does bot2 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
                         </action>
                     </normal>
                 </condition>
@@ -982,17 +1716,20 @@
                     <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
                     <string id="value" values="yesno">no</string>
                     <string id="Comment">Has bot3 stopped existing?</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot3State</string>
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Reset the state</string>
+                            <string id="Minimized">yes</string>
                         </action>
                         <action id="setBool">
                             <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
                             <string id="value" values="flagtoggle">no</string>
                             <string id="Comment">Does bot3 support GeneralAI-type states?</string>
+                            <string id="Minimized">yes</string>
                         </action>
                     </normal>
                 </condition>

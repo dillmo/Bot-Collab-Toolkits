@@ -9,6 +9,7 @@
                 </action>
                 <condition id="once">
                     <string id="Comment">Documents variables</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
@@ -555,6 +556,11 @@
                                             <string id="Comment">Bot1 no longer exists!</string>
                                             <string id="Minimized">yes</string>
                                         </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot1 is dead!</string>
+                                        </action>
                                     </normal>
                                     <else>
                                         <action id="setBool">
@@ -591,6 +597,11 @@
                                             <string id="Comment">Bot2 no longer exists!</string>
                                             <string id="Minimized">yes</string>
                                         </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot2 is dead!</string>
+                                        </action>
                                     </normal>
                                     <else>
                                         <action id="setBool">
@@ -626,6 +637,11 @@
                                             <string id="value" values="flagtoggle">no</string>
                                             <string id="Comment">Bot3 no longer exists!</string>
                                             <string id="Minimized">yes</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot3 is dead!</string>
                                         </action>
                                     </normal>
                                     <else>
