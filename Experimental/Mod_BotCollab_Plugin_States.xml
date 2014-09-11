@@ -53,10 +53,10 @@
                     <string id="id">Toolkit_Ticker_Event_10thTick</string>
                     <string id="value" values="yesno">no</string>
                     <string id="Comment">Broadcast logic</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <andblock>
                             <string id="Comment">Check if the state counter is GeneralAI friendly</string>
-                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -1026,6 +1026,102 @@
                                 </condition>
                             </or>
                         </andblock>
+                    </normal>
+                </condition>
+                <condition id="isUpgradeEnabled">
+                    <string id="condition" values="yesno">no</string>
+                    <string id="upgrade name">TutorialListen</string>
+                    <string id="Comment">Am I not bot 1?</string>
+                    <normal>
+                        <condition id="receivedMessage">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupportTrue</string>
+                            <string id="Comment">State support reciever logic</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                    <string id="Comment">bot1 supports GeneralAI style states!</string>
+                                    <string id="Minimized">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="receivedMessage">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupportFalse</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot1StateSupport</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot1 does not support GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="isUpgradeEnabled">
+                    <string id="condition" values="yesno">no</string>
+                    <string id="upgrade name">TutorialOpening</string>
+                    <string id="Comment">Am not I bot 2?</string>
+                    <normal>
+                        <condition id="receivedMessage">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupportTrue</string>
+                            <string id="Comment">state report reciever logic</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                    <string id="Comment">bot2 supports GeneralAI style states!</string>
+                                    <string id="Minimized">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="receivedMessage">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupportFalse</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot2StateSupport</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot2 does not support GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="isUpgradeEnabled">
+                    <string id="condition" values="yesno">no</string>
+                    <string id="upgrade name">TutorialTalk</string>
+                    <string id="Comment">Am I not bot 3?</string>
+                    <normal>
+                        <condition id="receivedMessage">
+                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupportTrue</string>
+                            <string id="Comment">State support reciever logic</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                    <string id="Comment">bot3 supports GeneralAI style states!</string>
+                                    <string id="Minimized">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="receivedMessage">
+                                    <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupportFalse</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_States_Bot3StateSupport</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot3 does not support GeneralAI style states!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                            </else>
+                        </condition>
                     </normal>
                 </condition>
                 <condition id="getBoolEquals">
