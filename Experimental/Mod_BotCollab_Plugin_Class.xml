@@ -188,7 +188,7 @@
                                                     <string id="check line of sight" values="yesno">no</string>
                                                 </action>
                                                 <action id="adjustCounter">
-                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Vampire</string>
                                                     <string id="adjust method" values="valueadjust">set</string>
                                                 </action>
@@ -267,7 +267,7 @@
                                                             <string id="check line of sight" values="yesno">no</string>
                                                         </action>
                                                         <action id="adjustCounter">
-                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Tank</string>
                                                             <string id="adjust method" values="valueadjust">set</string>
                                                         </action>
@@ -346,7 +346,7 @@
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                 </action>
                                                                 <action id="adjustCounter">
-                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Blazer</string>
                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                 </action>
@@ -425,7 +425,7 @@
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                         </action>
                                                                         <action id="adjustCounter">
-                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Heavy</string>
                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                         </action>
@@ -504,7 +504,7 @@
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                 </action>
                                                                                 <action id="adjustCounter">
-                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Dasher</string>
                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                 </action>
@@ -583,7 +583,7 @@
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                         </action>
                                                                                         <action id="adjustCounter">
-                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Butterfly</string>
                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                         </action>
@@ -662,7 +662,7 @@
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                 </action>
                                                                                                 <action id="adjustCounter">
-                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Maw</string>
                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                 </action>
@@ -741,7 +741,7 @@
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                         </action>
                                                                                                         <action id="adjustCounter">
-                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Chameleon</string>
                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                         </action>
@@ -820,7 +820,7 @@
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                 </action>
                                                                                                                 <action id="adjustCounter">
-                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Cowboy</string>
                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                 </action>
@@ -899,7 +899,7 @@
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                         </action>
                                                                                                                         <action id="adjustCounter">
-                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Assassin</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
@@ -978,7 +978,7 @@
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                 </action>
                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Hunter</string>
                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                 </action>
@@ -1057,7 +1057,7 @@
                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                         </action>
                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Spy</string>
                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                         </action>
@@ -1136,7 +1136,7 @@
                                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                 </action>
                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Brute</string>
                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                 </action>
@@ -1215,7 +1215,7 @@
                                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                         </action>
                                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Shaman</string>
                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                         </action>
@@ -1294,7 +1294,7 @@
                                                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                                 </action>
                                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Captain</string>
                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                 </action>
@@ -1373,7 +1373,7 @@
                                                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                                         </action>
                                                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Commando</string>
                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                         </action>
@@ -1453,7 +1453,7 @@
                                                                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                                                 </action>
                                                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Bird</string>
                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                 </action>
@@ -1532,7 +1532,7 @@
                                                                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                                                         </action>
                                                                                                                                                                                         <action id="adjustCounter">
-                                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Class_Summoner</string>
                                                                                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                         </action>
@@ -1611,7 +1611,7 @@
                                                                                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                                                                 </action>
                                                                                                                                                                                                 <action id="adjustCounter">
-                                                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot1Class</string>
+                                                                                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Class_Bot3Class</string>
                                                                                                                                                                                                     <string id="value">Toolkit_BotCollab_Plugin_Class_Jetter</string>
                                                                                                                                                                                                     <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                                                                                 </action>
