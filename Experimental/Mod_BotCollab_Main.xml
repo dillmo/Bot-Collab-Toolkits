@@ -9,7 +9,6 @@
                 </action>
                 <condition id="once">
                     <string id="Comment">Documents variables</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
@@ -185,6 +184,7 @@
                 </condition>
                 <orblock>
                     <string id="Comment">Do I have a bot identifier yet?</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isUpgradeEnabled">
                             <string id="condition" values="yesno">yes</string>
@@ -545,9 +545,9 @@
                             <normal>
                                 <condition id="checkCounter">
                                     <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
-                                    <string id="value">Toolkit_Ticker_Event_Ticks - 1800</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks - 800</string>
                                     <string id="compare method" values="valuecompare">less or equal</string>
-                                    <string id="Comment">Has it been 2:30 since last response from bot1?</string>
+                                    <string id="Comment">Has it been 80 seconds since last response from bot1?</string>
                                     <normal>
                                         <action id="setBool">
                                             <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
@@ -581,9 +581,9 @@
                             <normal>
                                 <condition id="checkCounter">
                                     <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
-                                    <string id="value">Toolkit_Ticker_Event_Ticks - 1800</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks - 800</string>
                                     <string id="compare method" values="valuecompare">less or equal</string>
-                                    <string id="Comment">Has it been 2:30 since last response from bot2?</string>
+                                    <string id="Comment">Has it been 80 seconds since last response from bot2?</string>
                                     <normal>
                                         <action id="setBool">
                                             <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
@@ -617,9 +617,9 @@
                             <normal>
                                 <condition id="checkCounter">
                                     <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
-                                    <string id="value">Toolkit_Ticker_Event_Ticks - 1800</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks - 800</string>
                                     <string id="compare method" values="valuecompare">less or equal</string>
-                                    <string id="Comment">Has it been 2:30 since last response from bot3?</string>
+                                    <string id="Comment">Has it been 80 seconds since last response from bot3?</string>
                                     <normal>
                                         <action id="setBool">
                                             <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
