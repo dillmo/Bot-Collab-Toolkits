@@ -1,0 +1,848 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="once">
+                    <string id="Comment">Documents variables</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health0</string>
+                            <string id="value">0</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health10</string>
+                            <string id="value">1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health20</string>
+                            <string id="value">2</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health30</string>
+                            <string id="value">3</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health40</string>
+                            <string id="value">4</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health50</string>
+                            <string id="value">5</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health60</string>
+                            <string id="value">6</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health70</string>
+                            <string id="value">7</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health80</string>
+                            <string id="value">8</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health90</string>
+                            <string id="value">9</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Health_Health100</string>
+                            <string id="value">10</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="checkCharacterValue">
+                    <string id="property" values="charactervaluesCheckable">health percentage</string>
+                    <float id="value">100.00</float>
+                    <string id="compare method" values="valuecompare">greater or equal</string>
+                    <string id="check on" values="targetself">self</string>
+                    <string id="Comment">Health reporting logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot 1?</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">bot1Health100</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialOpening</string>
+                                    <string id="Comment">Am I bot 2?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot2Health100</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialTalk</string>
+                                            <string id="Comment">Am I bot 3?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot3Health100</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                    <else>
+                        <condition id="checkCharacterValue">
+                            <string id="property" values="charactervaluesCheckable">health percentage</string>
+                            <float id="value">90.00</float>
+                            <string id="compare method" values="valuecompare">greater or equal</string>
+                            <string id="check on" values="targetself">self</string>
+                            <normal>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1Health90</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2Health90</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3Health90</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <condition id="checkCharacterValue">
+                                    <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                    <float id="value">80.00</float>
+                                    <string id="compare method" values="valuecompare">greater or equal</string>
+                                    <string id="check on" values="targetself">self</string>
+                                    <normal>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialListen</string>
+                                            <string id="Comment">Am I bot 1?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot1Health80</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialOpening</string>
+                                                    <string id="Comment">Am I bot 2?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot2Health80</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="isUpgradeEnabled">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialTalk</string>
+                                                            <string id="Comment">Am I bot 3?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot3Health80</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                            </normal>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                    <else>
+                                        <condition id="checkCharacterValue">
+                                            <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                            <float id="value">70.00</float>
+                                            <string id="compare method" values="valuecompare">greater or equal</string>
+                                            <string id="check on" values="targetself">self</string>
+                                            <normal>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialListen</string>
+                                                    <string id="Comment">Am I bot 1?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot1Health70</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="isUpgradeEnabled">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialOpening</string>
+                                                            <string id="Comment">Am I bot 2?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot2Health70</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="isUpgradeEnabled">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                    <string id="Comment">Am I bot 3?</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot3Health70</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </normal>
+                                            <else>
+                                                <condition id="checkCharacterValue">
+                                                    <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                    <float id="value">60.00</float>
+                                                    <string id="compare method" values="valuecompare">greater or equal</string>
+                                                    <string id="check on" values="targetself">self</string>
+                                                    <normal>
+                                                        <condition id="isUpgradeEnabled">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialListen</string>
+                                                            <string id="Comment">Am I bot 1?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot1Health60</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="isUpgradeEnabled">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                    <string id="Comment">Am I bot 2?</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot2Health60</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="isUpgradeEnabled">
+                                                                            <string id="condition" values="yesno">yes</string>
+                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                            <string id="Comment">Am I bot 3?</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot3Health60</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="checkCharacterValue">
+                                                            <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                            <float id="value">50.00</float>
+                                                            <string id="compare method" values="valuecompare">greater or equal</string>
+                                                            <string id="check on" values="targetself">self</string>
+                                                            <normal>
+                                                                <condition id="isUpgradeEnabled">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                    <string id="Comment">Am I bot 1?</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot1Health50</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="isUpgradeEnabled">
+                                                                            <string id="condition" values="yesno">yes</string>
+                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                            <string id="Comment">Am I bot 2?</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot2Health50</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="isUpgradeEnabled">
+                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                    <string id="Comment">Am I bot 3?</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot3Health50</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="checkCharacterValue">
+                                                                    <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                                    <float id="value">40.00</float>
+                                                                    <string id="compare method" values="valuecompare">greater or equal</string>
+                                                                    <string id="check on" values="targetself">self</string>
+                                                                    <normal>
+                                                                        <condition id="isUpgradeEnabled">
+                                                                            <string id="condition" values="yesno">yes</string>
+                                                                            <string id="upgrade name">TutorialListen</string>
+                                                                            <string id="Comment">Am I bot 1?</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot1Health40</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="isUpgradeEnabled">
+                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                                    <string id="Comment">Am I bot 2?</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot2Health40</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="isUpgradeEnabled">
+                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                                            <string id="Comment">Am I bot 3?</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot3Health40</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="checkCharacterValue">
+                                                                            <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                                            <float id="value">30.00</float>
+                                                                            <string id="compare method" values="valuecompare">greater or equal</string>
+                                                                            <string id="check on" values="targetself">self</string>
+                                                                            <normal>
+                                                                                <condition id="isUpgradeEnabled">
+                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                                    <string id="Comment">Am I bot 1?</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot1Health30</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="isUpgradeEnabled">
+                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                                            <string id="Comment">Am I bot 2?</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot2Health30</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                                    <string id="Comment">Am I bot 3?</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot3Health30</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="checkCharacterValue">
+                                                                                    <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                                                    <float id="value">90.00</float>
+                                                                                    <string id="compare method" values="valuecompare">greater or equal</string>
+                                                                                    <string id="check on" values="targetself">self</string>
+                                                                                    <normal>
+                                                                                        <condition id="isUpgradeEnabled">
+                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                            <string id="upgrade name">TutorialListen</string>
+                                                                                            <string id="Comment">Am I bot 1?</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot1Health20</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                                                    <string id="Comment">Am I bot 2?</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot2Health20</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                                                            <string id="Comment">Am I bot 3?</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot3Health20</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="checkCharacterValue">
+                                                                                            <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                                                            <float id="value">10.00</float>
+                                                                                            <string id="compare method" values="valuecompare">greater or equal</string>
+                                                                                            <string id="check on" values="targetself">self</string>
+                                                                                            <normal>
+                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                                                    <string id="Comment">Am I bot 1?</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot1Health10</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                                                            <string id="Comment">Am I bot 2?</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot2Health10</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                                                    <string id="Comment">Am I bot 3?</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot3Health10</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="checkCharacterValue">
+                                                                                                    <string id="property" values="charactervaluesCheckable">health percentage</string>
+                                                                                                    <float id="value">0.00</float>
+                                                                                                    <string id="compare method" values="valuecompare">greater or equal</string>
+                                                                                                    <string id="check on" values="targetself">self</string>
+                                                                                                    <normal>
+                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                            <string id="upgrade name">TutorialListen</string>
+                                                                                                            <string id="Comment">Am I bot 1?</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot1Health0</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                                                                    <string id="Comment">Am I bot 2?</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot2Health0</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                                                                            <string id="Comment">Am I bot 3?</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                    <string id="id">bot3Health0</string>
+                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
+                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </normal>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </else>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
