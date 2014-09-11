@@ -7,11 +7,9 @@
                     <string id="fileName">Mod_AwesomeAIMain_Toolkit_Ticker</string>
                     <string id="Minimized">yes</string>
                 </action>
-                <action id="executeBehaviourTree">
-                    <string id="fileName">Mod_BotCollab_Pinger</string>
-                    <string id="Minimized">yes</string>
-                </action>
                 <condition id="once">
+                    <string id="Comment">Documents variables</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
@@ -37,45 +35,44 @@
                             <string id="Comment">Does bot 3 exist?</string>
                             <string id="Minimized">yes</string>
                         </action>
-                    </normal>
-                </condition>
-                <condition id="receivedMessage">
-                    <string id="id">bot1Exist</string>
-                    <string id="Comment">Did I hear that bot1 exists?</string>
-                    <normal>
                         <action id="setBool">
-                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
-                            <string id="value" values="flagtoggle">yes</string>
-                            <string id="Comment">Bot1 exists!</string>
-                            <string id="Minimized">yes</string>
+                            <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot1 alive?</string>
                         </action>
-                    </normal>
-                </condition>
-                <condition id="receivedMessage">
-                    <string id="id">bot2Exist</string>
-                    <string id="Comment">Did I hear that bot2 exists?</string>
-                    <normal>
                         <action id="setBool">
-                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
-                            <string id="value" values="flagtoggle">yes</string>
-                            <string id="Comment">Bot2 exists!</string>
-                            <string id="Minimized">yes</string>
+                            <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot2 alive?</string>
                         </action>
-                    </normal>
-                </condition>
-                <condition id="receivedMessage">
-                    <string id="id">bot3Exist</string>
-                    <string id="Comment">Did I hear that bot3 exists?</string>
-                    <normal>
                         <action id="setBool">
-                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
-                            <string id="value" values="flagtoggle">yes</string>
-                            <string id="Comment">Bot3 exists!</string>
-                            <string id="Minimized">yes</string>
+                            <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot3 alive?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">When was the last time I heard from bot 1?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">When was the last time I heard from bot 2?</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">When was the last time I heard from bot 3?</string>
                         </action>
                     </normal>
                 </condition>
                 <condition id="once">
+                    <string id="Comment">Periodically asks for bots to report</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="emitMessageInArea">
                             <string id="id">botReport</string>
@@ -89,6 +86,100 @@
                             <string id="check line of sight" values="yesno">no</string>
                             <string id="Comment">Ask for friendly bots to report status</string>
                             <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                    <else>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_Ticker_Event_10thTick</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Periodically ping all other bots</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">botReport</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                    <string id="Comment">Ask for friendly bots to report status</string>
+                                    <string id="Minimized">yes</string>
+                                </action>
+                            </normal>
+                        </condition>
+                    </else>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">bot1Exist</string>
+                    <string id="Comment">Did I hear that bot1 exists?</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot1 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
+                            <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">I just heard bot1!</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot1 lives!</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">bot2Exist</string>
+                    <string id="Comment">Did I hear that bot2 exists?</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot2 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
+                            <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">I just heard bot2!</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot2 lives!</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">bot3Exist</string>
+                    <string id="Comment">Did I hear that bot3 exists?</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot3 exists!</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
+                            <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">I just heard bot3!</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                            <string id="value" values="flagtoggle">yes</string>
+                            <string id="Comment">Bot3 lives!</string>
                         </action>
                     </normal>
                 </condition>
@@ -131,6 +222,17 @@
                                                 </action>
                                             </normal>
                                         </condition>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
+                                            <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">I am bot1!</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">I am alive!</string>
+                                        </action>
                                     </else>
                                 </condition>
                             </normal>
@@ -171,6 +273,17 @@
                                                         </action>
                                                     </normal>
                                                 </condition>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
+                                                    <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                    <string id="Comment">I am bot2!</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                    <string id="Comment">I am alive!</string>
+                                                </action>
                                             </else>
                                         </condition>
                                     </normal>
@@ -211,6 +324,17 @@
                                                                 </action>
                                                             </normal>
                                                         </condition>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
+                                                            <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                            <string id="Comment">I am bot3!</string>
+                                                        </action>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                            <string id="Comment">I am alive!</string>
+                                                        </action>
                                                     </else>
                                                 </condition>
                                             </normal>
@@ -222,78 +346,52 @@
                     </normal>
                     <else>
                         <condition id="once">
-                            <normal>
-                                <action id="adjustCounter">
-                                    <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
-                                    <string id="value">Toolkit_Ticker_Event_1TickAgo</string>
-                                    <string id="adjust method" values="valueadjust">set</string>
-                                    <string id="Comment">start listening</string>
-                                </action>
-                            </normal>
-                        </condition>
-                        <condition id="checkCounter">
-                            <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
-                            <string id="value">Toolkit_Ticker_Event_5TickAgo</string>
-                            <string id="compare method" values="valuecompare">less or equal</string>
-                            <string id="Comment">Checks if the bot has been listening for longer than 5 ticks</string>
+                            <string id="Minimized">yes</string>
                             <normal>
                                 <action id="adjustCounter">
                                     <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
                                     <string id="value">Toolkit_Ticker_Event_Ticks</string>
                                     <string id="adjust method" values="valueadjust">set</string>
-                                    <string id="Comment">reset listener</string>
+                                    <string id="Comment">start listening</string>
                                 </action>
-                                <condition id="getBoolEquals">
-                                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
-                                    <string id="value" values="yesno">no</string>
-                                    <string id="Comment">Is there a free slot for bot1?</string>
+                            </normal>
+                            <else>
+                                <condition id="checkCounter">
+                                    <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                                    <string id="value">Toolkit_Ticker_Event_5TickAgo</string>
+                                    <string id="compare method" values="valuecompare">less or equal</string>
+                                    <string id="Comment">Checks if the bot has been listening for longer than 5 ticks</string>
                                     <normal>
-                                        <action id="enableUpgrade">
-                                            <string id="condition" values="yesno">yes</string>
-                                            <string id="upgrade name">TutorialListen</string>
-                                            <string id="Comment">I am now bot1!</string>
-                                            <string id="Minimized">yes</string>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                                            <string id="value">Toolkit_Ticker_Event_Ticks</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                            <string id="Comment">reset listener</string>
                                         </action>
-                                        <action id="setBool">
-                                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
-                                            <string id="value" values="flagtoggle">yes</string>
-                                            <string id="Comment">Bot1 exists!</string>
-                                            <string id="Minimized">yes</string>
-                                        </action>
-                                        <action id="emitMessageInArea">
-                                            <string id="id">bot1Exist</string>
-                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                                            <float id="xOffset">0.00</float>
-                                            <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
-                                            <string id="ignore invisibility" values="yesno">yes</string>
-                                            <string id="check line of sight" values="yesno">no</string>
-                                            <string id="Comment">Tell other friendly bots that I exist!</string>
-                                            <string id="Minimized">yes</string>
-                                        </action>
-                                    </normal>
-                                    <else>
                                         <condition id="getBoolEquals">
-                                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
                                             <string id="value" values="yesno">no</string>
-                                            <string id="Comment">Is there a free spot for bot2?</string>
+                                            <string id="Comment">Is there a free slot for bot1?</string>
                                             <normal>
                                                 <action id="enableUpgrade">
                                                     <string id="condition" values="yesno">yes</string>
-                                                    <string id="upgrade name">TutorialOpening</string>
-                                                    <string id="Comment">I am now bot2!</string>
+                                                    <string id="upgrade name">TutorialListen</string>
+                                                    <string id="Comment">I am now bot1!</string>
                                                     <string id="Minimized">yes</string>
                                                 </action>
                                                 <action id="setBool">
-                                                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
                                                     <string id="value" values="flagtoggle">yes</string>
-                                                    <string id="Comment">Bot2 exists!</string>
+                                                    <string id="Comment">Bot1 exists!</string>
                                                     <string id="Minimized">yes</string>
                                                 </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                    <string id="Comment">I am alive!</string>
+                                                </action>
                                                 <action id="emitMessageInArea">
-                                                    <string id="id">bot2Exist</string>
+                                                    <string id="id">bot1Exist</string>
                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
@@ -308,24 +406,29 @@
                                             </normal>
                                             <else>
                                                 <condition id="getBoolEquals">
-                                                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
                                                     <string id="value" values="yesno">no</string>
-                                                    <string id="Comment">Is there a free spot for bot3?</string>
+                                                    <string id="Comment">Is there a free spot for bot2?</string>
                                                     <normal>
                                                         <action id="enableUpgrade">
                                                             <string id="condition" values="yesno">yes</string>
-                                                            <string id="upgrade name">TutorialTalk</string>
-                                                            <string id="Comment">I am now bot3!</string>
+                                                            <string id="upgrade name">TutorialOpening</string>
+                                                            <string id="Comment">I am now bot2!</string>
                                                             <string id="Minimized">yes</string>
                                                         </action>
                                                         <action id="setBool">
-                                                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
                                                             <string id="value" values="flagtoggle">yes</string>
-                                                            <string id="Comment">Bot3 exists!</string>
+                                                            <string id="Comment">Bot2 exists!</string>
                                                             <string id="Minimized">yes</string>
                                                         </action>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                            <string id="Comment">I am alive!</string>
+                                                        </action>
                                                         <action id="emitMessageInArea">
-                                                            <string id="id">bot3Exist</string>
+                                                            <string id="id">bot2Exist</string>
                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
@@ -338,33 +441,72 @@
                                                             <string id="Minimized">yes</string>
                                                         </action>
                                                     </normal>
+                                                    <else>
+                                                        <condition id="getBoolEquals">
+                                                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                                            <string id="value" values="yesno">no</string>
+                                                            <string id="Comment">Is there a free spot for bot3?</string>
+                                                            <normal>
+                                                                <action id="enableUpgrade">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                    <string id="Comment">I am now bot3!</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                                <action id="setBool">
+                                                                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                                                    <string id="value" values="flagtoggle">yes</string>
+                                                                    <string id="Comment">Bot3 exists!</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                                <action id="setBool">
+                                                                    <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                                                                    <string id="value" values="flagtoggle">yes</string>
+                                                                    <string id="Comment">I am alive!</string>
+                                                                </action>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot3Exist</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                    <string id="Comment">Tell other friendly bots that I exist!</string>
+                                                                    <string id="Minimized">yes</string>
+                                                                </action>
+                                                            </normal>
+                                                        </condition>
+                                                    </else>
                                                 </condition>
                                             </else>
                                         </condition>
-                                    </else>
-                                </condition>
-                            </normal>
-                            <else>
-                                <condition id="checkCounter">
-                                    <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
-                                    <string id="value">Toolkit_Ticker_Event_1TickAgo</string>
-                                    <string id="compare method" values="valuecompare">equal</string>
-                                    <string id="Comment">Only triggers once at the start of every listen cycle</string>
-                                    <normal>
-                                        <action id="emitMessageInArea">
-                                            <string id="id">botReport</string>
-                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
-                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
-                                            <float id="xOffset">0.00</float>
-                                            <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
-                                            <string id="ignore invisibility" values="yesno">yes</string>
-                                            <string id="check line of sight" values="yesno">no</string>
-                                            <string id="Comment">Ask for friendly bots to report status</string>
-                                            <string id="Minimized">yes</string>
-                                        </action>
                                     </normal>
+                                    <else>
+                                        <condition id="checkCounter">
+                                            <string id="id">Toolkit_BotCollab_Main_ListeningTicks</string>
+                                            <string id="value">Toolkit_Ticker_Event_1TickAgo</string>
+                                            <string id="compare method" values="valuecompare">equal</string>
+                                            <string id="Comment">Only triggers once at the start of every listen cycle</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">botReport</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Ask for friendly bots to report status</string>
+                                                    <string id="Minimized">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
                                 </condition>
                             </else>
                         </condition>
@@ -390,6 +532,125 @@
                         </condition>
                     </or>
                 </orblock>
+                <condition id="isUpgradeEnabled">
+                    <string id="condition" values="yesno">no</string>
+                    <string id="upgrade name">TutorialListen</string>
+                    <string id="Comment">Am I not bot 1?</string>
+                    <normal>
+                        <condition id="checkCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
+                            <string id="value">Toolkit_Ticker_Event_50TickAgo</string>
+                            <string id="compare method" values="valuecompare">less or equal</string>
+                            <string id="Comment">Has it been 5 seconds since last response from bot1?</string>
+                            <normal>
+                                <condition id="checkCounter">
+                                    <string id="id">Toolkit_BotCollab_Main_Bot1LastResponse</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks - 1800</string>
+                                    <string id="compare method" values="valuecompare">less or equal</string>
+                                    <string id="Comment">Has it been 2:30 since last response from bot1?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">Bot1 no longer exists!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot1 is dead!</string>
+                                        </action>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="isUpgradeEnabled">
+                    <string id="condition" values="yesno">no</string>
+                    <string id="upgrade name">TutorialOpening</string>
+                    <string id="Comment">Am I not bot 2?</string>
+                    <normal>
+                        <condition id="checkCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
+                            <string id="value">Toolkit_Ticker_Event_50TickAgo</string>
+                            <string id="compare method" values="valuecompare">less or equal</string>
+                            <string id="Comment">Has it been 5 seconds since last response from bot2?</string>
+                            <normal>
+                                <condition id="checkCounter">
+                                    <string id="id">Toolkit_BotCollab_Main_Bot2LastResponse</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks - 1800</string>
+                                    <string id="compare method" values="valuecompare">less or equal</string>
+                                    <string id="Comment">Has it been 2:30 since last response from bot2?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">Bot2 no longer exists!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot2 is dead!</string>
+                                        </action>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="isUpgradeEnabled">
+                    <string id="condition" values="yesno">no</string>
+                    <string id="upgrade name">TutorialTalk</string>
+                    <string id="Comment">Am I not bot 3?</string>
+                    <normal>
+                        <condition id="checkCounter">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
+                            <string id="value">Toolkit_Ticker_Event_50TickAgo</string>
+                            <string id="compare method" values="valuecompare">less or equal</string>
+                            <string id="Comment">Has it been 5 seconds since last response from bot3?</string>
+                            <normal>
+                                <condition id="checkCounter">
+                                    <string id="id">Toolkit_BotCollab_Main_Bot3LastResponse</string>
+                                    <string id="value">Toolkit_Ticker_Event_Ticks - 1800</string>
+                                    <string id="compare method" values="valuecompare">less or equal</string>
+                                    <string id="Comment">Has it been 2:30 since last response from bot3?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">Bot3 no longer exists!</string>
+                                            <string id="Minimized">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">bot3 is dead!</string>
+                                        </action>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">botReport</string>
+                    <string id="Comment">This is leads to the plugins!</string>
+                    <normal>
+                        <action id="executeBehaviourTree">
+                            <string id="fileName">Mod_BotCollab_Plugins</string>
+                            <string id="Comment">This behavior tree leads to plugins, it does nothing on it&apos;s own but linking</string>
+                            <string id="Minimized">yes</string>
+                        </action>
+                    </normal>
+                </condition>
             </normal>
         </root>
     </behaviour>
