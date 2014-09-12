@@ -2773,6 +2773,12 @@
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Reset the health to nothing</string>
                         </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the health minus DoT to nothing</string>
+                        </action>
                     </normal>
                 </condition>
                 <condition id="getBoolEquals">
@@ -2786,6 +2792,12 @@
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Reset the health to nothing</string>
                         </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the health minus DoT to nothing</string>
+                        </action>
                     </normal>
                 </condition>
                 <condition id="getBoolEquals">
@@ -2798,6 +2810,12 @@
                             <string id="value">-1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Reset the health to nothing</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the health minus DoT to nothing</string>
                         </action>
                     </normal>
                 </condition>
