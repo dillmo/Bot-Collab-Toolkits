@@ -1,0 +1,604 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <string id="Comment">Supports Veanko&apos;s Improved GeneralAI (state 11)</string>
+            <normal>
+                <condition id="once">
+                    <string id="Comment">Documents variables</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot1&apos;s primary skill ready?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot2&apos;s primary skill ready?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot3&apos;s primary skill ready?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot1&apos;s secondary skill ready?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot2&apos;s secondary skill ready?</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Is bot3&apos;s secondary skill ready?</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">botReport</string>
+                    <string id="Comment">Broadcast logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isSkillOnButtonAvailable">
+                            <string id="button" values="buttons">FACE_RIGHT</string>
+                            <string id="Comment">Is my primary skill available?</string>
+                            <normal>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot1&apos;s primary skill is ready!</string>
+                                        </action>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1PrimaryTrue</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                            <string id="Comment">Tell all allies my skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                    <string id="Comment">Bot2&apos;s primary skill is ready!</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2PrimaryTrue</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell all allies my skill is ready!</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                            <string id="Comment">Bot3&apos;s primary skill is ready!</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3PrimaryTrue</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell all allies my skill is ready!</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">Bot1&apos;s primary skill is not ready!</string>
+                                        </action>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1PrimaryFalse</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                            <string id="Comment">Tell all allies my skill is not ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot2&apos;s primary skill is not ready!</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2PrimaryFalse</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell all allies my skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
+                                                            <string id="value" values="flagtoggle">no</string>
+                                                            <string id="Comment">Bot3&apos;s primary skill is not ready!</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3PrimaryFalse</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell all allies my skill is not ready!</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                        <condition id="isSkillOnButtonAvailable">
+                            <string id="button" values="buttons">FACE_TOP</string>
+                            <string id="Comment">Is my secondary skill available?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot1&apos;s Secondary skill is ready!</string>
+                                        </action>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1SecondaryTrue</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                            <string id="Comment">Tell all allies my skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                    <string id="Comment">Bot2&apos;s Secondary skill is ready!</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2SecondaryTrue</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell all allies my skill is ready!</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                            <string id="Comment">Bot3&apos;s Secondary skill is ready!</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3SecondaryTrue</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell all allies my skill is ready!</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                            <string id="Comment">Bot1&apos;s Secondary skill is not ready!</string>
+                                        </action>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1Secondaryfalse</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                            <string id="Comment">Tell all allies my skill is not ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot2&apos;s Secondary skill is not ready!</string>
+                                                </action>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2Secondaryfalse</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                    <string id="Comment">Tell all allies my skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                                                            <string id="value" values="flagtoggle">no</string>
+                                                            <string id="Comment">Bot3&apos;s Secondary skill is not ready!</string>
+                                                        </action>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3Secondaryfalse</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                            <string id="Comment">Tell all allies my skill is not ready!</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot1 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I not bot 1?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1PrimaryTrue</string>
+                                    <string id="Comment">Primary skill reciever logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot1&apos;s primary skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot1PrimaryFalse</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot1&apos;s primary skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1SecondaryTrue</string>
+                                    <string id="Comment">Secondary skill reciever logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot1&apos;s secondary skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot1SecondaryFalse</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot1&apos;s secondary skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot2 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialOpening</string>
+                            <string id="Comment">Am not I bot 2?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2PrimaryTrue</string>
+                                    <string id="Comment">Primary skill reciever logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot2&apos;s primary skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2PrimaryFalse</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot2&apos;s primary skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2SecondaryTrue</string>
+                                    <string id="Comment">Secondary skill reciever logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot2&apos;s secondary skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2SecondaryFalse</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot2&apos;s secondary skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot3 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialTalk</string>
+                            <string id="Comment">Am I not bot 3?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3PrimaryTrue</string>
+                                    <string id="Comment">Primary skill reciever logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot3&apos;s primary skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot3PrimaryFalse</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot3&apos;s primary skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3SecondaryTrue</string>
+                                    <string id="Comment">Secondary skill reciever logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                            <string id="Comment">Bot3&apos;s secondary skill is ready!</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot3SecondaryFalse</string>
+                                            <normal>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                    <string id="Comment">Bot3&apos;s secondary skill is not ready!</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot1 stopped existing?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Bot1&apos;s primary skill is not ready!</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Bot1&apos;s secondary skill is not ready!</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot2 stopped existing?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Bot2&apos;s primary skill is not ready!</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Bot2&apos;s secondary skill is not ready!</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot3 stopped existing?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Bot3&apos;s primary skill is not ready!</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Bot3&apos;s secondary skill is not ready!</string>
+                        </action>
+                    </normal>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
