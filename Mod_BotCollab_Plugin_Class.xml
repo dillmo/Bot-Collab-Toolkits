@@ -120,11 +120,9 @@
                         </action>
                     </normal>
                 </condition>
-                <condition id="getBoolEquals">
-                    <string id="id">Toolkit_Ticker_Event_50thTick</string>
-                    <string id="value" values="yesno">no</string>
-                    <string id="Comment">Check every 5 seconds</string>
-                    <string id="Minimized">yes</string>
+                <condition id="receivedMessage">
+                    <string id="id">botReport</string>
+                    <string id="Comment">Broadcast logic</string>
                     <normal>
                         <condition id="checkClass">
                             <string id="check on" values="targetself">self</string>

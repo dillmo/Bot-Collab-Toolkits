@@ -656,17 +656,11 @@
                         </condition>
                     </normal>
                 </condition>
-                <condition id="receivedMessage">
-                    <string id="id">botReport</string>
-                    <string id="Comment">This is leads to the plugins!</string>
-                    <normal>
-                        <action id="executeBehaviourTree">
-                            <string id="fileName">Mod_BotCollab_Plugins</string>
-                            <string id="Comment">This behavior tree leads to plugins, it does nothing on it&apos;s own but linking</string>
-                            <string id="Minimized">yes</string>
-                        </action>
-                    </normal>
-                </condition>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_BotCollab_Plugins</string>
+                    <string id="Comment">This behavior tree leads to plugins, it does nothing on it&apos;s own but linking</string>
+                    <string id="Minimized">yes</string>
+                </action>
             </normal>
         </root>
     </behaviour>
