@@ -1085,6 +1085,7 @@
                             <string id="condition" values="yesno">no</string>
                             <string id="upgrade name">TutorialTalk</string>
                             <string id="Comment">Am I not bot3?</string>
+                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="receivedMessage">
                                     <string id="id">bot3Blinded</string>
@@ -1198,6 +1199,105 @@
                                 </condition>
                             </normal>
                         </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot1 stopped existing?</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Blinded</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset blinded to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Silenced</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset silenced to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Slowed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset slowed to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Stealthed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset stealthed to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Stunned</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset stunned to false</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot2 stopped existing?</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Blinded</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset blinded to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Silenced</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset silenced to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Slowed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset slowed to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Stealthed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset stealthed to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Stunned</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset stunned to false</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot3 stopped existing?</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Blinded</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset blinded to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Silenced</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset silenced to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Slowed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset slowed to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stealthed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset stealthed to false</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stunned</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset stunned to false</string>
+                        </action>
                     </normal>
                 </condition>
             </normal>
