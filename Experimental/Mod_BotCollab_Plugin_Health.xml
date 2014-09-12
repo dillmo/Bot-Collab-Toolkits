@@ -105,6 +105,7 @@
                             <string id="compare method" values="valuecompare">greater or equal</string>
                             <string id="check on" values="targetself">self</string>
                             <string id="Comment">Health reporting logic</string>
+                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -1017,7 +1018,6 @@
                     <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
                     <string id="value" values="yesno">yes</string>
                     <string id="Comment">Is bot1 alive?</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isUpgradeEnabled">
                             <string id="condition" values="yesno">no</string>
@@ -1027,6 +1027,7 @@
                                 <condition id="receivedMessage">
                                     <string id="id">bot1Health100</string>
                                     <string id="Comment">bot1 health reciever logic</string>
+                                    <string id="Minimized">yes</string>
                                     <normal>
                                         <action id="adjustCounter">
                                             <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
@@ -1163,7 +1164,6 @@
                     <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
                     <string id="value" values="yesno">yes</string>
                     <string id="Comment">Is bot2 alive?</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isUpgradeEnabled">
                             <string id="condition" values="yesno">no</string>
@@ -1173,6 +1173,7 @@
                                 <condition id="receivedMessage">
                                     <string id="id">bot2Health100</string>
                                     <string id="Comment">bot1 health reciever logic</string>
+                                    <string id="Minimized">yes</string>
                                     <normal>
                                         <action id="adjustCounter">
                                             <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
@@ -1309,7 +1310,6 @@
                     <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
                     <string id="value" values="yesno">yes</string>
                     <string id="Comment">Is bot3 alive?</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isUpgradeEnabled">
                             <string id="condition" values="yesno">no</string>
@@ -1319,6 +1319,7 @@
                                 <condition id="receivedMessage">
                                     <string id="id">bot3Health100</string>
                                     <string id="Comment">bot3 health reciever logic</string>
+                                    <string id="Minimized">yes</string>
                                     <normal>
                                         <action id="adjustCounter">
                                             <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
@@ -1449,6 +1450,45 @@
                                 </condition>
                             </normal>
                         </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot1 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the health to nothing</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot2 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the health to nothing</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot3 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the health to nothing</string>
+                        </action>
                     </normal>
                 </condition>
             </normal>
