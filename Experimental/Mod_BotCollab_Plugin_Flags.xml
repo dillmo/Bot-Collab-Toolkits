@@ -470,6 +470,201 @@
                         </condition>
                     </normal>
                 </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot1 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I not bot1?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1Blinded</string>
+                                    <string id="Comment">Blindnes recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Blinded</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1Silenced</string>
+                                    <string id="Comment">Silence recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Silenced</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1Slowed</string>
+                                    <string id="Comment">Slow recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Slowed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1Stealthed</string>
+                                    <string id="Comment">Stealth recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Stealthed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1Stunned</string>
+                                    <string id="Comment">Stun recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Stunned</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot2 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutoriaOpening</string>
+                            <string id="Comment">Am I not bot2?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2Blinded</string>
+                                    <string id="Comment">Blindnes recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Blinded</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2Silenced</string>
+                                    <string id="Comment">Silence recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Silenced</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2Slowed</string>
+                                    <string id="Comment">Slow recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Slowed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2Stealthed</string>
+                                    <string id="Comment">Stealth recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Stealthed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2Stunned</string>
+                                    <string id="Comment">Stun recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Stunned</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot3 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialTalk</string>
+                            <string id="Comment">Am I not bot3?</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3Blinded</string>
+                                    <string id="Comment">Blindnes recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Blinded</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3Silenced</string>
+                                    <string id="Comment">Silence recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Silenced</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3Slowed</string>
+                                    <string id="Comment">Slow recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Slowed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3Stealthed</string>
+                                    <string id="Comment">Stealth recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stealthed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3Stunned</string>
+                                    <string id="Comment">Stun recieving logic</string>
+                                    <normal>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stunned</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
             </normal>
         </root>
     </behaviour>
