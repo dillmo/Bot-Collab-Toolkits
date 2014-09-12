@@ -12,6 +12,10 @@
                     <string id="fileName">Mod_BotCollab_Plugin_States</string>
                     <string id="Minimized">yes</string>
                 </action>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_BotCollab_Plugin_Health</string>
+                    <string id="Minimized">yes</string>
+                </action>
             </normal>
         </root>
     </behaviour>
