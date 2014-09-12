@@ -20,6 +20,10 @@
                     <string id="fileName">Mod_BotCollab_Plugin_Flags</string>
                     <string id="Minimized">yes</string>
                 </action>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_BotCollab_Plugin_Skills</string>
+                    <string id="Minimized">yes</string>
+                </action>
             </normal>
         </root>
     </behaviour>
