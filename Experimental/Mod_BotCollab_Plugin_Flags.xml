@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="once">
+                    <string id="Comment">Document Variables</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Blinded</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Blinded</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Blinded</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Silenced</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Silenced</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Silenced</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Slowed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Slowed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Slowed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Stealthed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Stealthed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stealthed</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Stunned</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot2Stunned</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stunned</string>
+                            <string id="value" values="flagtoggle">no</string>
+                        </action>
+                    </normal>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
