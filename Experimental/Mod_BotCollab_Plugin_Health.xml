@@ -105,7 +105,6 @@
                             <string id="compare method" values="valuecompare">greater or equal</string>
                             <string id="check on" values="targetself">self</string>
                             <string id="Comment">Health reporting logic</string>
-                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -122,6 +121,11 @@
                                             <float id="height">200.00</float>
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health100</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
                                         </action>
                                     </normal>
                                     <else>
@@ -141,6 +145,11 @@
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                 </action>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health100</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
                                             </normal>
                                             <else>
                                                 <condition id="isUpgradeEnabled">
@@ -159,6 +168,11 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                         </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health100</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
                                                     </normal>
                                                 </condition>
                                             </else>
@@ -172,7 +186,6 @@
                                     <float id="value">90.00</float>
                                     <string id="compare method" values="valuecompare">greater or equal</string>
                                     <string id="check on" values="targetself">self</string>
-                                    <string id="Minimized">yes</string>
                                     <normal>
                                         <condition id="isUpgradeEnabled">
                                             <string id="condition" values="yesno">yes</string>
@@ -189,6 +202,11 @@
                                                     <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health90</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
                                                 </action>
                                             </normal>
                                             <else>
@@ -208,6 +226,11 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                         </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health90</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
                                                     </normal>
                                                     <else>
                                                         <condition id="isUpgradeEnabled">
@@ -225,6 +248,11 @@
                                                                     <float id="height">200.00</float>
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health90</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
                                                                 </action>
                                                             </normal>
                                                         </condition>
@@ -256,6 +284,11 @@
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                         </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health80</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
                                                     </normal>
                                                     <else>
                                                         <condition id="isUpgradeEnabled">
@@ -274,6 +307,11 @@
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                 </action>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health80</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
                                                             </normal>
                                                             <else>
                                                                 <condition id="isUpgradeEnabled">
@@ -291,6 +329,11 @@
                                                                             <float id="height">200.00</float>
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health80</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
                                                                         </action>
                                                                     </normal>
                                                                 </condition>
@@ -322,6 +365,11 @@
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                 </action>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health70</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
                                                             </normal>
                                                             <else>
                                                                 <condition id="isUpgradeEnabled">
@@ -340,6 +388,11 @@
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                         </action>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health70</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
                                                                     </normal>
                                                                     <else>
                                                                         <condition id="isUpgradeEnabled">
@@ -357,6 +410,11 @@
                                                                                     <float id="height">200.00</float>
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health70</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
                                                                                 </action>
                                                                             </normal>
                                                                         </condition>
@@ -388,6 +446,11 @@
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                         </action>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health60</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
                                                                     </normal>
                                                                     <else>
                                                                         <condition id="isUpgradeEnabled">
@@ -406,6 +469,11 @@
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                 </action>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health60</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
                                                                             </normal>
                                                                             <else>
                                                                                 <condition id="isUpgradeEnabled">
@@ -423,6 +491,11 @@
                                                                                             <float id="height">200.00</float>
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health60</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
                                                                                         </action>
                                                                                     </normal>
                                                                                 </condition>
@@ -454,6 +527,11 @@
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                 </action>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health50</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
                                                                             </normal>
                                                                             <else>
                                                                                 <condition id="isUpgradeEnabled">
@@ -472,6 +550,11 @@
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                         </action>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health50</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
                                                                                     </normal>
                                                                                     <else>
                                                                                         <condition id="isUpgradeEnabled">
@@ -489,6 +572,11 @@
                                                                                                     <float id="height">200.00</float>
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health50</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
                                                                                                 </action>
                                                                                             </normal>
                                                                                         </condition>
@@ -520,6 +608,11 @@
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                         </action>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health40</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
                                                                                     </normal>
                                                                                     <else>
                                                                                         <condition id="isUpgradeEnabled">
@@ -538,6 +631,11 @@
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                 </action>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health40</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
                                                                                             </normal>
                                                                                             <else>
                                                                                                 <condition id="isUpgradeEnabled">
@@ -555,6 +653,11 @@
                                                                                                             <float id="height">200.00</float>
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health40</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
                                                                                                         </action>
                                                                                                     </normal>
                                                                                                 </condition>
@@ -586,6 +689,11 @@
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                 </action>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health30</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
                                                                                             </normal>
                                                                                             <else>
                                                                                                 <condition id="isUpgradeEnabled">
@@ -604,6 +712,11 @@
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                         </action>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health30</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
                                                                                                     </normal>
                                                                                                     <else>
                                                                                                         <condition id="isUpgradeEnabled">
@@ -621,6 +734,11 @@
                                                                                                                     <float id="height">200.00</float>
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health30</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
                                                                                                                 </action>
                                                                                                             </normal>
                                                                                                         </condition>
@@ -652,6 +770,11 @@
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                         </action>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health20</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
                                                                                                     </normal>
                                                                                                     <else>
                                                                                                         <condition id="isUpgradeEnabled">
@@ -670,6 +793,11 @@
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                 </action>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health20</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
                                                                                                             </normal>
                                                                                                             <else>
                                                                                                                 <condition id="isUpgradeEnabled">
@@ -687,6 +815,11 @@
                                                                                                                             <float id="height">200.00</float>
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
+                                                                                                                        </action>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health20</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
                                                                                                                     </normal>
                                                                                                                 </condition>
@@ -718,6 +851,11 @@
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                 </action>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
                                                                                                             </normal>
                                                                                                             <else>
                                                                                                                 <condition id="isUpgradeEnabled">
@@ -736,6 +874,11 @@
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                         </action>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health10</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
                                                                                                                     </normal>
                                                                                                                     <else>
                                                                                                                         <condition id="isUpgradeEnabled">
@@ -753,6 +896,11 @@
                                                                                                                                     <float id="height">200.00</float>
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                </action>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health10</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                 </action>
                                                                                                                             </normal>
                                                                                                                         </condition>
@@ -784,6 +932,11 @@
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                         </action>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
                                                                                                                     </normal>
                                                                                                                     <else>
                                                                                                                         <condition id="isUpgradeEnabled">
@@ -802,6 +955,11 @@
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                 </action>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                </action>
                                                                                                                             </normal>
                                                                                                                             <else>
                                                                                                                                 <condition id="isUpgradeEnabled">
@@ -819,6 +977,11 @@
                                                                                                                                             <float id="height">200.00</float>
                                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                        </action>
+                                                                                                                                        <action id="adjustCounter">
+                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
+                                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
                                                                                                                                         </action>
                                                                                                                                     </normal>
                                                                                                                                 </condition>
