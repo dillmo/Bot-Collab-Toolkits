@@ -5,6 +5,7 @@
             <normal>
                 <condition id="once">
                     <string id="Comment">Document Variables</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="setBool">
                             <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot1Blinded</string>
@@ -66,6 +67,401 @@
                             <string id="id">Toolkit_BotCollab_Plugin_Flags_Bot3Stunned</string>
                             <string id="value" values="flagtoggle">no</string>
                         </action>
+                    </normal>
+                </condition>
+                <condition id="checkCharacterFlag">
+                    <string id="property" values="characterflags">isBlinded</string>
+                    <string id="condition" values="yesno">yes</string>
+                    <string id="check on" values="targetself">self</string>
+                    <string id="Comment">Blindness reporting logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot1?</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">bot1Blinded</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                </action>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Flags_Bot1Blinded</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialOpening</string>
+                                    <string id="Comment">Am I bot2?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot2Blinded</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Flags_Bot2Blinded</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialTalk</string>
+                                            <string id="Comment">Am I bot3?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot3Blinded</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Flags_Bot3Blinded</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="checkCharacterFlag">
+                    <string id="property" values="characterflags">isSilenced</string>
+                    <string id="condition" values="yesno">yes</string>
+                    <string id="check on" values="targetself">self</string>
+                    <string id="Comment">Silence reporting logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot1?</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">bot1Silenced</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                </action>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Flags_Bot1Silenced</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialOpening</string>
+                                    <string id="Comment">Am I bot2?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot2Silenced</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Flags_Bot2Silenced</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialTalk</string>
+                                            <string id="Comment">Am I bot3?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot3Silenced</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Flags_Bot3Silenced</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="checkCharacterFlag">
+                    <string id="property" values="characterflags">isSlowed</string>
+                    <string id="condition" values="yesno">yes</string>
+                    <string id="check on" values="targetself">self</string>
+                    <string id="Comment">Slow reporting logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot1?</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">bot1Slowed</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                </action>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Flags_Bot1Slowed</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialOpening</string>
+                                    <string id="Comment">Am I bot2?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot2Slowed</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Flags_Bot2Slowed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialTalk</string>
+                                            <string id="Comment">Am I bot3?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot3Slowed</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Flags_Bot3Slowed</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="checkCharacterFlag">
+                    <string id="property" values="characterflags">IsStealth</string>
+                    <string id="condition" values="yesno">yes</string>
+                    <string id="check on" values="targetself">self</string>
+                    <string id="Comment">Stealth reporting logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot1?</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">bot1Stealthed</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                </action>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Flags_Bot1Stealthed</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialOpening</string>
+                                    <string id="Comment">Am I bot2?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot2Stealthed</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Flags_Bot2Stealthed</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialTalk</string>
+                                            <string id="Comment">Am I bot3?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot3Stealthed</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Flags_Bot3Stealthed</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="checkCharacterFlag">
+                    <string id="property" values="characterflags">isStunned</string>
+                    <string id="condition" values="yesno">yes</string>
+                    <string id="check on" values="targetself">self</string>
+                    <string id="Comment">Stun reporting logic</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">yes</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I bot1?</string>
+                            <normal>
+                                <action id="emitMessageInArea">
+                                    <string id="id">bot1Stunned</string>
+                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                    <float id="xOffset">0.00</float>
+                                    <float id="yOffset">0.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
+                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                    <string id="check line of sight" values="yesno">no</string>
+                                </action>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Flags_Bot1Stunned</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                            <else>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialOpening</string>
+                                    <string id="Comment">Am I bot2?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot2Stunned</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Flags_Bot2Stunned</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialTalk</string>
+                                            <string id="Comment">Am I bot3?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot3Stunned</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Flags_Bot3Stunned</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                </action>
+                                            </normal>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
                     </normal>
                 </condition>
             </normal>
