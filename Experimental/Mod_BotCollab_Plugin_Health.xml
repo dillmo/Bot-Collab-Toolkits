@@ -2070,6 +2070,138 @@
                                         </condition>
                                     </else>
                                 </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1HealthMinusDOT100</string>
+                                    <string id="Comment">bot1 health minus DoT reciever logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health100</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot1HealthMinusDOT90</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health90</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot1HealthMinusDOT80</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health80</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot1HealthMinusDOT70</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health70</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot1HealthMinusDOT60</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health60</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot1HealthMinusDOT50</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health50</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot1HealthMinusDOT40</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health40</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot1HealthMinusDOT30</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health30</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot1HealthMinusDOT20</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health20</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot1HealthMinusDOT10</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot1HealthMinusDOT0</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1HealthMinusDOT</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
                             </normal>
                         </condition>
                     </normal>
@@ -2086,7 +2218,7 @@
                             <normal>
                                 <condition id="receivedMessage">
                                     <string id="id">bot2Health100</string>
-                                    <string id="Comment">bot1 health reciever logic</string>
+                                    <string id="Comment">bot2 health reciever logic</string>
                                     <string id="Minimized">yes</string>
                                     <normal>
                                         <action id="adjustCounter">
@@ -2191,6 +2323,138 @@
                                                                                                                     <normal>
                                                                                                                         <action id="adjustCounter">
                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2Health</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2HealthMinusDOT100</string>
+                                    <string id="Comment">bot2 health minus DoT reciever logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health100</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2HealthMinusDOT90</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health90</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot2HealthMinusDOT80</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health80</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot2HealthMinusDOT70</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health70</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot2HealthMinusDOT60</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health60</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot2HealthMinusDOT50</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health50</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot2HealthMinusDOT40</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health40</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot2HealthMinusDOT30</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health30</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot2HealthMinusDOT20</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health20</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot2HealthMinusDOT10</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot2HealthMinusDOT0</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot2HealthMinusDOT</string>
                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
@@ -2337,6 +2601,138 @@
                                                                                                                     <normal>
                                                                                                                         <action id="adjustCounter">
                                                                                                                             <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3Health</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3HealthMinusDOT100</string>
+                                    <string id="Comment">bot3 health minus DoT reciever logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health100</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot3HealthMinusDOT90</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health90</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot3HealthMinusDOT80</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health80</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot3HealthMinusDOT70</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health70</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot3HealthMinusDOT60</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health60</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot3HealthMinusDOT50</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health50</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot3HealthMinusDOT40</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health40</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot3HealthMinusDOT30</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health30</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot3HealthMinusDOT20</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Health_Health20</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot3HealthMinusDOT10</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Health_Health10</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot3HealthMinusDOT0</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Health_Bot3HealthMinusDOT</string>
                                                                                                                             <string id="value">Toolkit_BotCollab_Plugin_Health_Health0</string>
                                                                                                                             <string id="adjust method" values="valueadjust">set</string>
                                                                                                                         </action>
