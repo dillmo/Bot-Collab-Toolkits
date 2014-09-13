@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="once">
+                    <string id="Comment">Document Variables</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Tookit_BotCollab_Plugin_Location_Bot1Location</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Tookit_BotCollab_Plugin_Location_Bot2Location</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Tookit_BotCollab_Plugin_Location_Bot3Location</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                            <string id="value">0</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                            <string id="value">1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                            <string id="value">2</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                            <string id="value">3</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                            <string id="value">4</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                            <string id="value">5</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                            <string id="value">7</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                            <string id="value">8</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                            <string id="value">9</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_JUNGLE</string>
+                            <string id="value">10</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
