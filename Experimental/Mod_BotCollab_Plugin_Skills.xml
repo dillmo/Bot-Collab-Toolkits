@@ -42,11 +42,11 @@
                 <condition id="receivedMessage">
                     <string id="id">botReport</string>
                     <string id="Comment">Broadcast logic</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <condition id="isSkillOnButtonAvailable">
                             <string id="button" values="buttons">FACE_RIGHT</string>
                             <string id="Comment">Is my primary skill available?</string>
+                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -64,8 +64,8 @@
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
                                             <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
                                             <string id="Comment">Tell all allies my skill is ready!</string>
@@ -88,8 +88,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">200.00</float>
-                                                    <float id="height">200.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell all allies my skill is ready!</string>
@@ -112,8 +112,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">200.00</float>
-                                                            <float id="height">200.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell all allies my skill is ready!</string>
@@ -142,8 +142,8 @@
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
                                             <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
                                             <string id="Comment">Tell all allies my skill is not ready!</string>
@@ -166,8 +166,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">200.00</float>
-                                                    <float id="height">200.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell all allies my skill is not ready!</string>
@@ -190,8 +190,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">200.00</float>
-                                                            <float id="height">200.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell all allies my skill is not ready!</string>
@@ -207,7 +207,6 @@
                         <condition id="isSkillOnButtonAvailable">
                             <string id="button" values="buttons">FACE_TOP</string>
                             <string id="Comment">Is my secondary skill available?</string>
-                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -225,8 +224,8 @@
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
                                             <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
                                             <string id="Comment">Tell all allies my skill is ready!</string>
@@ -249,8 +248,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">200.00</float>
-                                                    <float id="height">200.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell all allies my skill is ready!</string>
@@ -273,8 +272,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">200.00</float>
-                                                            <float id="height">200.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell all allies my skill is ready!</string>
@@ -298,13 +297,13 @@
                                             <string id="Comment">Bot1&apos;s Secondary skill is not ready!</string>
                                         </action>
                                         <action id="emitMessageInArea">
-                                            <string id="id">bot1Secondaryfalse</string>
+                                            <string id="id">bot1SecondaryFalse</string>
                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
                                             <float id="yOffset">0.00</float>
-                                            <float id="width">200.00</float>
-                                            <float id="height">200.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
                                             <string id="Comment">Tell all allies my skill is not ready!</string>
@@ -322,13 +321,13 @@
                                                     <string id="Comment">Bot2&apos;s Secondary skill is not ready!</string>
                                                 </action>
                                                 <action id="emitMessageInArea">
-                                                    <string id="id">bot2Secondaryfalse</string>
+                                                    <string id="id">bot2SecondaryFalse</string>
                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">200.00</float>
-                                                    <float id="height">200.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell all allies my skill is not ready!</string>
@@ -346,13 +345,13 @@
                                                             <string id="Comment">Bot3&apos;s Secondary skill is not ready!</string>
                                                         </action>
                                                         <action id="emitMessageInArea">
-                                                            <string id="id">bot3Secondaryfalse</string>
+                                                            <string id="id">bot3SecondaryFalse</string>
                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">200.00</float>
-                                                            <float id="height">200.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell all allies my skill is not ready!</string>
@@ -384,7 +383,7 @@
                                         <action id="setBool">
                                             <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
                                             <string id="value" values="flagtoggle">yes</string>
-                                            <string id="Comment">Bot1&apos;s primary skill is ready!</string>
+                                            <string id="Comment">Bot1&apos;s Primary skill is ready!</string>
                                         </action>
                                     </normal>
                                     <else>
@@ -444,7 +443,7 @@
                                         <action id="setBool">
                                             <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
                                             <string id="value" values="flagtoggle">yes</string>
-                                            <string id="Comment">Bot2&apos;s primary skill is ready!</string>
+                                            <string id="Comment">Bot2&apos;s Primary skill is ready!</string>
                                         </action>
                                     </normal>
                                     <else>
@@ -514,7 +513,7 @@
                                                 <action id="setBool">
                                                     <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
                                                     <string id="value" values="flagtoggle">no</string>
-                                                    <string id="Comment">Bot3&apos;s primary skill is not ready!</string>
+                                                    <string id="Comment">Bot3&apos;s Primary skill is not ready!</string>
                                                 </action>
                                             </normal>
                                         </condition>
