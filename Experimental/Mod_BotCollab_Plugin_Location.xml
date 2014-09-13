@@ -1434,6 +1434,45 @@
                         </condition>
                     </normal>
                 </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot1 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Tookit_BotCollab_Plugin_Location_Bot1Location</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the location to nothing</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot2 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Tookit_BotCollab_Plugin_Location_Bot2Location</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the location to nothing</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot3 stopped existing?</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Tookit_BotCollab_Plugin_Location_Bot3Location</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Reset the location to nothing</string>
+                        </action>
+                    </normal>
+                </condition>
             </normal>
         </root>
     </behaviour>
