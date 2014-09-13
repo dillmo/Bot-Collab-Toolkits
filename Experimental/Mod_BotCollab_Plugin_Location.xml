@@ -5,6 +5,7 @@
             <normal>
                 <condition id="once">
                     <string id="Comment">Document Variables</string>
+                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Tookit_BotCollab_Plugin_Location_Bot1Location</string>
@@ -25,6 +26,7 @@
                             <string id="id">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
                             <string id="value">0</string>
                             <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Everything from this point forwards is just enumerators</string>
                         </action>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
@@ -67,10 +69,921 @@
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Plugin_Location_JUNGLE</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
                             <string id="value">10</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                            <string id="value">11</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="receivedMessage">
+                    <string id="id">botReport</string>
+                    <string id="Comment">Broadcast logic</string>
+                    <normal>
+                        <condition id="isInNamedArea">
+                            <string id="area name">STARTAREA</string>
+                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                            <string id="who" values="targetself">self</string>
+                            <string id="Comment">Location Reporting Logic</string>
+                            <string id="Minimized">yes</string>
+                            <normal>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot1?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1InSTARTAREA</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot2?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2InSTARTAREA</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot3?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3InSTARTAREA</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                            <else>
+                                <condition id="isInNamedArea">
+                                    <string id="area name">AREAHOME_0</string>
+                                    <string id="team" values="ownenemy">OWN_TEAM</string>
+                                    <string id="who" values="targetself">self</string>
+                                    <normal>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialListen</string>
+                                            <string id="Comment">Am I bot1?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot1InAREAHOME_0</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialOpening</string>
+                                                    <string id="Comment">Am I bot2?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot2InAREAHOME_0</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="isUpgradeEnabled">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialTalk</string>
+                                                            <string id="Comment">Am I bot3?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot3InAREAHOME_0</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">50.00</float>
+                                                                    <float id="height">50.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </normal>
+                                    <else>
+                                        <condition id="isInNamedArea">
+                                            <string id="area name">AREAHOME_1</string>
+                                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                                            <string id="who" values="targetself">self</string>
+                                            <normal>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialListen</string>
+                                                    <string id="Comment">Am I bot1?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot1InAREAHOME_1</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="isUpgradeEnabled">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialOpening</string>
+                                                            <string id="Comment">Am I bot2?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot2InAREAHOME_1</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">50.00</float>
+                                                                    <float id="height">50.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="isUpgradeEnabled">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                    <string id="Comment">Am I bot3?</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot3InAREAHOME_1</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">50.00</float>
+                                                                            <float id="height">50.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </normal>
+                                            <else>
+                                                <condition id="isInNamedArea">
+                                                    <string id="area name">JUNGLE</string>
+                                                    <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                    <string id="who" values="targetself">self</string>
+                                                    <normal>
+                                                        <condition id="isUpgradeEnabled">
+                                                            <string id="condition" values="yesno">yes</string>
+                                                            <string id="upgrade name">TutorialListen</string>
+                                                            <string id="Comment">Am I bot1?</string>
+                                                            <normal>
+                                                                <action id="emitMessageInArea">
+                                                                    <string id="id">bot1InOwnTeam_JUNGLE</string>
+                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                    <float id="xOffset">0.00</float>
+                                                                    <float id="yOffset">0.00</float>
+                                                                    <float id="width">50.00</float>
+                                                                    <float id="height">50.00</float>
+                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                </action>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="isUpgradeEnabled">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                    <string id="Comment">Am I bot2?</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot2InOwnTeam_JUNGLE</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">50.00</float>
+                                                                            <float id="height">50.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="isUpgradeEnabled">
+                                                                            <string id="condition" values="yesno">yes</string>
+                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                            <string id="Comment">Am I bot3?</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot3InOwnTeam_JUNGLE</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">50.00</float>
+                                                                                    <float id="height">50.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="isInNamedArea">
+                                                            <string id="area name">JUNGLE</string>
+                                                            <string id="team" values="ownenemy">ENEMY_TEAM</string>
+                                                            <string id="who" values="targetself">self</string>
+                                                            <normal>
+                                                                <condition id="isUpgradeEnabled">
+                                                                    <string id="condition" values="yesno">yes</string>
+                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                    <string id="Comment">Am I bot1?</string>
+                                                                    <normal>
+                                                                        <action id="emitMessageInArea">
+                                                                            <string id="id">bot1InEnemyTeam_JUNGLE</string>
+                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                            <float id="xOffset">0.00</float>
+                                                                            <float id="yOffset">0.00</float>
+                                                                            <float id="width">50.00</float>
+                                                                            <float id="height">50.00</float>
+                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                        </action>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="isUpgradeEnabled">
+                                                                            <string id="condition" values="yesno">yes</string>
+                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                            <string id="Comment">Am I bot2?</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot2InEnemyTeam_JUNGLE</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">50.00</float>
+                                                                                    <float id="height">50.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="isUpgradeEnabled">
+                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                    <string id="Comment">Am I bot3?</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot3InEnemyTeam_JUNGLE</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">50.00</float>
+                                                                                            <float id="height">50.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="isInNamedArea">
+                                                                    <string id="area name">AREABOTTOM_0</string>
+                                                                    <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                                    <string id="who" values="targetself">self</string>
+                                                                    <normal>
+                                                                        <condition id="isUpgradeEnabled">
+                                                                            <string id="condition" values="yesno">yes</string>
+                                                                            <string id="upgrade name">TutorialListen</string>
+                                                                            <string id="Comment">Am I bot1?</string>
+                                                                            <normal>
+                                                                                <action id="emitMessageInArea">
+                                                                                    <string id="id">bot1InAREABOTTOM_0</string>
+                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                    <float id="xOffset">0.00</float>
+                                                                                    <float id="yOffset">0.00</float>
+                                                                                    <float id="width">50.00</float>
+                                                                                    <float id="height">50.00</float>
+                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                </action>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="isUpgradeEnabled">
+                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                                    <string id="Comment">Am I bot2?</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot2InAREABOTTOM_0</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">50.00</float>
+                                                                                            <float id="height">50.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="isUpgradeEnabled">
+                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                                            <string id="Comment">Am I bot3?</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot3InAREABOTTOM_0</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">50.00</float>
+                                                                                                    <float id="height">50.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="isInNamedArea">
+                                                                            <string id="area name">AREABOTTOM_1</string>
+                                                                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                                            <string id="who" values="targetself">self</string>
+                                                                            <normal>
+                                                                                <condition id="isUpgradeEnabled">
+                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                                    <string id="Comment">Am I bot1?</string>
+                                                                                    <normal>
+                                                                                        <action id="emitMessageInArea">
+                                                                                            <string id="id">bot1InAREABOTTOM_1</string>
+                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                            <float id="xOffset">0.00</float>
+                                                                                            <float id="yOffset">0.00</float>
+                                                                                            <float id="width">50.00</float>
+                                                                                            <float id="height">50.00</float>
+                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                        </action>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="isUpgradeEnabled">
+                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                                            <string id="Comment">Am I bot2?</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot2InAREABOTTOM_1</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">50.00</float>
+                                                                                                    <float id="height">50.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                                    <string id="Comment">Am I bot3?</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot3InAREABOTTOM_1</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">50.00</float>
+                                                                                                            <float id="height">50.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="isInNamedArea">
+                                                                                    <string id="area name">AREACENTERBOTTOM</string>
+                                                                                    <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                                                    <string id="who" values="targetself">self</string>
+                                                                                    <normal>
+                                                                                        <condition id="isUpgradeEnabled">
+                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                            <string id="upgrade name">TutorialListen</string>
+                                                                                            <string id="Comment">Am I bot1?</string>
+                                                                                            <normal>
+                                                                                                <action id="emitMessageInArea">
+                                                                                                    <string id="id">bot1InAREACENTERBOTTOM</string>
+                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                    <float id="width">50.00</float>
+                                                                                                    <float id="height">50.00</float>
+                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                </action>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                                                    <string id="Comment">Am I bot2?</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot2InAREACENTERBOTTOM</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">50.00</float>
+                                                                                                            <float id="height">50.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                                                            <string id="Comment">Am I bot3?</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot3InAREACENTERBOTTOM</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">50.00</float>
+                                                                                                                    <float id="height">50.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="isInNamedArea">
+                                                                                            <string id="area name">AREAUPPER_0</string>
+                                                                                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                                                            <string id="who" values="targetself">self</string>
+                                                                                            <normal>
+                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                                                    <string id="Comment">Am I bot1?</string>
+                                                                                                    <normal>
+                                                                                                        <action id="emitMessageInArea">
+                                                                                                            <string id="id">bot1InAREAUPPER_0</string>
+                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                            <float id="width">50.00</float>
+                                                                                                            <float id="height">50.00</float>
+                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                        </action>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                                                            <string id="Comment">Am I bot2?</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot2InAREAUPPER_0</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">50.00</float>
+                                                                                                                    <float id="height">50.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                                                    <string id="Comment">Am I bot3?</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot3InAREAUPPER_0</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">50.00</float>
+                                                                                                                            <float id="height">50.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                        </action>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                                <condition id="isInNamedArea">
+                                                                                                    <string id="area name">AREAUPPER_1</string>
+                                                                                                    <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                                                                    <string id="who" values="targetself">self</string>
+                                                                                                    <normal>
+                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                            <string id="upgrade name">TutorialListen</string>
+                                                                                                            <string id="Comment">Am I bot1?</string>
+                                                                                                            <normal>
+                                                                                                                <action id="emitMessageInArea">
+                                                                                                                    <string id="id">bot1InAREAUPPER_1</string>
+                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                    <float id="width">50.00</float>
+                                                                                                                    <float id="height">50.00</float>
+                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                </action>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                    <string id="upgrade name">TutorialOpening</string>
+                                                                                                                    <string id="Comment">Am I bot2?</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot2InAREAUPPER_1</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">50.00</float>
+                                                                                                                            <float id="height">50.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                        </action>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                                            <string id="upgrade name">TutorialTalk</string>
+                                                                                                                            <string id="Comment">Am I bot3?</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                    <string id="id">bot3InAREAUPPER_1</string>
+                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                    <float id="width">50.00</float>
+                                                                                                                                    <float id="height">50.00</float>
+                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                </action>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="isInNamedArea">
+                                                                                                            <string id="area name">AREACENTER</string>
+                                                                                                            <string id="team" values="ownenemy">OWN_TEAM</string>
+                                                                                                            <string id="who" values="targetself">self</string>
+                                                                                                            <normal>
+                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                    <string id="upgrade name">TutorialListen</string>
+                                                                                                                    <string id="Comment">Am I bot1?</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                            <string id="id">bot1InAREACENTER</string>
+                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                            <float id="width">50.00</float>
+                                                                                                                            <float id="height">50.00</float>
+                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                        </action>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                    <else>
+                                                                                                                        <condition id="isUpgradeEnabled">
+                                                                                                                            <string id="condition" values="yesno">yes</string>
+                                                                                                                            <string id="upgrade name">TutorialOpening</string>
+                                                                                                                            <string id="Comment">Am I bot2?</string>
+                                                                                                                            <normal>
+                                                                                                                                <action id="emitMessageInArea">
+                                                                                                                                    <string id="id">bot2InAREACENTER</string>
+                                                                                                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                    <float id="xOffset">0.00</float>
+                                                                                                                                    <float id="yOffset">0.00</float>
+                                                                                                                                    <float id="width">50.00</float>
+                                                                                                                                    <float id="height">50.00</float>
+                                                                                                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                    <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                </action>
+                                                                                                                                <action id="adjustCounter">
+                                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                </action>
+                                                                                                                            </normal>
+                                                                                                                            <else>
+                                                                                                                                <condition id="isUpgradeEnabled">
+                                                                                                                                    <string id="condition" values="yesno">yes</string>
+                                                                                                                                    <string id="upgrade name">TutorialTalk</string>
+                                                                                                                                    <string id="Comment">Am I bot3?</string>
+                                                                                                                                    <normal>
+                                                                                                                                        <action id="emitMessageInArea">
+                                                                                                                                            <string id="id">bot3InAREACENTER</string>
+                                                                                                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                                                                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                                                                                                            <float id="xOffset">0.00</float>
+                                                                                                                                            <float id="yOffset">0.00</float>
+                                                                                                                                            <float id="width">50.00</float>
+                                                                                                                                            <float id="height">50.00</float>
+                                                                                                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                                                                                                            <string id="check line of sight" values="yesno">no</string>
+                                                                                                                                        </action>
+                                                                                                                                        <action id="adjustCounter">
+                                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                                        </action>
+                                                                                                                                    </normal>
+                                                                                                                                </condition>
+                                                                                                                            </else>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </normal>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </normal>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </else>
+                        </condition>
                     </normal>
                 </condition>
             </normal>
