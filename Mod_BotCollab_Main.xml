@@ -79,8 +79,8 @@
                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                             <float id="xOffset">0.00</float>
                             <float id="yOffset">0.00</float>
-                            <float id="width">50.00</float>
-                            <float id="height">50.00</float>
+                            <float id="width">200.00</float>
+                            <float id="height">200.00</float>
                             <string id="ignore invisibility" values="yesno">yes</string>
                             <string id="check line of sight" values="yesno">no</string>
                             <string id="Comment">Ask for friendly bots to report status</string>
@@ -99,8 +99,8 @@
                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                     <float id="xOffset">0.00</float>
                                     <float id="yOffset">0.00</float>
-                                    <float id="width">50.00</float>
-                                    <float id="height">50.00</float>
+                                    <float id="width">200.00</float>
+                                    <float id="height">200.00</float>
                                     <string id="ignore invisibility" values="yesno">yes</string>
                                     <string id="check line of sight" values="yesno">no</string>
                                     <string id="Comment">Ask for friendly bots to report status</string>
@@ -212,8 +212,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">50.00</float>
-                                                    <float id="height">50.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell all friendly bots who I am!</string>
@@ -263,8 +263,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">50.00</float>
-                                                            <float id="height">50.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell all friendly bots who I am!</string>
@@ -314,8 +314,8 @@
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
                                                                     <float id="yOffset">0.00</float>
-                                                                    <float id="width">50.00</float>
-                                                                    <float id="height">50.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">Tell all friendly bots who I am!</string>
@@ -394,8 +394,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">50.00</float>
-                                                    <float id="height">50.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell other friendly bots that I exist!</string>
@@ -438,8 +438,8 @@
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
                                                                     <float id="yOffset">0.00</float>
-                                                                    <float id="width">50.00</float>
-                                                                    <float id="height">50.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">Tell other friendly bots that I exist!</string>
@@ -484,8 +484,8 @@
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
                                                                             <float id="yOffset">0.00</float>
-                                                                            <float id="width">50.00</float>
-                                                                            <float id="height">50.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">Tell other friendly bots that I exist!</string>
@@ -513,8 +513,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">50.00</float>
-                                                    <float id="height">50.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Ask for friendly bots to report status</string>

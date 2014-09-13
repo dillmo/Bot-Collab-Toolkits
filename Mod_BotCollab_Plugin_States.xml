@@ -88,8 +88,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">50.00</float>
-                                                    <float id="height">50.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">I&apos;m in state 1!</string>
@@ -109,8 +109,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">50.00</float>
-                                                            <float id="height">50.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">I&apos;m in state 2!</string>
@@ -130,8 +130,8 @@
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
                                                                     <float id="yOffset">0.00</float>
-                                                                    <float id="width">50.00</float>
-                                                                    <float id="height">50.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">I&apos;m in state 3!</string>
@@ -151,8 +151,8 @@
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
                                                                             <float id="yOffset">0.00</float>
-                                                                            <float id="width">50.00</float>
-                                                                            <float id="height">50.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">I&apos;m in state 4!</string>
@@ -172,8 +172,8 @@
                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                     <float id="xOffset">0.00</float>
                                                                                     <float id="yOffset">0.00</float>
-                                                                                    <float id="width">50.00</float>
-                                                                                    <float id="height">50.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                     <string id="Comment">I&apos;m in state 5!</string>
@@ -193,8 +193,8 @@
                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                             <float id="xOffset">0.00</float>
                                                                                             <float id="yOffset">0.00</float>
-                                                                                            <float id="width">50.00</float>
-                                                                                            <float id="height">50.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                             <string id="Comment">I&apos;m in state 6!</string>
@@ -214,8 +214,8 @@
                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                     <float id="xOffset">0.00</float>
                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                    <float id="width">50.00</float>
-                                                                                                    <float id="height">50.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                     <string id="Comment">I&apos;m in state 7!</string>
@@ -235,8 +235,8 @@
                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                             <float id="xOffset">0.00</float>
                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                            <float id="width">50.00</float>
-                                                                                                            <float id="height">50.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                             <string id="Comment">I&apos;m in state 8!</string>
@@ -256,8 +256,8 @@
                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                    <float id="width">50.00</float>
-                                                                                                                    <float id="height">50.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                     <string id="Comment">I&apos;m in state 9!</string>
@@ -277,8 +277,8 @@
                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                             <float id="xOffset">0.00</float>
                                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                                            <float id="width">50.00</float>
-                                                                                                                            <float id="height">50.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                             <string id="Comment">I&apos;m in state 10!</string>
@@ -298,8 +298,8 @@
                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                                    <float id="width">50.00</float>
-                                                                                                                                    <float id="height">50.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                     <string id="Comment">I&apos;m in state 11!</string>
@@ -354,8 +354,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">50.00</float>
-                                                    <float id="height">50.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell allies that I support GeneralAI style states!</string>
@@ -373,8 +373,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">50.00</float>
-                                                            <float id="height">50.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">I&apos;m in state 1</string>
@@ -394,8 +394,8 @@
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
                                                                     <float id="yOffset">0.00</float>
-                                                                    <float id="width">50.00</float>
-                                                                    <float id="height">50.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">I&apos;m in state 2</string>
@@ -415,8 +415,8 @@
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
                                                                             <float id="yOffset">0.00</float>
-                                                                            <float id="width">50.00</float>
-                                                                            <float id="height">50.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">I&apos;m in state 3</string>
@@ -436,8 +436,8 @@
                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                     <float id="xOffset">0.00</float>
                                                                                     <float id="yOffset">0.00</float>
-                                                                                    <float id="width">50.00</float>
-                                                                                    <float id="height">50.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                     <string id="Comment">I&apos;m in state 4</string>
@@ -457,8 +457,8 @@
                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                             <float id="xOffset">0.00</float>
                                                                                             <float id="yOffset">0.00</float>
-                                                                                            <float id="width">50.00</float>
-                                                                                            <float id="height">50.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                             <string id="Comment">I&apos;m in state 5</string>
@@ -478,8 +478,8 @@
                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                     <float id="xOffset">0.00</float>
                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                    <float id="width">50.00</float>
-                                                                                                    <float id="height">50.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                     <string id="Comment">I&apos;m in state 6</string>
@@ -499,8 +499,8 @@
                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                             <float id="xOffset">0.00</float>
                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                            <float id="width">50.00</float>
-                                                                                                            <float id="height">50.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                             <string id="Comment">I&apos;m in state 7</string>
@@ -520,8 +520,8 @@
                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                    <float id="width">50.00</float>
-                                                                                                                    <float id="height">50.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                     <string id="Comment">I&apos;m in state 8</string>
@@ -541,8 +541,8 @@
                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                             <float id="xOffset">0.00</float>
                                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                                            <float id="width">50.00</float>
-                                                                                                                            <float id="height">50.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                             <string id="Comment">I&apos;m in state 9</string>
@@ -562,8 +562,8 @@
                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                                    <float id="width">50.00</float>
-                                                                                                                                    <float id="height">50.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                     <string id="Comment">I&apos;m in state 10</string>
@@ -583,8 +583,8 @@
                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                             <float id="xOffset">0.00</float>
                                                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                                                            <float id="width">50.00</float>
-                                                                                                                                            <float id="height">50.00</float>
+                                                                                                                                            <float id="width">200.00</float>
+                                                                                                                                            <float id="height">200.00</float>
                                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                             <string id="Comment">I&apos;m in state 11</string>
@@ -639,8 +639,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">50.00</float>
-                                                            <float id="height">50.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell allies that I support GeneralAI style states!</string>
@@ -658,8 +658,8 @@
                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                     <float id="xOffset">0.00</float>
                                                                     <float id="yOffset">0.00</float>
-                                                                    <float id="width">50.00</float>
-                                                                    <float id="height">50.00</float>
+                                                                    <float id="width">200.00</float>
+                                                                    <float id="height">200.00</float>
                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                     <string id="Comment">I&apos;m in state 1</string>
@@ -679,8 +679,8 @@
                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                             <float id="xOffset">0.00</float>
                                                                             <float id="yOffset">0.00</float>
-                                                                            <float id="width">50.00</float>
-                                                                            <float id="height">50.00</float>
+                                                                            <float id="width">200.00</float>
+                                                                            <float id="height">200.00</float>
                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                             <string id="Comment">I&apos;m in state 2</string>
@@ -700,8 +700,8 @@
                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                     <float id="xOffset">0.00</float>
                                                                                     <float id="yOffset">0.00</float>
-                                                                                    <float id="width">50.00</float>
-                                                                                    <float id="height">50.00</float>
+                                                                                    <float id="width">200.00</float>
+                                                                                    <float id="height">200.00</float>
                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                     <string id="Comment">I&apos;m in state 3</string>
@@ -721,8 +721,8 @@
                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                             <float id="xOffset">0.00</float>
                                                                                             <float id="yOffset">0.00</float>
-                                                                                            <float id="width">50.00</float>
-                                                                                            <float id="height">50.00</float>
+                                                                                            <float id="width">200.00</float>
+                                                                                            <float id="height">200.00</float>
                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                             <string id="Comment">I&apos;m in state 4</string>
@@ -742,8 +742,8 @@
                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                     <float id="xOffset">0.00</float>
                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                    <float id="width">50.00</float>
-                                                                                                    <float id="height">50.00</float>
+                                                                                                    <float id="width">200.00</float>
+                                                                                                    <float id="height">200.00</float>
                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                     <string id="Comment">I&apos;m in state 5</string>
@@ -763,8 +763,8 @@
                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                             <float id="xOffset">0.00</float>
                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                            <float id="width">50.00</float>
-                                                                                                            <float id="height">50.00</float>
+                                                                                                            <float id="width">200.00</float>
+                                                                                                            <float id="height">200.00</float>
                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                             <string id="Comment">I&apos;m in state 6</string>
@@ -784,8 +784,8 @@
                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                    <float id="width">50.00</float>
-                                                                                                                    <float id="height">50.00</float>
+                                                                                                                    <float id="width">200.00</float>
+                                                                                                                    <float id="height">200.00</float>
                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                     <string id="Comment">I&apos;m in state 7</string>
@@ -805,8 +805,8 @@
                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                             <float id="xOffset">0.00</float>
                                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                                            <float id="width">50.00</float>
-                                                                                                                            <float id="height">50.00</float>
+                                                                                                                            <float id="width">200.00</float>
+                                                                                                                            <float id="height">200.00</float>
                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                             <string id="Comment">I&apos;m in state 8</string>
@@ -826,8 +826,8 @@
                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                                    <float id="width">50.00</float>
-                                                                                                                                    <float id="height">50.00</float>
+                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                    <float id="height">200.00</float>
                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                     <string id="Comment">I&apos;m in state 9</string>
@@ -847,8 +847,8 @@
                                                                                                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                             <float id="xOffset">0.00</float>
                                                                                                                                             <float id="yOffset">0.00</float>
-                                                                                                                                            <float id="width">50.00</float>
-                                                                                                                                            <float id="height">50.00</float>
+                                                                                                                                            <float id="width">200.00</float>
+                                                                                                                                            <float id="height">200.00</float>
                                                                                                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                             <string id="check line of sight" values="yesno">no</string>
                                                                                                                                             <string id="Comment">I&apos;m in state 10</string>
@@ -868,8 +868,8 @@
                                                                                                                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                                                                                                                     <float id="xOffset">0.00</float>
                                                                                                                                                     <float id="yOffset">0.00</float>
-                                                                                                                                                    <float id="width">50.00</float>
-                                                                                                                                                    <float id="height">50.00</float>
+                                                                                                                                                    <float id="width">200.00</float>
+                                                                                                                                                    <float id="height">200.00</float>
                                                                                                                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                                                                                                                     <string id="check line of sight" values="yesno">no</string>
                                                                                                                                                     <string id="Comment">I&apos;m in state 11</string>
@@ -930,8 +930,8 @@
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
                                             <float id="yOffset">0.00</float>
-                                            <float id="width">50.00</float>
-                                            <float id="height">50.00</float>
+                                            <float id="width">200.00</float>
+                                            <float id="height">200.00</float>
                                             <string id="ignore invisibility" values="yesno">yes</string>
                                             <string id="check line of sight" values="yesno">no</string>
                                             <string id="Comment">Tell allies that I support GeneralAI style states!</string>
@@ -964,8 +964,8 @@
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
                                                     <float id="yOffset">0.00</float>
-                                                    <float id="width">50.00</float>
-                                                    <float id="height">50.00</float>
+                                                    <float id="width">200.00</float>
+                                                    <float id="height">200.00</float>
                                                     <string id="ignore invisibility" values="yesno">yes</string>
                                                     <string id="check line of sight" values="yesno">no</string>
                                                     <string id="Comment">Tell allies that I support GeneralAI style states!</string>
@@ -998,8 +998,8 @@
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
                                                             <float id="yOffset">0.00</float>
-                                                            <float id="width">50.00</float>
-                                                            <float id="height">50.00</float>
+                                                            <float id="width">200.00</float>
+                                                            <float id="height">200.00</float>
                                                             <string id="ignore invisibility" values="yesno">yes</string>
                                                             <string id="check line of sight" values="yesno">no</string>
                                                             <string id="Comment">Tell allies that I support GeneralAI style states!</string>
