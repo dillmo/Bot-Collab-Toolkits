@@ -207,7 +207,6 @@
                         <condition id="isSkillOnButtonAvailable">
                             <string id="button" values="buttons">FACE_TOP</string>
                             <string id="Comment">Is my secondary skill available?</string>
-                            <string id="Minimized">yes</string>
                             <normal>
                                 <condition id="isUpgradeEnabled">
                                     <string id="condition" values="yesno">yes</string>
@@ -298,7 +297,7 @@
                                             <string id="Comment">Bot1&apos;s Secondary skill is not ready!</string>
                                         </action>
                                         <action id="emitMessageInArea">
-                                            <string id="id">bot1Secondaryfalse</string>
+                                            <string id="id">bot1SecondaryFalse</string>
                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                             <float id="xOffset">0.00</float>
@@ -322,7 +321,7 @@
                                                     <string id="Comment">Bot2&apos;s Secondary skill is not ready!</string>
                                                 </action>
                                                 <action id="emitMessageInArea">
-                                                    <string id="id">bot2Secondaryfalse</string>
+                                                    <string id="id">bot2SecondaryFalse</string>
                                                     <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                     <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                     <float id="xOffset">0.00</float>
@@ -346,7 +345,7 @@
                                                             <string id="Comment">Bot3&apos;s Secondary skill is not ready!</string>
                                                         </action>
                                                         <action id="emitMessageInArea">
-                                                            <string id="id">bot3Secondaryfalse</string>
+                                                            <string id="id">bot3SecondaryFalse</string>
                                                             <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
                                                             <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
                                                             <float id="xOffset">0.00</float>
