@@ -175,6 +175,7 @@
                                             <string id="condition" values="yesno">yes</string>
                                             <string id="upgrade name">TutorialListen</string>
                                             <string id="Comment">Am I bot1?</string>
+                                            <string id="Minimized">yes</string>
                                             <normal>
                                                 <action id="emitMessageInArea">
                                                     <string id="id">bot1InAREAHOME_0</string>
@@ -255,6 +256,7 @@
                                                     <string id="condition" values="yesno">yes</string>
                                                     <string id="upgrade name">TutorialListen</string>
                                                     <string id="Comment">Am I bot1?</string>
+                                                    <string id="Minimized">yes</string>
                                                     <normal>
                                                         <action id="emitMessageInArea">
                                                             <string id="id">bot1InAREAHOME_1</string>
@@ -335,6 +337,7 @@
                                                             <string id="condition" values="yesno">yes</string>
                                                             <string id="upgrade name">TutorialListen</string>
                                                             <string id="Comment">Am I bot1?</string>
+                                                            <string id="Minimized">yes</string>
                                                             <normal>
                                                                 <action id="emitMessageInArea">
                                                                     <string id="id">bot1InOwnTeam_JUNGLE</string>
@@ -415,6 +418,7 @@
                                                                     <string id="condition" values="yesno">yes</string>
                                                                     <string id="upgrade name">TutorialListen</string>
                                                                     <string id="Comment">Am I bot1?</string>
+                                                                    <string id="Minimized">yes</string>
                                                                     <normal>
                                                                         <action id="emitMessageInArea">
                                                                             <string id="id">bot1InEnemyTeam_JUNGLE</string>
@@ -495,6 +499,7 @@
                                                                             <string id="condition" values="yesno">yes</string>
                                                                             <string id="upgrade name">TutorialListen</string>
                                                                             <string id="Comment">Am I bot1?</string>
+                                                                            <string id="Minimized">yes</string>
                                                                             <normal>
                                                                                 <action id="emitMessageInArea">
                                                                                     <string id="id">bot1InAREABOTTOM_0</string>
@@ -575,6 +580,7 @@
                                                                                     <string id="condition" values="yesno">yes</string>
                                                                                     <string id="upgrade name">TutorialListen</string>
                                                                                     <string id="Comment">Am I bot1?</string>
+                                                                                    <string id="Minimized">yes</string>
                                                                                     <normal>
                                                                                         <action id="emitMessageInArea">
                                                                                             <string id="id">bot1InAREABOTTOM_1</string>
@@ -655,6 +661,7 @@
                                                                                             <string id="condition" values="yesno">yes</string>
                                                                                             <string id="upgrade name">TutorialListen</string>
                                                                                             <string id="Comment">Am I bot1?</string>
+                                                                                            <string id="Minimized">yes</string>
                                                                                             <normal>
                                                                                                 <action id="emitMessageInArea">
                                                                                                     <string id="id">bot1InAREACENTERBOTTOM</string>
@@ -735,6 +742,7 @@
                                                                                                     <string id="condition" values="yesno">yes</string>
                                                                                                     <string id="upgrade name">TutorialListen</string>
                                                                                                     <string id="Comment">Am I bot1?</string>
+                                                                                                    <string id="Minimized">yes</string>
                                                                                                     <normal>
                                                                                                         <action id="emitMessageInArea">
                                                                                                             <string id="id">bot1InAREAUPPER_0</string>
@@ -813,6 +821,7 @@
                                                                                                             <string id="condition" values="yesno">yes</string>
                                                                                                             <string id="upgrade name">TutorialListen</string>
                                                                                                             <string id="Comment">Am I bot1?</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                             <normal>
                                                                                                                 <action id="emitMessageInArea">
                                                                                                                     <string id="id">bot1InAREAUPPER_1</string>
@@ -888,6 +897,7 @@
                                                                                                             <string id="area name">AREACENTER</string>
                                                                                                             <string id="team" values="ownenemy">OWN_TEAM</string>
                                                                                                             <string id="who" values="targetself">self</string>
+                                                                                                            <string id="Minimized">yes</string>
                                                                                                             <normal>
                                                                                                                 <condition id="isUpgradeEnabled">
                                                                                                                     <string id="condition" values="yesno">yes</string>
@@ -983,6 +993,444 @@
                                     </else>
                                 </condition>
                             </else>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot1 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I not bot1?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot1InSTARTAREA</string>
+                                    <string id="Comment">bot1 location receiver logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot1InAREAHOME_0</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot1InAREAHOME_1</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot1InOwnTeam_JUNGLE</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot1InEnemyTeam_JUNGLE</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot1InAREABOTTOM_0</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot1InAREABOTTOM_1</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot1InAREACENTERBOTTOM</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot1InAREAUPPER_0</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot1InAREAUPPER_1</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot1InAREACENTER</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot1Location</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot2 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialOpening</string>
+                            <string id="Comment">Am I not bot2?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot2InSTARTAREA</string>
+                                    <string id="Comment">bot2 location receiver logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot2InAREAHOME_0</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot2InAREAHOME_1</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot2InOwnTeam_JUNGLE</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot2InEnemyTeam_JUNGLE</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot2InAREABOTTOM_0</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot2InAREABOTTOM_1</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot2InAREACENTERBOTTOM</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot2InAREAUPPER_0</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot2InAREAUPPER_1</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot2InAREACENTER</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot2Location</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                    <string id="value" values="yesno">yes</string>
+                    <string id="Comment">Is bot3 alive?</string>
+                    <normal>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialTalk</string>
+                            <string id="Comment">Am I not bot3?</string>
+                            <normal>
+                                <condition id="receivedMessage">
+                                    <string id="id">bot3InSTARTAREA</string>
+                                    <string id="Comment">bot3 location receiver logic</string>
+                                    <string id="Minimized">yes</string>
+                                    <normal>
+                                        <action id="adjustCounter">
+                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                            <string id="value">Toolkit_BotCollab_Plugin_Location_STARTAREA</string>
+                                            <string id="adjust method" values="valueadjust">set</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="receivedMessage">
+                                            <string id="id">bot3InAREAHOME_0</string>
+                                            <normal>
+                                                <action id="adjustCounter">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_0</string>
+                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="receivedMessage">
+                                                    <string id="id">bot3InAREAHOME_1</string>
+                                                    <normal>
+                                                        <action id="adjustCounter">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAHOME_1</string>
+                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                        </action>
+                                                    </normal>
+                                                    <else>
+                                                        <condition id="receivedMessage">
+                                                            <string id="id">bot3InOwnTeam_JUNGLE</string>
+                                                            <normal>
+                                                                <action id="adjustCounter">
+                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_OwnTeam_JUNGLE</string>
+                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                </action>
+                                                            </normal>
+                                                            <else>
+                                                                <condition id="receivedMessage">
+                                                                    <string id="id">bot3InEnemyTeam_JUNGLE</string>
+                                                                    <normal>
+                                                                        <action id="adjustCounter">
+                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_EnemyTeam_JUNGLE</string>
+                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                        </action>
+                                                                    </normal>
+                                                                    <else>
+                                                                        <condition id="receivedMessage">
+                                                                            <string id="id">bot3InAREABOTTOM_0</string>
+                                                                            <normal>
+                                                                                <action id="adjustCounter">
+                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_0</string>
+                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                </action>
+                                                                            </normal>
+                                                                            <else>
+                                                                                <condition id="receivedMessage">
+                                                                                    <string id="id">bot3InAREABOTTOM_1</string>
+                                                                                    <normal>
+                                                                                        <action id="adjustCounter">
+                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREABOTTOM_1</string>
+                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                        </action>
+                                                                                    </normal>
+                                                                                    <else>
+                                                                                        <condition id="receivedMessage">
+                                                                                            <string id="id">bot3InAREACENTERBOTTOM</string>
+                                                                                            <normal>
+                                                                                                <action id="adjustCounter">
+                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTERBOTTOM</string>
+                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                </action>
+                                                                                            </normal>
+                                                                                            <else>
+                                                                                                <condition id="receivedMessage">
+                                                                                                    <string id="id">bot3InAREAUPPER_0</string>
+                                                                                                    <normal>
+                                                                                                        <action id="adjustCounter">
+                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_0</string>
+                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                        </action>
+                                                                                                    </normal>
+                                                                                                    <else>
+                                                                                                        <condition id="receivedMessage">
+                                                                                                            <string id="id">bot3InAREAUPPER_1</string>
+                                                                                                            <normal>
+                                                                                                                <action id="adjustCounter">
+                                                                                                                    <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                                    <string id="value">Toolkit_BotCollab_Plugin_Location_AREAUPPER_1</string>
+                                                                                                                    <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                </action>
+                                                                                                            </normal>
+                                                                                                            <else>
+                                                                                                                <condition id="receivedMessage">
+                                                                                                                    <string id="id">bot3InAREACENTER</string>
+                                                                                                                    <normal>
+                                                                                                                        <action id="adjustCounter">
+                                                                                                                            <string id="id">Toolkit_BotCollab_Plugin_Location_Bot3Location</string>
+                                                                                                                            <string id="value">Toolkit_BotCollab_Plugin_Location_AREACENTER</string>
+                                                                                                                            <string id="adjust method" values="valueadjust">set</string>
+                                                                                                                        </action>
+                                                                                                                    </normal>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
                         </condition>
                     </normal>
                 </condition>
