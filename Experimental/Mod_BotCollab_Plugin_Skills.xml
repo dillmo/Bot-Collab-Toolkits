@@ -378,21 +378,21 @@
                             <string id="Comment">Am I not bot 1?</string>
                             <normal>
                                 <condition id="receivedMessage">
-                                    <string id="id">bot1SecondaryTrue</string>
+                                    <string id="id">bot1PrimaryTrue</string>
                                     <string id="Comment">Primary skill reciever logic</string>
                                     <normal>
                                         <action id="setBool">
-                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
                                             <string id="value" values="flagtoggle">yes</string>
-                                            <string id="Comment">Bot1&apos;s Secondary skill is ready!</string>
+                                            <string id="Comment">Bot1&apos;s Primary skill is ready!</string>
                                         </action>
                                     </normal>
                                     <else>
                                         <condition id="receivedMessage">
-                                            <string id="id">bot1SecondaryFalse</string>
+                                            <string id="id">bot1PrimaryFalse</string>
                                             <normal>
                                                 <action id="setBool">
-                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Secondary</string>
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot1Primary</string>
                                                     <string id="value" values="flagtoggle">no</string>
                                                     <string id="Comment">Bot1&apos;s primary skill is not ready!</string>
                                                 </action>
@@ -438,21 +438,21 @@
                             <string id="Comment">Am not I bot 2?</string>
                             <normal>
                                 <condition id="receivedMessage">
-                                    <string id="id">bot2SecondaryTrue</string>
-                                    <string id="Comment">Secondary skill reciever logic</string>
+                                    <string id="id">bot2PrimaryTrue</string>
+                                    <string id="Comment">Primary skill reciever logic</string>
                                     <normal>
                                         <action id="setBool">
-                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
                                             <string id="value" values="flagtoggle">yes</string>
-                                            <string id="Comment">Bot2&apos;s Secondary skill is ready!</string>
+                                            <string id="Comment">Bot2&apos;s Primary skill is ready!</string>
                                         </action>
                                     </normal>
                                     <else>
                                         <condition id="receivedMessage">
-                                            <string id="id">bot2SecondaryFalse</string>
+                                            <string id="id">bot2PrimaryFalse</string>
                                             <normal>
                                                 <action id="setBool">
-                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Secondary</string>
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot2Primary</string>
                                                     <string id="value" values="flagtoggle">no</string>
                                                     <string id="Comment">Bot2&apos;s primary skill is not ready!</string>
                                                 </action>
@@ -498,23 +498,23 @@
                             <string id="Comment">Am I not bot 3?</string>
                             <normal>
                                 <condition id="receivedMessage">
-                                    <string id="id">bot3SecondaryTrue</string>
+                                    <string id="id">bot3PrimaryTrue</string>
                                     <string id="Comment">Primary skill reciever logic</string>
                                     <normal>
                                         <action id="setBool">
-                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                                            <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
                                             <string id="value" values="flagtoggle">yes</string>
                                             <string id="Comment">Bot3&apos;s primary skill is ready!</string>
                                         </action>
                                     </normal>
                                     <else>
                                         <condition id="receivedMessage">
-                                            <string id="id">bot3SecondaryFalse</string>
+                                            <string id="id">bot3PrimaryFalse</string>
                                             <normal>
                                                 <action id="setBool">
-                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Secondary</string>
+                                                    <string id="id">Toolkit_BotCollab_Plugin_Skills_Bot3Primary</string>
                                                     <string id="value" values="flagtoggle">no</string>
-                                                    <string id="Comment">Bot3&apos;s Secondary skill is not ready!</string>
+                                                    <string id="Comment">Bot3&apos;s Primary skill is not ready!</string>
                                                 </action>
                                             </normal>
                                         </condition>
