@@ -5,7 +5,6 @@
             <normal>
                 <condition id="once">
                     <string id="Comment">Documents variables</string>
-                    <string id="Minimized">yes</string>
                     <normal>
                         <action id="adjustCounter">
                             <string id="id">Toolkit_BotCollab_Plugin_Health_Bot1Health</string>
@@ -38,58 +37,58 @@
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health0</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health0</string>
                             <string id="value">0</string>
                             <string id="adjust method" values="valueadjust">set</string>
                             <string id="Comment">Everything from this point forwards is just enumerators</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health10</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health10</string>
                             <string id="value">1</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health20</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health20</string>
                             <string id="value">2</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health30</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health30</string>
                             <string id="value">3</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health40</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health40</string>
                             <string id="value">4</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health50</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health50</string>
                             <string id="value">5</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health60</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health60</string>
                             <string id="value">6</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health70</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health70</string>
                             <string id="value">7</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health80</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health80</string>
                             <string id="value">8</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health90</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health90</string>
                             <string id="value">9</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">Toolkit_BotCollab_Health_Health100</string>
+                            <string id="id">Toolkit_BotCollab_Plugin_Health_Health100</string>
                             <string id="value">10</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
