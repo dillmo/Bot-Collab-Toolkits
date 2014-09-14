@@ -257,7 +257,7 @@
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
                         <action id="adjustCounter">
-                            <string id="id">NEUTRAL_halfway_0</string>
+                            <string id="id">NEUTRAL_halfway_1</string>
                             <string id="value">51</string>
                             <string id="adjust method" values="valueadjust">set</string>
                         </action>
@@ -425,5 +425,33 @@
                 </condition>
             </normal>
         </root>
+    </behaviour>
+    <behaviour>
+        <condition id="checkCounter" x="1835" y="5963">
+            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+            <string id="value">FREECREEPS_0</string>
+            <string id="compare method" values="valuecompare">equal</string>
+        </condition>
+    </behaviour>
+    <behaviour>
+        <condition id="checkCounter" x="1603" y="6594">
+            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+            <string id="value">NEUTRALUPPERSPOT_0</string>
+            <string id="compare method" values="valuecompare">equal</string>
+        </condition>
+    </behaviour>
+    <behaviour>
+        <condition id="checkCounter" x="2083" y="7375">
+            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+            <string id="value">CENTERBOTTOMHP</string>
+            <string id="compare method" values="valuecompare">equal</string>
+        </condition>
+    </behaviour>
+    <behaviour>
+        <condition id="checkCounter" x="2076" y="7416">
+            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+            <string id="value">CENTERBOTTOMHP</string>
+            <string id="compare method" values="valuecompare">equal</string>
+        </condition>
     </behaviour>
 </enemy>
