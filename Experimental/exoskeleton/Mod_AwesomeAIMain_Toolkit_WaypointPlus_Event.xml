@@ -1,0 +1,429 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <string id="Comment">Named node enumerators</string>
+            <normal>
+                <condition id="once">
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">REGENHOME_0</string>
+                            <string id="value">1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">REGENHOME_1</string>
+                            <string id="value">2</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">behindDrill_0</string>
+                            <string id="value">3</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">behindDrill_1</string>
+                            <string id="value">4</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">belowLaunch_0</string>
+                            <string id="value">5</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">belowLaunch_1</string>
+                            <string id="value">6</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">LAUNCH_0</string>
+                            <string id="value">7</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">LAUNCH_1</string>
+                            <string id="value">8</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">FINALSTAND_0</string>
+                            <string id="value">9</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">FINALSTAND_1</string>
+                            <string id="value">10</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveBase_0</string>
+                            <string id="value">11</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveBase_1</string>
+                            <string id="value">12</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">FIRSTHP_0</string>
+                            <string id="value">13</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">FIRSTHP_1</string>
+                            <string id="value">14</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">upperSecondTower_0</string>
+                            <string id="value">15</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">upperSecondTower_1</string>
+                            <string id="value">16</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERLANE_LEFT</string>
+                            <string id="value">17</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERLANESECOND_0</string>
+                            <string id="value">18</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERLANESECOND_1</string>
+                            <string id="value">19</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERHP_0</string>
+                            <string id="value">20</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERHP_1</string>
+                            <string id="value">21</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">bottomSecondTower_0</string>
+                            <string id="value">22</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">bottomSecondTower_1</string>
+                            <string id="value">23</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveBottomSecondTower_0</string>
+                            <string id="value">24</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveBottomSecondTower_1</string>
+                            <string id="value">25</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANESECOND_0</string>
+                            <string id="value">26</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANESECOND_1</string>
+                            <string id="value">27</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMHP_0</string>
+                            <string id="value">28</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMHP_1</string>
+                            <string id="value">29</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">upperFirstTower_0</string>
+                            <string id="value">30</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">upperFirstTower_1</string>
+                            <string id="value">31</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">AboveUpperFirstTower_0</string>
+                            <string id="value">32</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">AboveUpperFirstTower_1</string>
+                            <string id="value">33</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERLANE</string>
+                            <string id="value">34</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">CENTERHP</string>
+                            <string id="value">35</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">AboveUpperSecondTower_0</string>
+                            <string id="value">36</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">AboveUpperSecondTower_1</string>
+                            <string id="value">37</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">bottomFirstTower_0</string>
+                            <string id="value">38</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">bottomFirstTower_1</string>
+                            <string id="value">39</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveBottomFirstTower_0</string>
+                            <string id="value">40</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveBottomFirstTower_1</string>
+                            <string id="value">41</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaBottom</string>
+                            <string id="value">42</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANE</string>
+                            <string id="value">43</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">healthBehindSolarBoss_0</string>
+                            <string id="value">44</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">healthBehindSolarBoss_1</string>
+                            <string id="value">45</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">solarboss_0</string>
+                            <string id="value">46</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">solarboss_1</string>
+                            <string id="value">47</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALSIDESPOT_0</string>
+                            <string id="value">48</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALSIDESPOT_1</string>
+                            <string id="value">49</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRAL_halfway_0</string>
+                            <string id="value">50</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRAL_halfway_0</string>
+                            <string id="value">51</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALCENTERSPOT_0</string>
+                            <string id="value">52</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALCENTERSPOT_1</string>
+                            <string id="value">53</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaTop</string>
+                            <string id="value">54</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaCentre</string>
+                            <string id="value">55</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANETHIRD_0</string>
+                            <string id="value">56</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANETHIRD_1</string>
+                            <string id="value">57</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">FREECREEPS_0</string>
+                            <string id="value">58</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">FREECREEPS_1</string>
+                            <string id="value">59</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERLANE_1</string>
+                            <string id="value">60</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">UPPERLANE_0</string>
+                            <string id="value">61</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveNeutralSideSpot_0</string>
+                            <string id="value">62</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveNeutralSideSpot_1</string>
+                            <string id="value">63</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">TOPHP_0</string>
+                            <string id="value">64</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALUPPERSPOT</string>
+                            <string id="value">65</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALUPPERSPOT_0</string>
+                            <string id="value">66</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALUPPERSPOT_1</string>
+                            <string id="value">67</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveTopLane_0</string>
+                            <string id="value">68</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">aboveTopLane_1</string>
+                            <string id="value">69</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">jumppadCenter_0</string>
+                            <string id="value">70</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">jumppadCenter_1</string>
+                            <string id="value">71</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANE_1</string>
+                            <string id="value">72</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">BOTTOMLANE_0</string>
+                            <string id="value">73</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">wormButton</string>
+                            <string id="value">74</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">CENTERBOTTOMHP</string>
+                            <string id="value">75</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaSide_0</string>
+                            <string id="value">76</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaSide_1</string>
+                            <string id="value">77</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaTop_0</string>
+                            <string id="value">78</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">hideAreaTop_1</string>
+                            <string id="value">79</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">invisibilityItem</string>
+                            <string id="value">80</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">NEUTRALCENTERSPOT</string>
+                            <string id="value">81</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">launch_0</string>
+                            <string id="value">82</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">launch_1</string>
+                            <string id="value">83</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>

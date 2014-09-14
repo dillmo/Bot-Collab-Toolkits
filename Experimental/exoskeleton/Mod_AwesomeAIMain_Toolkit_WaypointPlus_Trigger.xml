@@ -1,0 +1,390 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="once">
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory0</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory1</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory2</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory3</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory4</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory5</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="isAtDestWaypoint">
+                    <string id="Comment">If arrived at the target waypoint, set the internal waypoint target to -1 to represent that the movement has finished</string>
+                    <string id="Minimized">yes</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="checkCounter">
+                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                    <string id="value">-1</string>
+                    <string id="compare method" values="valuecompare">equal</string>
+                    <string id="Comment">Triggers when the destination waypoint changes. Remembers the history of selected nodes, then translates the enumerator into the destination</string>
+                    <else>
+                        <condition id="checkCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                            <string id="value">Toolkit_WaypointPlus_Trigger_WaypointHistory0</string>
+                            <string id="compare method" values="valuecompare">equal</string>
+                            <normal>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory5</string>
+                                    <string id="value">Toolkit_WaypointPlus_Trigger_WaypointHistory4</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory4</string>
+                                    <string id="value">Toolkit_WaypointPlus_Trigger_WaypointHistory3</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory3</string>
+                                    <string id="value">Toolkit_WaypointPlus_Trigger_WaypointHistory2</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory2</string>
+                                    <string id="value">Toolkit_WaypointPlus_Trigger_WaypointHistory1</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory1</string>
+                                    <string id="value">Toolkit_WaypointPlus_Trigger_WaypointHistory0</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                                <action id="adjustCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_WaypointHistory0</string>
+                                    <string id="value">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                    <string id="adjust method" values="valueadjust">set</string>
+                                </action>
+                                <condition id="checkCounter">
+                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                    <string id="value">REGENHOME_0</string>
+                                    <string id="compare method" values="valuecompare">equal</string>
+                                    <else>
+                                        <condition id="checkCounter">
+                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                            <string id="value">REGENHOME_1</string>
+                                            <string id="compare method" values="valuecompare">equal</string>
+                                            <else>
+                                                <condition id="checkCounter">
+                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                    <string id="value">behindDrill_0</string>
+                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                    <else>
+                                                        <condition id="checkCounter">
+                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                            <string id="value">behindDrill_1</string>
+                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                            <else>
+                                                                <condition id="checkCounter">
+                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                    <string id="value">belowLaunch_0</string>
+                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                    <else>
+                                                                        <condition id="checkCounter">
+                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                            <string id="value">belowLaunch_1</string>
+                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                            <else>
+                                                                                <condition id="checkCounter">
+                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                    <string id="value">LAUNCH_0</string>
+                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                    <else>
+                                                                                        <condition id="checkCounter">
+                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                            <string id="value">LAUNCH_1</string>
+                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                            <else>
+                                                                                                <condition id="checkCounter">
+                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                    <string id="value">FINALSTAND_0</string>
+                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                    <else>
+                                                                                                        <condition id="checkCounter">
+                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                            <string id="value">FINALSTAND_1</string>
+                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                            <else>
+                                                                                                                <condition id="checkCounter">
+                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                    <string id="value">aboveBase_0</string>
+                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                    <else>
+                                                                                                                        <condition id="checkCounter">
+                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                            <string id="value">aboveBase_1</string>
+                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                            <else>
+                                                                                                                                <condition id="checkCounter">
+                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                    <string id="value">FIRSTHP_0</string>
+                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                    <else>
+                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                            <string id="value">FIRSTHP_1</string>
+                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                            <else>
+                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                    <string id="value">upperSecondTower_0</string>
+                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                    <else>
+                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                            <string id="value">upperSecondTower_1</string>
+                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                            <else>
+                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                    <string id="value">UPPERLANE_LEFT</string>
+                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                    <else>
+                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                            <string id="value">UPPERLANESECOND_0</string>
+                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                            <else>
+                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                    <string id="value">UPPERLANESECOND_1</string>
+                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                    <else>
+                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                            <string id="value">UPPERHP_0</string>
+                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                            <else>
+                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                    <string id="value">UPPERHP_1</string>
+                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                            <string id="value">bottomSecondTower_0</string>
+                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                    <string id="value">bottomSecondTower_1</string>
+                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                            <string id="value">aboveBottomSecondTower_0</string>
+                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                    <string id="value">aboveBottomSecondTower_1</string>
+                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                            <string id="value">BOTTOMLANESECOND_0</string>
+                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                    <string id="value">BOTTOMLANESECOND_1</string>
+                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                            <string id="value">BOTTOMHP_0</string>
+                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                    <string id="value">BOTTOMHP_1</string>
+                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                            <string id="value">upperFirstTower_0</string>
+                                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                    <string id="value">upperFirstTower_1</string>
+                                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                            <string id="value">AboveUpperFirstTower_0</string>
+                                                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                    <string id="value">AboveUpperFirstTower_1</string>
+                                                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                            <string id="value">UPPERLANE</string>
+                                                                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                    <string id="value">CENTERHP</string>
+                                                                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                            <string id="value">AboveUpperSecondTower_0</string>
+                                                                                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                                    <string id="value">AboveUpperSecondTower_1</string>
+                                                                                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                                            <string id="value">bottomFirstTower_0</string>
+                                                                                                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                                                    <string id="value">bottomFirstTower_1</string>
+                                                                                                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                                                    <else>
+                                                                                                                                                                                                                                                                                                                                                        <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                                                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                                                            <string id="value">aboveBottomFirstTower_0</string>
+                                                                                                                                                                                                                                                                                                                                                            <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                                                            <else>
+                                                                                                                                                                                                                                                                                                                                                                <condition id="checkCounter">
+                                                                                                                                                                                                                                                                                                                                                                    <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                                                                                                                                                                                                                                                                                                                                                                    <string id="value">aboveBottomFirstTower_1</string>
+                                                                                                                                                                                                                                                                                                                                                                    <string id="compare method" values="valuecompare">equal</string>
+                                                                                                                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                                </condition>
+                                                                                                                                                                                                            </else>
+                                                                                                                                                                                                        </condition>
+                                                                                                                                                                                                    </else>
+                                                                                                                                                                                                </condition>
+                                                                                                                                                                                            </else>
+                                                                                                                                                                                        </condition>
+                                                                                                                                                                                    </else>
+                                                                                                                                                                                </condition>
+                                                                                                                                                                            </else>
+                                                                                                                                                                        </condition>
+                                                                                                                                                                    </else>
+                                                                                                                                                                </condition>
+                                                                                                                                                            </else>
+                                                                                                                                                        </condition>
+                                                                                                                                                    </else>
+                                                                                                                                                </condition>
+                                                                                                                                            </else>
+                                                                                                                                        </condition>
+                                                                                                                                    </else>
+                                                                                                                                </condition>
+                                                                                                                            </else>
+                                                                                                                        </condition>
+                                                                                                                    </else>
+                                                                                                                </condition>
+                                                                                                            </else>
+                                                                                                        </condition>
+                                                                                                    </else>
+                                                                                                </condition>
+                                                                                            </else>
+                                                                                        </condition>
+                                                                                    </else>
+                                                                                </condition>
+                                                                            </else>
+                                                                        </condition>
+                                                                    </else>
+                                                                </condition>
+                                                            </else>
+                                                        </condition>
+                                                    </else>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </else>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>

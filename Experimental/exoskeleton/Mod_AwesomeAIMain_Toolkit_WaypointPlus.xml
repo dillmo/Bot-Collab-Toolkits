@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="once">
+                    <normal>
+                        <action id="log">
+                            <string id="text">Loaded WaypointPlus Toolkit!</string>
+                            <string id="counter"></string>
+                            <string id="bool"></string>
+                        </action>
+                    </normal>
+                </condition>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_AwesomeAIMain_Toolkit_WaypointPlus_Event</string>
+                    <string id="Comment">Events file</string>
+                    <string id="Minimized">yes</string>
+                </action>
+                <action id="executeBehaviourTree">
+                    <string id="fileName">Mod_AwesomeAIMain_Toolkit_WaypointPlus_Trigger</string>
+                    <string id="Comment">Triggers File</string>
+                    <string id="Minimized">yes</string>
+                </action>
+                <sequence>
+                    <string id="Is blocking">no</string>
+                    <string id="Comment">Trigger resets</string>
+                    <normal>
+                        <action id="adjustCounter">
+                            <string id="id">Toolkit_WaypointPlus_Trigger_TargetWaypoint</string>
+                            <string id="value">-1</string>
+                            <string id="adjust method" values="valueadjust">set</string>
+                            <string id="Comment">Represents the final target location you want to reach(-1 is null). Ribbit IV: 10:REGENHOME_0 11:BOSSSPOT_0(RED) 12:LAUNCHLEFT 13:FINALSTAND_0 14:UPPERLANE_LEFT 15:UPPERLANESECOND_0 16:UPPERHP_0 17:BOTTOMLEFT_TOWER2(RED) 18:BOTTOMLANESECOND_0 19:BOTTOMHP_0 110:NEUTRALSIDESPOT_0 111:NEUTRAL_LEFT1(RED) 112:NEUTRALCENTERSPOT_0 20:REGENHOME_1 21:BOSSSPOT_ 0(BLUE) 22:LAUNCHRIGHT 23:FINALSTAND_1 24:FIRSTHP_1 25:UPPERLEFT_TOWER2(BLUE) 26:UPPERLANESECOND_1 27:UPPERHP_1 28:BOTTOMLEFT_TOWER2(BLUE) 29:BOTTOMLANESECOND_1 210:BOTTOMHP_1 211:NEUTRALSIDESPOT_1 212:NEUTRAL_LEFT1 213:NEUTRALCENTERSPOT_1 30:CENTERHP 31:UPPERLANE 32:BOTTOMLANE</string>
+                        </action>
+                    </normal>
+                </sequence>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
