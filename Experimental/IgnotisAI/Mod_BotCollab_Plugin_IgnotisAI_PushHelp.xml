@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<enemy>
+    <behaviour>
+        <root x="110" y="40">
+            <normal>
+                <condition id="receivedMessage">
+                    <string id="id">botReport</string>
+                    <string id="Comment">Broadcast logic</string>
+                    <normal>
+                        <condition id="getBoolEquals">
+                            <string id="id">helpMePush</string>
+                            <string id="value" values="yesno">yes</string>
+                            <normal>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1HelpPush</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot1HelpPush</string>
+                                            <string id="value" values="flagtoggle">yes</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2HelpPush</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot2HelpPush</string>
+                                                    <string id="value" values="flagtoggle">yes</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3HelpPush</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot3HelpPush</string>
+                                                            <string id="value" values="flagtoggle">yes</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                                <condition id="isUpgradeEnabled">
+                                    <string id="condition" values="yesno">yes</string>
+                                    <string id="upgrade name">TutorialListen</string>
+                                    <string id="Comment">Am I bot 1?</string>
+                                    <normal>
+                                        <action id="emitMessageInArea">
+                                            <string id="id">bot1NoHelpPush</string>
+                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                            <float id="xOffset">0.00</float>
+                                            <float id="yOffset">0.00</float>
+                                            <float id="width">50.00</float>
+                                            <float id="height">50.00</float>
+                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                            <string id="check line of sight" values="yesno">no</string>
+                                        </action>
+                                        <action id="setBool">
+                                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot1HelpPush</string>
+                                            <string id="value" values="flagtoggle">no</string>
+                                        </action>
+                                    </normal>
+                                    <else>
+                                        <condition id="isUpgradeEnabled">
+                                            <string id="condition" values="yesno">yes</string>
+                                            <string id="upgrade name">TutorialOpening</string>
+                                            <string id="Comment">Am I bot 2?</string>
+                                            <normal>
+                                                <action id="emitMessageInArea">
+                                                    <string id="id">bot2NoHelpPush</string>
+                                                    <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                    <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                    <float id="xOffset">0.00</float>
+                                                    <float id="yOffset">0.00</float>
+                                                    <float id="width">50.00</float>
+                                                    <float id="height">50.00</float>
+                                                    <string id="ignore invisibility" values="yesno">yes</string>
+                                                    <string id="check line of sight" values="yesno">no</string>
+                                                </action>
+                                                <action id="setBool">
+                                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot2HelpPush</string>
+                                                    <string id="value" values="flagtoggle">no</string>
+                                                </action>
+                                            </normal>
+                                            <else>
+                                                <condition id="isUpgradeEnabled">
+                                                    <string id="condition" values="yesno">yes</string>
+                                                    <string id="upgrade name">TutorialTalk</string>
+                                                    <string id="Comment">Am I bot 3?</string>
+                                                    <normal>
+                                                        <action id="emitMessageInArea">
+                                                            <string id="id">bot3NoHelpPush</string>
+                                                            <string id="receive groups" values="target receive groups" multiselect="true">PLAYERS;;</string>
+                                                            <string id="teams" values="teamswithtarget" multiselect="true">OWN_TEAM;;</string>
+                                                            <float id="xOffset">0.00</float>
+                                                            <float id="yOffset">0.00</float>
+                                                            <float id="width">50.00</float>
+                                                            <float id="height">50.00</float>
+                                                            <string id="ignore invisibility" values="yesno">yes</string>
+                                                            <string id="check line of sight" values="yesno">no</string>
+                                                        </action>
+                                                        <action id="setBool">
+                                                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot3HelpPush</string>
+                                                            <string id="value" values="flagtoggle">no</string>
+                                                        </action>
+                                                    </normal>
+                                                </condition>
+                                            </else>
+                                        </condition>
+                                    </else>
+                                </condition>
+                            </normal>
+                        </condition>
+                    </normal>
+                </condition>
+                <andblock>
+                    <string id="Comment">Bot 1 push reciever logic</string>
+                    <normal>
+                        <condition id="receivedMessage">
+                            <string id="id">bot1HelpPush</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot1HelpPush</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="receivedMessage">
+                            <string id="id">bot1NoHelpPush</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot1HelpPush</string>
+                                    <string id="value" values="flagtoggle">no</string>
+                                </action>
+                            </normal>
+                        </condition>
+                    </normal>
+                    <or>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_BotCollab_Main_Bot1Alive</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Is bot1 alive?</string>
+                        </condition>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialListen</string>
+                            <string id="Comment">Am I not bot1?</string>
+                        </condition>
+                    </or>
+                </andblock>
+                <andblock>
+                    <string id="Comment">Bot 2 push reciever logic</string>
+                    <normal>
+                        <condition id="receivedMessage">
+                            <string id="id">bot2HelpPush</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot2HelpPush</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="receivedMessage">
+                            <string id="id">bot2NoHelpPush</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot2HelpPush</string>
+                                    <string id="value" values="flagtoggle">no</string>
+                                </action>
+                            </normal>
+                        </condition>
+                    </normal>
+                    <or>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_BotCollab_Main_Bot2Alive</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Is bot2 alive?</string>
+                        </condition>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutorialOpening</string>
+                            <string id="Comment">Am I not bot1?</string>
+                        </condition>
+                    </or>
+                </andblock>
+                <andblock>
+                    <string id="Comment">Bot 3 push reciever logic</string>
+                    <normal>
+                        <condition id="receivedMessage">
+                            <string id="id">bot3HelpPush</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot3HelpPush</string>
+                                    <string id="value" values="flagtoggle">yes</string>
+                                </action>
+                            </normal>
+                        </condition>
+                        <condition id="receivedMessage">
+                            <string id="id">bot3NoHelpPush</string>
+                            <normal>
+                                <action id="setBool">
+                                    <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot3HelpPush</string>
+                                    <string id="value" values="flagtoggle">no</string>
+                                </action>
+                            </normal>
+                        </condition>
+                    </normal>
+                    <or>
+                        <condition id="getBoolEquals">
+                            <string id="id">Toolkit_BotCollab_Main_Bot3Alive</string>
+                            <string id="value" values="yesno">yes</string>
+                            <string id="Comment">Is bot1 alive?</string>
+                        </condition>
+                        <condition id="isUpgradeEnabled">
+                            <string id="condition" values="yesno">no</string>
+                            <string id="upgrade name">TutoriaTalk</string>
+                            <string id="Comment">Am I not bot1?</string>
+                        </condition>
+                    </or>
+                </andblock>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot1Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot 1 stopped existing?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot1HelpPush</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset the push status to false</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot2Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot 2 stopped existing?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot2HelpPush</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset the push status to false</string>
+                        </action>
+                    </normal>
+                </condition>
+                <condition id="getBoolEquals">
+                    <string id="id">Toolkit_BotCollab_Main_Bot3Exists</string>
+                    <string id="value" values="yesno">no</string>
+                    <string id="Comment">Has bot 3 stopped existing?</string>
+                    <normal>
+                        <action id="setBool">
+                            <string id="id">Toolkit_BotCollab_Plugin_IgnotisAI_PushHelp_bot3HelpPush</string>
+                            <string id="value" values="flagtoggle">no</string>
+                            <string id="Comment">Reset the push status to false</string>
+                        </action>
+                    </normal>
+                </condition>
+            </normal>
+        </root>
+    </behaviour>
+</enemy>
